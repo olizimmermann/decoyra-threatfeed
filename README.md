@@ -7,14 +7,14 @@ everything here comes from unsolicited, automated attack traffic. Updated hourly
 <!-- stats:start -->
 | | |
 |---|---|
-| updated utc | 2026-11-14T10:35:40Z |
-| blocked now | 697 |
+| updated utc | 2026-11-14T10:41:49Z |
+| blocked now | 698 |
 | blocked ipv6 | 0 |
-| collapsed entries | 588 |
-| blocked 7d | 697 |
-| blocked 30d | 697 |
-| urls | 58 |
-| hosts | 38 |
+| collapsed entries | 586 |
+| blocked 7d | 700 |
+| blocked 30d | 700 |
+| urls | 59 |
+| hosts | 39 |
 | sha256 | 45 |
 | cves 7d | 8 |
 | cves kev | 8 |

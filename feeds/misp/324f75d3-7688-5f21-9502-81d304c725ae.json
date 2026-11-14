@@ -7,8 +7,8 @@
   "analysis": "1",
   "distribution": "3",
   "published": true,
-  "timestamp": "1794652425",
-  "publish_timestamp": "1794652425",
+  "timestamp": "1794652851",
+  "publish_timestamp": "1794652851",
   "Orgc": {
    "name": "Decoyra honeypot fleet",
    "uuid": "9ac0bc45-8d7b-5e74-a3ad-e3f31f0311e0"
@@ -918,6 +918,16 @@
     "type": "ip-src",
     "category": "Network activity",
     "to_ids": true,
+    "value": "109.160.32.135",
+    "comment": "score 105",
+    "timestamp": "1794652821",
+    "uuid": "9f810ea0-8643-5537-ac0b-6d0e3cc14362",
+    "distribution": "5"
+   },
+   {
+    "type": "ip-src",
+    "category": "Network activity",
+    "to_ids": true,
     "value": "109.160.32.139",
     "comment": "score 105",
     "timestamp": "1794620645",
@@ -1642,6 +1652,16 @@
     "comment": "score 112",
     "timestamp": "1794610275",
     "uuid": "af725d60-ad85-5c4f-9892-4d19824baa01",
+    "distribution": "5"
+   },
+   {
+    "type": "ip-src",
+    "category": "Network activity",
+    "to_ids": true,
+    "value": "139.59.125.159",
+    "comment": "score 107",
+    "timestamp": "1794652707",
+    "uuid": "22c21c3f-e1e7-53e8-8775-0e147bedf682",
     "distribution": "5"
    },
    {
@@ -2512,16 +2532,6 @@
     "comment": "score 105",
     "timestamp": "1794598550",
     "uuid": "9a3edf8d-3a1e-5f19-88fc-24295ffca0f2",
-    "distribution": "5"
-   },
-   {
-    "type": "ip-src",
-    "category": "Network activity",
-    "to_ids": true,
-    "value": "164.90.210.197",
-    "comment": "score 110",
-    "timestamp": "1794566215",
-    "uuid": "59982fcb-bed5-52b4-ad70-52c365adc7bc",
     "distribution": "5"
    },
    {
@@ -4188,16 +4198,6 @@
     "type": "ip-src",
     "category": "Network activity",
     "to_ids": true,
-    "value": "31.220.44.203",
-    "comment": "score 105",
-    "timestamp": "1794566364",
-    "uuid": "961afd48-cdc8-5c7c-8919-424e48c1f1f4",
-    "distribution": "5"
-   },
-   {
-    "type": "ip-src",
-    "category": "Network activity",
-    "to_ids": true,
     "value": "31.57.34.150",
     "comment": "signal exploit.sig",
     "timestamp": "1794611364",
@@ -5322,6 +5322,16 @@
     "comment": "score 100",
     "timestamp": "1794636028",
     "uuid": "28800ea0-cd8d-5189-bfda-7dfdb8d2a601",
+    "distribution": "5"
+   },
+   {
+    "type": "ip-src",
+    "category": "Network activity",
+    "to_ids": true,
+    "value": "45.156.87.70",
+    "comment": "score 109",
+    "timestamp": "1794652806",
+    "uuid": "5499cb16-d012-5bf5-9396-7fdeb6bc92cc",
     "distribution": "5"
    },
    {
@@ -7039,8 +7049,8 @@
     "category": "Payload delivery",
     "to_ids": true,
     "value": "2634c3097f98e36865f0c572009c4ffd73316bc8b88ccfe8d196af35f46e2394",
-    "comment": "data file uploaded to a decoy by 39 attacking addresses",
-    "timestamp": "1794651412",
+    "comment": "data file uploaded to a decoy by 40 attacking addresses",
+    "timestamp": "1794652763",
     "uuid": "40b5252d-cd88-5216-abd8-60a3772a04d9",
     "distribution": "5"
    },
@@ -7089,8 +7099,8 @@
     "category": "Payload delivery",
     "to_ids": true,
     "value": "3c56dd5ed61af7e7b20f54288947a89a4891d181b10fe04560b55c5e82de1fa2",
-    "comment": "data file uploaded to a decoy by 21 attacking addresses",
-    "timestamp": "1794648688",
+    "comment": "data file uploaded to a decoy by 22 attacking addresses",
+    "timestamp": "1794652851",
     "uuid": "0a2b6ccb-703c-593d-8839-6e54822cf53d",
     "distribution": "5"
    },
@@ -7370,7 +7380,7 @@
     "to_ids": true,
     "value": "e150a1ec81e8e93e1eae2c3a77e66ec6dbd6a3b460f89c1d08aecf422ee401a0",
     "comment": "data file uploaded to a decoy by 40 attacking addresses",
-    "timestamp": "1794652129",
+    "timestamp": "1794652825",
     "uuid": "522a05d4-77f5-58c2-b759-17e5c7e6b7a4",
     "distribution": "5"
    },
@@ -7882,6 +7892,16 @@
     "comment": "referenced by 1 attacking addresses, 1 times",
     "timestamp": "1794602261",
     "uuid": "44f90534-2172-574f-ae9f-22b5dafee6ee",
+    "distribution": "5"
+   },
+   {
+    "type": "url",
+    "category": "Payload delivery",
+    "to_ids": false,
+    "value": "http://www.google.com",
+    "comment": "referenced by 1 attacking addresses, 1 times",
+    "timestamp": "1794652611",
+    "uuid": "c88c95b4-b796-5aaa-bd99-63661a34ed28",
     "distribution": "5"
    },
    {
