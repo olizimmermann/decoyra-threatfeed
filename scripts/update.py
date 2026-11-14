@@ -60,7 +60,7 @@ CTX = ssl.create_default_context()
 def get(path: str) -> bytes:
     """GET one endpoint. Errors name the path only, never the host or the token."""
     req = urllib.request.Request(f"https://{DOMAIN}/api/v1/{path}",
-                                 headers={"Authorization": "Bearer " + TOKEN, "User-Agent": "decoyra-blocklist/1"})
+                                 headers={"Authorization": "Bearer " + TOKEN, "User-Agent": "decoyra-threatfeed/1"})
     for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=60, context=CTX) as r:
@@ -163,7 +163,7 @@ now = time.time()
 out: dict[str, str] = {}          # relative path -> content
 ips = [b["ip"] for b in bans]
 HDR = ("# Decoyra honeypot fleet: addresses confirmed by at least two agents, blocked right now.\n"
-       "# Source: https://github.com/olizimmermann/blocklist  (honeypot traffic only; nothing legitimate talks to a decoy)\n")
+       "# Source: https://github.com/olizimmermann/decoyra-threatfeed  (honeypot traffic only; nothing legitimate talks to a decoy)\n")
 
 # ----------------------------------------------------------------- block lists
 

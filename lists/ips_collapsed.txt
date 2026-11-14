@@ -1,5 +1,5 @@
 # Decoyra honeypot fleet: addresses confirmed by at least two agents, blocked right now.
-# Source: https://github.com/olizimmermann/blocklist  (honeypot traffic only; nothing legitimate talks to a decoy)
+# Source: https://github.com/olizimmermann/decoyra-threatfeed  (honeypot traffic only; nothing legitimate talks to a decoy)
 # /24 networks where 3 or more addresses are blocked replace those addresses.
 # Blocks neighbours that share the network (cloud ranges): use with care.
 1.92.80.86

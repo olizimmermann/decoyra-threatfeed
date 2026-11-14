@@ -1,4 +1,4 @@
-# Decoyra honeypot blocklist
+# Decoyra threat feed
 
 Free threat-intelligence feeds from the **Decoyra** honeypot fleet: decoy servers on several continents
 that run web, SSH, Telnet, FTP, RDP, SMB and database decoys. Nothing legitimate talks to a decoy, so
@@ -24,7 +24,7 @@ everything here comes from unsolicited, automated attack traffic. Updated hourly
 
 ## Lists
 
-Raw URL prefix: `https://raw.githubusercontent.com/olizimmermann/blocklist/main/`
+Raw URL prefix: `https://raw.githubusercontent.com/olizimmermann/decoyra-threatfeed/main/`
 
 ### Block lists (addresses blocked right now)
 
@@ -47,7 +47,7 @@ Shadowserver, …) are never listed for scanning alone.
 Cron example (nftables, every hour):
 
 ```bash
-curl -fsS https://raw.githubusercontent.com/olizimmermann/blocklist/main/lists/decoyra.nft -o /tmp/decoyra.nft && nft -f /tmp/decoyra.nft
+curl -fsS https://raw.githubusercontent.com/olizimmermann/decoyra-threatfeed/main/lists/decoyra.nft -o /tmp/decoyra.nft && nft -f /tmp/decoyra.nft
 ```
 
 ### Threat-intel feeds
