@@ -299,7 +299,7 @@ WARN = ("# LIVE MALWARE INFRASTRUCTURE: not de-fanged. Never fetch these.\n"
         "# Payload and callback URLs attackers told the honeypots to fetch, last 7 days. Shell glue cut off;\n"
         "# proxy-check, benign, internal and single-address domains left out (see iocs.csv).\n")
 out["iocs/urls.txt"] = WARN + "".join(u + "\n" for u in urls)
-out["iocs/hosts.txt"] = WARN.replace("URLs attackers", "Hosts of URLs attackers") + "".join(h + "\n" for h in hosts)
+out["iocs/hosts.txt"] = WARN.replace("Payload and callback URLs attackers", "Hosts of payload and callback URLs attackers") + "".join(h + "\n" for h in hosts)
 out["iocs/sha256.txt"] = "# SHA-256 of files uploaded to the honeypots (SSH/SCP), last 7 days.\n" + "".join(h + "\n" for h in sorted(hashes))
 buf = io.StringIO()
 w = csv.writer(buf, lineterminator="\n")
