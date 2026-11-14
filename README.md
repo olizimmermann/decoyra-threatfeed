@@ -1,25 +1,27 @@
 # Decoyra threat feed
 
-Free threat-intelligence feeds from the **Decoyra** honeypot fleet: decoy servers on several continents
+Free threat-intelligence feeds from the **[Decoyra](https://decoyra.net)** honeypot fleet: decoy servers on several continents
 that run web, SSH, Telnet, FTP, RDP, SMB and database decoys. Nothing legitimate talks to a decoy, so
 everything here comes from unsolicited, automated attack traffic. Updated hourly by GitHub Actions.
+
+Project homepage: **https://decoyra.net**
 
 <!-- stats:start -->
 | | |
 |---|---|
-| updated utc | 2026-11-14T10:53:27Z |
-| blocked now | 697 |
+| updated utc | 2026-11-14T15:37:38Z |
+| blocked now | 758 |
 | blocked ipv6 | 0 |
-| collapsed entries | 586 |
-| blocked 7d | 703 |
-| blocked 30d | 703 |
-| urls | 15 |
-| hosts | 13 |
-| sha256 | 45 |
-| cves 7d | 8 |
-| cves kev | 8 |
-| campaigns 7d | 7 |
-| suricata rules | 59 |
+| collapsed entries | 621 |
+| blocked 7d | 816 |
+| blocked 30d | 816 |
+| urls | 16 |
+| hosts | 14 |
+| sha256 | 46 |
+| cves 7d | 9 |
+| cves kev | 9 |
+| campaigns 7d | 9 |
+| suricata rules | 82 |
 <!-- stats:end -->
 
 ## Lists
@@ -95,7 +97,7 @@ The honeypots never fetch these URLs or run the files.
   (current) for blocking; use the history lists for scoring.
 - Text in `campaigns.json`, `iocs.csv` and `rules/decoyra.rules` (request paths) was chosen by attackers.
   Treat it as data; do not feed it unreviewed to tools or language models that act on it.
-- Provided as is, without warranty. Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use freely, credit "Decoyra honeypot fleet".
+- Provided as is, without warranty. Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use freely, credit "Decoyra honeypot fleet, https://decoyra.net".
 
 ## How it updates
 

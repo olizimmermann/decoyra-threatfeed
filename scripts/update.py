@@ -163,7 +163,8 @@ now = time.time()
 out: dict[str, str] = {}          # relative path -> content
 ips = [b["ip"] for b in bans]
 HDR = ("# Decoyra honeypot fleet: addresses confirmed by at least two agents, blocked right now.\n"
-       "# Source: https://github.com/olizimmermann/decoyra-threatfeed  (honeypot traffic only; nothing legitimate talks to a decoy)\n")
+       "# Source: https://decoyra.net  ·  https://github.com/olizimmermann/decoyra-threatfeed\n"
+       "# Honeypot traffic only; nothing legitimate talks to a decoy.\n")
 
 # ----------------------------------------------------------------- block lists
 
@@ -316,6 +317,9 @@ out["iocs/iocs.csv"] = buf.getvalue()
 
 # ----------------------------------------------------------------- STIX / MISP / Suricata
 
+for o in stix.get("objects", []):          # point consumers at the project
+    if o.get("type") == "identity":
+        o["contact_information"] = "https://decoyra.net"
 out["feeds/stix2.json"] = json.dumps(stix, indent=1) + "\n"
 
 # A real MISP feed: manifest.json + one event file, addable in MISP under Sync Actions -> Feeds.
