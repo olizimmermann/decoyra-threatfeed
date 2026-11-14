@@ -1,5 +1,5 @@
 # Threat situation report
-Period: last 7 days (2026-11-07 10:52 UTC to 2026-11-14 10:52 UTC) · 16 agents
+Period: last 7 days (2026-11-07 10:53 UTC to 2026-11-14 10:53 UTC) · 16 agents
 ## Key findings
 - **High confidence.** The fleet has less history than this period, so there is no usual level yet: nothing here is called new or rising. _(comparisons start once the fleet has run for 336 hours)_
 - **Medium confidence.** CVE-2017-9841 (PHPUnit eval-stdin remote code execution) is being attempted, a vulnerability CISA lists as exploited in the wild. _(161 attempts on 7 of 16 agents; first seen by the fleet 24 hours ago)_
@@ -11,7 +11,7 @@ Period: last 7 days (2026-11-07 10:52 UTC to 2026-11-14 10:52 UTC) · 16 agents
 ## Numbers
 | Events | Attacking addresses | High severity | Blocked now | Language-model agents | New patterns |
 |---|---|---|---|---|---|
-| 617297 | 8052 | 2890 | 697 | 0 | 10 |
+| 617584 | 8059 | 2890 | 697 | 0 | 10 |
 
 ## Known exploits
 | CVE | Name | CVSS | CISA | Events | Agents |
@@ -28,25 +28,25 @@ Period: last 7 days (2026-11-07 10:52 UTC to 2026-11-14 10:52 UTC) · 16 agents
 ## Technologies under attack
 | Technology | Events | Change | Agents |
 |---|---|---|---|
-| ssh | 26476 | no history yet | 16 |
-| credential-attack | 21698 | no history yet | 16 |
-| rdp | 14511 | no history yet | 16 |
+| ssh | 26478 | no history yet | 16 |
+| credential-attack | 21701 | no history yet | 16 |
+| rdp | 14524 | no history yet | 16 |
 | ssh-shell | 13252 | no history yet | 15 |
 | telnet | 11959 | no history yet | 16 |
-| ssh-login | 7020 | no history yet | 15 |
+| ssh-login | 7021 | no history yet | 15 |
 | shell-recon | 6569 | no history yet | 15 |
 | shell-download | 3656 | no history yet | 15 |
-| smb | 3596 | no history yet | 15 |
-| smb1 | 2146 | no history yet | 15 |
+| smb | 3597 | no history yet | 15 |
+| smb1 | 2147 | no history yet | 15 |
 | mysql | 2119 | no history yet | 15 |
 | redis | 1854 | no history yet | 15 |
 
 ## New request patterns
 | Pattern | Events | Addresses | Confidence |
 |---|---|---|---|
-| `SSH-2.0-Go ` | 12419 | 397 | high |
-| ssh root | 11029 | 417 | high |
-| RDP tls,nla | 4881 | 171 | high |
+| `SSH-2.0-Go ` | 12420 | 397 | high |
+| ssh root | 11032 | 417 | high |
+| RDP tls,nla | 4883 | 171 | high |
 | `0a07365cc01fa9fc82608ba4019af499 SSH-2.0-Go ` | 4790 | 102 | high |
 | (many distinct values from one address) | 4280 | 44 | high |
 | uname -s -v -n -r -m | 3660 | 83 | high |
@@ -84,30 +84,30 @@ Period: last 7 days (2026-11-07 10:52 UTC to 2026-11-14 10:52 UTC) · 16 agents
 ## ATT&CK techniques
 | Tactic | Technique | Name | Events | Agents | Confidence |
 |---|---|---|---|---|---|
-| Reconnaissance | `T1595.001 ` | Scanning IP Blocks | 49399 | 16 | high |
+| Reconnaissance | `T1595.001 ` | Scanning IP Blocks | 49411 | 16 | high |
 | Reconnaissance | `T1595.002 ` | Vulnerability Scanning | 1261 | 15 | high |
 | Reconnaissance | `T1595.003 ` | Wordlist Scanning | 1017 | 16 | high |
 | Reconnaissance | T1594 | Search Victim-Owned Websites | 364 | 15 | high |
-| Initial Access | T1133 | External Remote Services | 19866 | 16 | high |
+| Initial Access | T1133 | External Remote Services | 19869 | 16 | high |
 | Initial Access | T1078 | Valid Accounts | 7020 | 15 | high |
 | Initial Access | T1190 | Exploit Public-Facing Application | 466 | 15 | high |
 | Execution | `T1059.004 ` | Unix Shell | 13528 | 15 | high |
-| Persistence | `T1053.003 ` | Cron | 1282 | 15 | high |
+| Persistence | `T1053.003 ` | Cron | 1283 | 15 | high |
 | Persistence | T1098 | Account Manipulation | 172 | 9 | high |
 | Persistence | `T1098.004 ` | SSH Authorized Keys | 125 | 9 | high |
-| Stealth | `T1070.004 ` | File Deletion | 1335 | 15 | high |
+| Stealth | `T1070.004 ` | File Deletion | 1336 | 15 | high |
 | Stealth | `T1070.003 ` | Clear Command History | 170 | 15 | high |
 | Defense Impairment | `T1222.002 ` | Linux and Mac Permissions | 362 | 15 | high |
-| Credential Access | `T1110.001 ` | Password Guessing | 21698 | 16 | high |
+| Credential Access | `T1110.001 ` | Password Guessing | 21701 | 16 | high |
 | Credential Access | `T1552.001 ` | Credentials In Files | 787 | 15 | high |
 | Discovery | T1082 | System Information Discovery | 6538 | 15 | high |
-| Discovery | T1057 | Process Discovery | 1262 | 15 | high |
+| Discovery | T1057 | Process Discovery | 1263 | 15 | high |
 | Discovery | T1033 | `System Owner/User Discovery ` | 191 | 9 | high |
 | Discovery | T1083 | File and Directory Discovery | 99 | 9 | high |
 | Discovery | T1016 | System Network Configuration Discovery | 2 | 1 | low |
 | Command and Control | T1105 | Ingress Tool Transfer | 4199 | 15 | high |
 | Command and Control | T1090 | Proxy | 699 | 15 | high |
-| Impact | `T1496.001 ` | Compute Hijacking | 1185 | 15 | high |
+| Impact | `T1496.001 ` | Compute Hijacking | 1186 | 15 | high |
 
 ## Recommendations
 - Patch or take offline anything affected by CVE-2017-9841 (PHPUnit eval-stdin remote code execution). _161 attempts on 7 agents in this period, listed by CISA as exploited in the wild._

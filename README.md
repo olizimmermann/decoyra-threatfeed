@@ -7,7 +7,7 @@ everything here comes from unsolicited, automated attack traffic. Updated hourly
 <!-- stats:start -->
 | | |
 |---|---|
-| updated utc | 2026-11-14T10:52:34Z |
+| updated utc | 2026-11-14T10:53:27Z |
 | blocked now | 697 |
 | blocked ipv6 | 0 |
 | collapsed entries | 586 |
