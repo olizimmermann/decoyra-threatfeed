@@ -1,0 +1,384 @@
+[
+ {
+  "id": "a555128e77",
+  "addresses": 24,
+  "events": 42,
+  "agents": 10,
+  "first_seen": 1794517207.98973,
+  "last_seen": 1794651061.474943,
+  "tags": [
+   "git-exposure"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 87,
+    "pattern": "GET /.git/config"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "US",
+    "n": 6
+   },
+   {
+    "cc": "NL",
+    "n": 4
+   },
+   {
+    "cc": "DE",
+    "n": 3
+   },
+   {
+    "cc": "PL",
+    "n": 2
+   },
+   {
+    "cc": "IN",
+    "n": 2
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS14061 DigitalOcean, LLC",
+    "n": 8
+   },
+   {
+    "network": "AS13335 Cloudflare, Inc.",
+    "n": 5
+   },
+   {
+    "network": "AS213790 Limited Network LTD",
+    "n": 2
+   }
+  ],
+  "sample_addresses": [
+   "103.41.19.124",
+   "104.23.168.74",
+   "104.238.228.254",
+   "129.121.75.86",
+   "13.140.164.22"
+  ]
+ },
+ {
+  "id": "f07930997a",
+  "addresses": 15,
+  "events": 18,
+  "agents": 1,
+  "first_seen": 1794522638.281329,
+  "last_seen": 1794650897.5648026,
+  "tags": [
+   "php",
+   "wordpress"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 572,
+    "pattern": "GET /wp-admin/install.php?step="
+   }
+  ],
+  "countries": [
+   {
+    "cc": "DE",
+    "n": 7
+   },
+   {
+    "cc": "SE",
+    "n": 4
+   },
+   {
+    "cc": "GB",
+    "n": 2
+   },
+   {
+    "cc": "US",
+    "n": 1
+   },
+   {
+    "cc": "NL",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS13335 Cloudflare, Inc.",
+    "n": 14
+   }
+  ],
+  "sample_addresses": [
+   "104.22.219.118",
+   "104.23.221.104",
+   "104.23.223.121",
+   "104.23.239.77",
+   "162.158.182.156"
+  ]
+ },
+ {
+  "id": "b7653d1284",
+  "addresses": 14,
+  "events": 14,
+  "agents": 10,
+  "first_seen": 1794556532.6283548,
+  "last_seen": 1794640222.5223942,
+  "tags": [
+   "admin-panel",
+   "iot-router"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 3829,
+    "pattern": "GET /boaform/admin/formlogin?psd=&username="
+   }
+  ],
+  "countries": [
+   {
+    "cc": "PK",
+    "n": 13
+   },
+   {
+    "cc": "CN",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS9541 Cyber Internet Services (Private) Limited",
+    "n": 5
+   },
+   {
+    "network": "AS138423 CMPak Limited",
+    "n": 3
+   },
+   {
+    "network": "AS38264 Wateen Telecom Limited",
+    "n": 2
+   }
+  ],
+  "sample_addresses": [
+   "101.53.225.177",
+   "110.38.8.160",
+   "110.38.8.64",
+   "119.116.96.108",
+   "139.135.41.94"
+  ]
+ },
+ {
+  "id": "2ef6aa6617",
+  "addresses": 11,
+  "events": 86,
+  "agents": 15,
+  "first_seen": 1794560167.2304807,
+  "last_seen": 1794651988.4740896,
+  "tags": [
+   "env-secrets"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 85,
+    "pattern": "GET /.env"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "NL",
+    "n": 3
+   },
+   {
+    "cc": "US",
+    "n": 2
+   },
+   {
+    "cc": "PL",
+    "n": 2
+   },
+   {
+    "cc": "SI",
+    "n": 1
+   },
+   {
+    "cc": "MA",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS13335 Cloudflare, Inc.",
+    "n": 4
+   },
+   {
+    "network": "AS51396 Pfcloud UG (haftungsbeschrankt)",
+    "n": 1
+   },
+   {
+    "network": "AS48090 TECHOFF SRV LIMITED",
+    "n": 1
+   }
+  ],
+  "sample_addresses": [
+   "102.220.163.241",
+   "161.178.142.38",
+   "172.69.155.25",
+   "172.69.155.28",
+   "172.70.206.11"
+  ]
+ },
+ {
+  "id": "6fd93f706b",
+  "addresses": 10,
+  "events": 58,
+  "agents": 13,
+  "first_seen": 1794514535.451093,
+  "last_seen": 1794645907.168333,
+  "tags": [
+   "admin-panel",
+   "php"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 9,
+    "pattern": "GET /admin/config.php"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "BR",
+    "n": 6
+   },
+   {
+    "cc": "ID",
+    "n": 3
+   },
+   {
+    "cc": "NL",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS28267 SIM INTERNET PROVEDORES DE INTERNET EIRELI.",
+    "n": 2
+   },
+   {
+    "network": "AS141127 PT Anugerah Cimanuk Raya",
+    "n": 2
+   },
+   {
+    "network": "AS63949 Akamai Technologies, Inc.",
+    "n": 1
+   }
+  ],
+  "sample_addresses": [
+   "103.158.121.21",
+   "103.158.121.4",
+   "172.235.173.150",
+   "177.136.239.86",
+   "186.65.107.234"
+  ]
+ },
+ {
+  "id": "2e89352f2b",
+  "addresses": 8,
+  "events": 8,
+  "agents": 8,
+  "first_seen": 1794572880.1634552,
+  "last_seen": 1794573164.3673413,
+  "tags": [
+   "java-spring"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 5821,
+    "pattern": "GET /actuator/health"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "US",
+    "n": 8
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS8075 Microsoft Corporation",
+    "n": 8
+   }
+  ],
+  "sample_addresses": [
+   "135.119.113.72",
+   "172.174.112.144",
+   "20.15.203.16",
+   "20.98.163.96",
+   "40.119.46.8"
+  ]
+ },
+ {
+  "id": "f2720dd295",
+  "addresses": 5,
+  "events": 53,
+  "agents": 5,
+  "first_seen": 1794529504.9150047,
+  "last_seen": 1794619494.528473,
+  "tags": [
+   "env-secrets"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 85,
+    "pattern": "GET /.env"
+   },
+   {
+    "id": 370,
+    "pattern": "GET /.env.backup"
+   },
+   {
+    "id": 375,
+    "pattern": "GET /.env.production"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "FR",
+    "n": 2
+   },
+   {
+    "cc": "NL",
+    "n": 1
+   },
+   {
+    "cc": "IN",
+    "n": 1
+   },
+   {
+    "cc": "FI",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS14061 DigitalOcean, LLC",
+    "n": 2
+   },
+   {
+    "network": "AS51167 Contabo GmbH",
+    "n": 1
+   },
+   {
+    "network": "AS24940 Hetzner Online GmbH",
+    "n": 1
+   }
+  ],
+  "sample_addresses": [
+   "134.209.85.233",
+   "139.59.27.160",
+   "172.69.222.158",
+   "207.180.202.214",
+   "89.167.11.42"
+  ]
+ }
+]

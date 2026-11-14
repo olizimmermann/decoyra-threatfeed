@@ -1,0 +1,47 @@
+name: Update lists
+
+on:
+  schedule:
+    - cron: "17 * * * *"      # hourly; bans start at 24 h, so hourly is fresh enough and keeps history readable
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Publish even if the ban list shrank by more than 90 %"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-lists
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      # The central only speaks post-quantum TLS (X25519MLKEM768). The runner's OpenSSL 3.0 cannot,
+      # Alpine 3.22's OpenSSL 3.5 can, so the fetch runs in that container.
+      - name: Fetch from Decoyra
+        env:
+          DECOYRA_API: ${{ secrets.DECOYRA_API }}
+          # a secret is masked in the public log; a variable is printed in this step's env header
+          DECOYRA_DOMAIN: ${{ secrets.DECOYRA_DOMAIN || vars.DECOYRA_DOMAIN }}
+          FORCE: ${{ inputs.force && '1' || '0' }}
+        run: |
+          docker run --rm --network host -e DECOYRA_API -e DECOYRA_DOMAIN -e FORCE \
+            -u "$(id -u):$(id -g)" -v "$PWD:/repo" -w /repo \
+            python:3.13-alpine3.22 python -I scripts/update.py
+
+      - name: Commit changes
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then echo "nothing changed"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A lists iocs feeds rules intel reports data stats.json README.md
+          git commit -q -m "Update lists $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q

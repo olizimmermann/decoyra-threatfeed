@@ -1,0 +1,178 @@
+[
+ {
+  "cve": "CVE-2017-9841",
+  "name": "PHPUnit eval-stdin remote code execution",
+  "disclosed": "2017-06-27",
+  "cvss": 9.8,
+  "kev": {
+   "added": "2022-02-15",
+   "due": "2022-08-15",
+   "name": "PHPUnit Command Injection Vulnerability",
+   "product": "PHPUnit PHPUnit",
+   "ransomware": false
+  },
+  "events": 161,
+  "baseline": null,
+  "change": null,
+  "agents": 7,
+  "first_seen": 1794567600,
+  "last_seen": 1794650400,
+  "days_after_disclosure": 3426,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2024-4577",
+  "name": "PHP-CGI argument injection",
+  "disclosed": "2024-06-09",
+  "cvss": 9.8,
+  "kev": {
+   "added": "2024-06-12",
+   "due": "2024-07-03",
+   "name": "PHP-CGI OS Command Injection Vulnerability",
+   "product": "PHP Group PHP",
+   "ransomware": true
+  },
+  "events": 23,
+  "baseline": null,
+  "change": null,
+  "agents": 8,
+  "first_seen": 1794542400,
+  "last_seen": 1794646800,
+  "days_after_disclosure": 887,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2025-31324",
+  "name": "SAP NetWeaver Visual Composer file upload",
+  "disclosed": "2025-04-24",
+  "cvss": 10.0,
+  "kev": {
+   "added": "2025-04-29",
+   "due": "2025-05-20",
+   "name": "SAP NetWeaver Unrestricted File Upload Vulnerability",
+   "product": "SAP NetWeaver",
+   "ransomware": true
+  },
+  "events": 14,
+  "baseline": null,
+  "change": null,
+  "agents": 14,
+  "first_seen": 1794618000,
+  "last_seen": 1794621600,
+  "days_after_disclosure": 569,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2021-41773",
+  "name": "Apache httpd path traversal",
+  "disclosed": "2021-10-05",
+  "cvss": 7.5,
+  "kev": {
+   "added": "2021-11-03",
+   "due": "2021-11-17",
+   "name": "Apache HTTP Server Path Traversal Vulnerability",
+   "product": "Apache HTTP Server",
+   "ransomware": true
+  },
+  "events": 13,
+  "baseline": null,
+  "change": null,
+  "agents": 8,
+  "first_seen": 1794542400,
+  "last_seen": 1794646800,
+  "days_after_disclosure": 1865,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2018-20062",
+  "name": "ThinkPHP remote code execution",
+  "disclosed": "2018-12-11",
+  "cvss": 9.8,
+  "kev": {
+   "added": "2021-11-03",
+   "due": "2022-05-03",
+   "name": "ThinkPHP \"noneCms\" Remote Code Execution Vulnerability",
+   "product": "ThinkPHP noneCms",
+   "ransomware": false
+  },
+  "events": 11,
+  "baseline": null,
+  "change": null,
+  "agents": 5,
+  "first_seen": 1794567600,
+  "last_seen": 1794650400,
+  "days_after_disclosure": 2894,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2018-13379",
+  "name": "FortiOS SSL VPN file read",
+  "disclosed": "2019-06-04",
+  "cvss": 9.1,
+  "kev": {
+   "added": "2021-11-03",
+   "due": "2022-05-03",
+   "name": "Fortinet FortiOS SSL VPN Path Traversal Vulnerability",
+   "product": "Fortinet FortiOS",
+   "ransomware": true
+  },
+  "events": 8,
+  "baseline": null,
+  "change": null,
+  "agents": 4,
+  "first_seen": 1794636000,
+  "last_seen": 1794654000,
+  "days_after_disclosure": 2720,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2018-10561",
+  "name": "GPON router authentication bypass",
+  "disclosed": "2018-05-04",
+  "cvss": 9.8,
+  "kev": {
+   "added": "2022-03-31",
+   "due": "2022-04-21",
+   "name": "Dasan GPON Routers Authentication Bypass Vulnerability",
+   "product": "Dasan Gigabit Passive Optical Network (GPON) Routers",
+   "ransomware": false
+  },
+  "events": 2,
+  "baseline": null,
+  "change": null,
+  "agents": 2,
+  "first_seen": 1794546000,
+  "last_seen": 1794560400,
+  "days_after_disclosure": 3115,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2026-123158",
+  "name": "OpenSSH password authentication bypass (musl libc without PAM)",
+  "disclosed": "2026-11-05",
+  "cvss": null,
+  "kev": {
+   "added": "2026-11-09",
+   "due": "2026-11-12",
+   "name": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
+   "product": "OpenBSD OpenSSH",
+   "ransomware": false
+  },
+  "events": 1,
+  "baseline": null,
+  "change": null,
+  "agents": 1,
+  "first_seen": 1794621600,
+  "last_seen": 1794625200,
+  "days_after_disclosure": 9,
+  "custom": false,
+  "source": "own"
+ }
+]
