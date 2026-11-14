@@ -1,6 +1,6 @@
 {
  "type": "bundle",
- "id": "bundle--5d3840ee-351a-5bde-9ecd-28e453ecc38a",
+ "id": "bundle--4930a9f0-4d8c-5410-a9db-ad4cfd70bddd",
  "objects": [
   {
    "type": "identity",
@@ -10,6 +10,57 @@
    "modified": "1970-01-01T00:00:00.000Z",
    "name": "Decoyra honeypot fleet",
    "identity_class": "system"
+  },
+  {
+   "type": "indicator",
+   "spec_version": "2.1",
+   "id": "indicator--3469bb72-6ee9-5e09-a8a9-0bbe4d5d4ab9",
+   "created_by_ref": "identity--e7a12b1b-dc4f-5474-996c-50097d238ceb",
+   "created": "2026-11-14T10:46:29.000Z",
+   "modified": "2026-11-14T10:46:29.000Z",
+   "name": "Blocked address (bruteforcer)",
+   "description": "score 114",
+   "indicator_types": [
+    "malicious-activity"
+   ],
+   "pattern": "[ipv4-addr:value = '100.51.6.16']",
+   "pattern_type": "stix",
+   "valid_from": "2026-11-14T10:46:29.000Z",
+   "valid_until": "2026-11-15T10:46:29.000Z"
+  },
+  {
+   "type": "indicator",
+   "spec_version": "2.1",
+   "id": "indicator--9f5f34a8-59ba-56d2-931f-f6129d42e91f",
+   "created_by_ref": "identity--e7a12b1b-dc4f-5474-996c-50097d238ceb",
+   "created": "2026-11-14T10:43:51.000Z",
+   "modified": "2026-11-14T10:43:51.000Z",
+   "name": "Blocked address (scanner)",
+   "description": "score 107",
+   "indicator_types": [
+    "malicious-activity"
+   ],
+   "pattern": "[ipv4-addr:value = '85.11.167.204']",
+   "pattern_type": "stix",
+   "valid_from": "2026-11-14T10:43:51.000Z",
+   "valid_until": "2026-11-15T10:43:51.000Z"
+  },
+  {
+   "type": "indicator",
+   "spec_version": "2.1",
+   "id": "indicator--d2b79e21-e6ed-5841-bcef-1289af915efa",
+   "created_by_ref": "identity--e7a12b1b-dc4f-5474-996c-50097d238ceb",
+   "created": "2026-11-14T10:43:13.000Z",
+   "modified": "2026-11-14T10:43:13.000Z",
+   "name": "Blocked address (scanner)",
+   "description": "score 104",
+   "indicator_types": [
+    "malicious-activity"
+   ],
+   "pattern": "[ipv4-addr:value = '100.28.191.174']",
+   "pattern_type": "stix",
+   "valid_from": "2026-11-14T10:43:13.000Z",
+   "valid_until": "2026-11-15T10:43:13.000Z"
   },
   {
    "type": "indicator",
@@ -2585,7 +2636,7 @@
    "created_by_ref": "identity--e7a12b1b-dc4f-5474-996c-50097d238ceb",
    "created": "2026-11-14T06:01:51.000Z",
    "modified": "2026-11-14T06:01:51.000Z",
-   "name": "Blocked address (scanner)",
+   "name": "Blocked address (crawler)",
    "description": "score 105",
    "indicator_types": [
     "malicious-activity"
@@ -11655,74 +11706,6 @@
    "pattern_type": "stix",
    "valid_from": "2026-11-13T10:57:54.000Z",
    "valid_until": "2026-11-14T10:57:54.000Z"
-  },
-  {
-   "type": "indicator",
-   "spec_version": "2.1",
-   "id": "indicator--dea0ad4f-d6f3-59fa-aa1b-2a7aa78ac9ce",
-   "created_by_ref": "identity--e7a12b1b-dc4f-5474-996c-50097d238ceb",
-   "created": "2026-11-13T10:50:15.000Z",
-   "modified": "2026-11-13T10:50:15.000Z",
-   "name": "Blocked address (bruteforcer)",
-   "description": "score 110",
-   "indicator_types": [
-    "malicious-activity"
-   ],
-   "pattern": "[ipv4-addr:value = '118.27.10.208']",
-   "pattern_type": "stix",
-   "valid_from": "2026-11-13T10:50:15.000Z",
-   "valid_until": "2026-11-14T10:50:15.000Z"
-  },
-  {
-   "type": "indicator",
-   "spec_version": "2.1",
-   "id": "indicator--7a778914-42eb-56e6-9d20-e1484e3cfe6a",
-   "created_by_ref": "identity--e7a12b1b-dc4f-5474-996c-50097d238ceb",
-   "created": "2026-11-13T10:49:31.000Z",
-   "modified": "2026-11-13T10:49:31.000Z",
-   "name": "Blocked address (intruder)",
-   "description": "score 124",
-   "indicator_types": [
-    "malicious-activity"
-   ],
-   "pattern": "[ipv4-addr:value = '138.226.239.233']",
-   "pattern_type": "stix",
-   "valid_from": "2026-11-13T10:49:31.000Z",
-   "valid_until": "2026-11-14T10:49:31.000Z"
-  },
-  {
-   "type": "indicator",
-   "spec_version": "2.1",
-   "id": "indicator--133f3418-f88a-5974-aae5-803bd30798cb",
-   "created_by_ref": "identity--e7a12b1b-dc4f-5474-996c-50097d238ceb",
-   "created": "2026-11-13T10:48:01.000Z",
-   "modified": "2026-11-13T10:48:01.000Z",
-   "name": "Blocked address (intruder)",
-   "description": "score 110",
-   "indicator_types": [
-    "malicious-activity"
-   ],
-   "pattern": "[ipv4-addr:value = '77.239.124.35']",
-   "pattern_type": "stix",
-   "valid_from": "2026-11-13T10:48:01.000Z",
-   "valid_until": "2026-11-14T10:48:01.000Z"
-  },
-  {
-   "type": "indicator",
-   "spec_version": "2.1",
-   "id": "indicator--772653c4-cb16-5148-802a-2350f8906ccf",
-   "created_by_ref": "identity--e7a12b1b-dc4f-5474-996c-50097d238ceb",
-   "created": "2026-11-13T10:47:55.000Z",
-   "modified": "2026-11-13T10:47:55.000Z",
-   "name": "Blocked address (intruder)",
-   "description": "score 105",
-   "indicator_types": [
-    "malicious-activity"
-   ],
-   "pattern": "[ipv4-addr:value = '87.106.65.126']",
-   "pattern_type": "stix",
-   "valid_from": "2026-11-13T10:47:55.000Z",
-   "valid_until": "2026-11-14T10:47:55.000Z"
   },
   {
    "type": "indicator",

@@ -227,29 +227,91 @@ for days in (7, 30, 90):
 
 # ----------------------------------------------------------------- indicators
 
-attrs = misp_src.get("Event", misp_src).get("Attribute", [])
-urls = sorted({a["value"] for a in attrs if a.get("type") == "url"})
-hashes = {a["value"].lower() for a in attrs if a.get("type") == "sha256" and re.fullmatch(r"[0-9a-fA-F]{64}", a.get("value", ""))}
-hosts = set()
-for u in urls:
+# Attackers name many hosts that are not theirs: "what is my address" services in open-proxy tests,
+# XML namespaces, vendor domains inside exploit text, research scanners' info pages. Only URLs that
+# look like a payload or callback go into the blocking lists; everything stays in iocs.csv with a reason.
+BENIGN = {  # registrable domains, matched with all subdomains
+    "google.com", "apache.org", "w3.org", "xmlsoap.org", "example.com", "example.net", "example.org", "microsoft.com",
+    "azenv.net", "ipip.net", "geoiphub.com", "ipify.org", "ifconfig.me", "ifconfig.co", "icanhazip.com", "ipinfo.io",
+    "ip-api.com", "myip.com", "httpbin.org", "checkip.amazonaws.com", "whatismyipaddress.com", "bablosoft.com",
+    "purenetworks.com", "modat.io", "criminalip.com", "flowiq-labs.com", "infrawat.ch", "censys.io", "shodan.io",
+    "shadowserver.org", "onyphe.io", "leakix.net", "internet-measurement.com", "binaryedge.io", "stretchoid.com",
+}
+SHARED = {  # hosting many tenants: the URL is an indicator, the host is not
+    "github.com", "githubusercontent.com", "gitlab.com", "bitbucket.org", "pastebin.com", "discord.com",
+    "discordapp.com", "transfer.sh", "dropbox.com", "drive.google.com", "amazonaws.com", "cloudfront.net",
+    "azureedge.net", "blob.core.windows.net", "storage.googleapis.com", "r2.dev", "workers.dev", "pages.dev",
+}
+DOMAIN_RE = re.compile(r"(?i)(?=.{4,253}$)([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}")
+MIN_DOMAIN_SOURCES = 2      # a domain needs two attacking addresses; an IP payload host needs one
+
+
+def in_set(host: str, names: set) -> bool:
+    return any(host == d or host.endswith("." + d) for d in names)
+
+
+def refang(s: str) -> str:
+    return re.sub(r"(?i)^hxxp", "http", s).replace("[.]", ".").replace("[:]", ":")
+
+
+def classify_url(raw: str, sources: int):
+    """Return (clean URL or None, host, reason). Shell glue after the URL is cut: ';chmod…', '+-O+…'."""
+    u = re.split(r"[;$+|`)\s]", raw, maxsplit=1)[0]
     try:
-        h = urlsplit(u).hostname or ""
+        p = urlsplit(u)
+        host = (p.hostname or "").lower()
     except ValueError:
-        continue
-    n = public_net(h)
-    if n or re.fullmatch(r"(?i)[a-z0-9.-]+\.[a-z]{2,}", h):
-        hosts.add(h.lower())
+        return None, "", "malformed"
+    if p.scheme not in ("http", "https") or not host:
+        return None, host, "malformed"
+    try:
+        ip = ipaddress.ip_address(host)
+    except ValueError:
+        ip = None
+    if ip is not None:
+        if not ip.is_global:
+            return None, host, "private address"
+    elif not DOMAIN_RE.fullmatch(host) or host.endswith((".local", ".lan", ".internal", ".home", ".localdomain")):
+        return None, host, "malformed or internal host"
+    elif in_set(host, BENIGN):
+        return None, host, "benign or proxy-check host"
+    elif sources < MIN_DOMAIN_SOURCES:
+        return None, host, f"domain seen from fewer than {MIN_DOMAIN_SOURCES} addresses"
+    if p.path in ("", "/") and not p.query:
+        return None, host, "no path (open-proxy or reachability test)"
+    return u, host, ""
+
+
+attrs = misp_src.get("Event", misp_src).get("Attribute", [])
+hashes = {a["value"].lower() for a in attrs if a.get("type") == "sha256" and re.fullmatch(r"[0-9a-fA-F]{64}", a.get("value", ""))}
+verdict: dict[str, tuple] = {}           # raw URL -> (clean URL or None, host, reason)
+for i in iocs:
+    if i.get("kind") == "url":
+        raw = refang(str(i.get("indicator", "")))
+        verdict[raw] = classify_url(raw, int(i.get("sources") or 0))
+for a in attrs:                          # URLs only the MISP export carries: single-source evidence at best
+    if a.get("type") == "url" and a.get("value") not in verdict:
+        verdict[a["value"]] = classify_url(a["value"], 0)
+urls = sorted({v[0] for v in verdict.values() if v[0]})
+hosts = sorted({v[1] for v in verdict.values() if v[0] and not in_set(v[1], SHARED)},
+               key=lambda h: (0, sort_key(h)) if public_net(h) else (1, h))
 WARN = ("# LIVE MALWARE INFRASTRUCTURE: not de-fanged. Never fetch these.\n"
-        "# Download and callback URLs that attackers told the honeypots to fetch, last 7 days.\n")
+        "# Payload and callback URLs attackers told the honeypots to fetch, last 7 days. Shell glue cut off;\n"
+        "# proxy-check, benign, internal and single-address domains left out (see iocs.csv).\n")
 out["iocs/urls.txt"] = WARN + "".join(u + "\n" for u in urls)
-out["iocs/hosts.txt"] = WARN.replace("URLs that", "hosts in URLs that") + "".join(h + "\n" for h in sorted(hosts))
+out["iocs/hosts.txt"] = WARN.replace("URLs attackers", "Hosts of URLs attackers") + "".join(h + "\n" for h in hosts)
 out["iocs/sha256.txt"] = "# SHA-256 of files uploaded to the honeypots (SSH/SCP), last 7 days.\n" + "".join(h + "\n" for h in sorted(hashes))
 buf = io.StringIO()
 w = csv.writer(buf, lineterminator="\n")
-w.writerow(["kind", "indicator_defanged", "context", "sources", "hits", "first_seen_utc", "last_seen_utc"])
+w.writerow(["kind", "indicator_defanged", "context", "sources", "hits", "first_seen_utc", "last_seen_utc", "blocklisted", "reason_not_listed"])
 for i in sorted(iocs, key=lambda x: (-x.get("sources", 0), x.get("indicator", ""))):
+    listed, reason = "yes", ""
+    if i.get("kind") == "url":
+        v = verdict.get(refang(str(i.get("indicator", ""))))
+        listed, reason = ("yes", "") if v and v[0] else ("no", v[2] if v else "unknown")
     w.writerow([i.get("kind"), i.get("indicator"), i.get("host"), i.get("sources"), i.get("hits"),
-                iso(i["first_seen"]) if i.get("first_seen") else "", iso(i["last_seen"]) if i.get("last_seen") else ""])
+                iso(i["first_seen"]) if i.get("first_seen") else "", iso(i["last_seen"]) if i.get("last_seen") else "",
+                listed, reason])
 out["iocs/iocs.csv"] = buf.getvalue()
 
 # ----------------------------------------------------------------- STIX / MISP / Suricata
@@ -260,9 +322,19 @@ out["feeds/stix2.json"] = json.dumps(stix, indent=1) + "\n"
 ev = dict(misp_src.get("Event", misp_src))
 ev_uuid = ev.get("uuid") or str(uuid.uuid5(NS, "event"))
 ts = str(max([int(a.get("timestamp") or 0) for a in attrs] + [0]) or int(now))
-m_attrs = []
+m_attrs, seen_vals = [], set()
 for a in attrs:
     a = dict(a)
+    if a.get("type") == "url":                    # same decision as urls.txt: cleaned URL, to_ids only when listed
+        clean, _, reason = verdict.get(a.get("value")) or (None, "", "unknown")
+        if clean:
+            a["value"], a["to_ids"] = clean, True
+        else:
+            a["to_ids"] = False
+            a["comment"] = (a.get("comment", "") + "; context only, not for blocking: " + reason).lstrip("; ")
+    if (a.get("type"), a.get("value")) in seen_vals:
+        continue
+    seen_vals.add((a.get("type"), a.get("value")))
     a["uuid"] = str(uuid.uuid5(NS, f"{a.get('type')}|{a.get('value')}"))
     a.setdefault("timestamp", ts)
     a.setdefault("distribution", "5")

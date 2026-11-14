@@ -223,7 +223,6 @@
 /ip firewall address-list add list=decoyra address=77.239.124.31 comment=decoyra
 /ip firewall address-list add list=decoyra address=77.239.124.32 comment=decoyra
 /ip firewall address-list add list=decoyra address=77.239.124.33 comment=decoyra
-/ip firewall address-list add list=decoyra address=77.239.124.35 comment=decoyra
 /ip firewall address-list add list=decoyra address=77.239.124.36 comment=decoyra
 /ip firewall address-list add list=decoyra address=77.239.124.37 comment=decoyra
 /ip firewall address-list add list=decoyra address=77.239.124.38 comment=decoyra
@@ -268,6 +267,7 @@
 /ip firewall address-list add list=decoyra address=82.147.85.101 comment=decoyra
 /ip firewall address-list add list=decoyra address=84.254.25.14 comment=decoyra
 /ip firewall address-list add list=decoyra address=85.11.167.183 comment=decoyra
+/ip firewall address-list add list=decoyra address=85.11.167.204 comment=decoyra
 /ip firewall address-list add list=decoyra address=85.93.90.77 comment=decoyra
 /ip firewall address-list add list=decoyra address=85.120.53.138 comment=decoyra
 /ip firewall address-list add list=decoyra address=85.165.94.212 comment=decoyra
@@ -278,7 +278,6 @@
 /ip firewall address-list add list=decoyra address=85.217.149.51 comment=decoyra
 /ip firewall address-list add list=decoyra address=85.217.149.61 comment=decoyra
 /ip firewall address-list add list=decoyra address=85.217.149.71 comment=decoyra
-/ip firewall address-list add list=decoyra address=87.106.65.126 comment=decoyra
 /ip firewall address-list add list=decoyra address=88.151.33.188 comment=decoyra
 /ip firewall address-list add list=decoyra address=89.167.11.42 comment=decoyra
 /ip firewall address-list add list=decoyra address=90.151.171.108 comment=decoyra
@@ -315,6 +314,8 @@
 /ip firewall address-list add list=decoyra address=95.179.155.197 comment=decoyra
 /ip firewall address-list add list=decoyra address=97.107.130.115 comment=decoyra
 /ip firewall address-list add list=decoyra address=98.89.204.118 comment=decoyra
+/ip firewall address-list add list=decoyra address=100.28.191.174 comment=decoyra
+/ip firewall address-list add list=decoyra address=100.51.6.16 comment=decoyra
 /ip firewall address-list add list=decoyra address=101.33.81.148 comment=decoyra
 /ip firewall address-list add list=decoyra address=101.43.89.206 comment=decoyra
 /ip firewall address-list add list=decoyra address=101.47.12.168 comment=decoyra
@@ -433,7 +434,6 @@
 /ip firewall address-list add list=decoyra address=117.50.70.125 comment=decoyra
 /ip firewall address-list add list=decoyra address=117.72.212.5 comment=decoyra
 /ip firewall address-list add list=decoyra address=117.215.28.177 comment=decoyra
-/ip firewall address-list add list=decoyra address=118.27.10.208 comment=decoyra
 /ip firewall address-list add list=decoyra address=118.38.44.223 comment=decoyra
 /ip firewall address-list add list=decoyra address=118.70.168.218 comment=decoyra
 /ip firewall address-list add list=decoyra address=118.122.147.49 comment=decoyra
@@ -468,7 +468,6 @@
 /ip firewall address-list add list=decoyra address=138.124.31.169 comment=decoyra
 /ip firewall address-list add list=decoyra address=138.197.117.158 comment=decoyra
 /ip firewall address-list add list=decoyra address=138.197.157.0 comment=decoyra
-/ip firewall address-list add list=decoyra address=138.226.239.233 comment=decoyra
 /ip firewall address-list add list=decoyra address=138.226.239.234 comment=decoyra
 /ip firewall address-list add list=decoyra address=139.19.117.130 comment=decoyra
 /ip firewall address-list add list=decoyra address=139.19.117.197 comment=decoyra

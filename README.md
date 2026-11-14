@@ -7,14 +7,14 @@ everything here comes from unsolicited, automated attack traffic. Updated hourly
 <!-- stats:start -->
 | | |
 |---|---|
-| updated utc | 2026-11-14T10:41:49Z |
-| blocked now | 698 |
+| updated utc | 2026-11-14T10:52:34Z |
+| blocked now | 697 |
 | blocked ipv6 | 0 |
 | collapsed entries | 586 |
-| blocked 7d | 700 |
-| blocked 30d | 700 |
-| urls | 59 |
-| hosts | 39 |
+| blocked 7d | 703 |
+| blocked 30d | 703 |
+| urls | 15 |
+| hosts | 13 |
 | sha256 | 45 |
 | cves 7d | 8 |
 | cves kev | 8 |
@@ -62,10 +62,18 @@ curl -fsS https://raw.githubusercontent.com/olizimmermann/decoyra-threatfeed/mai
 
 | File | Contents |
 |---|---|
-| `iocs/urls.txt` | download/callback URLs attackers told the honeypots to fetch. **Live malware infrastructure, not de-fanged** |
-| `iocs/hosts.txt` | the hosts of those URLs (payload servers, C2), for DNS/proxy blocking |
+| `iocs/urls.txt` | payload and callback URLs attackers told the honeypots to fetch, shell glue cut off (`…/Mozi.a;chmod+777…` → `…/Mozi.a`). **Live malware infrastructure, not de-fanged** |
+| `iocs/hosts.txt` | the hosts of those URLs (payload servers, C2), for DNS/proxy blocking. Shared platforms (GitHub, Pastebin, cloud storage) stay out |
 | `iocs/sha256.txt` | SHA-256 of files uploaded via SSH/SCP (bots, miners, SSH keys) |
-| `iocs/iocs.csv` | all of the above, de-fanged, with sources, hits, first/last seen |
+| `iocs/iocs.csv` | every indicator, de-fanged, with sources, hits, first/last seen and `blocklisted` / `reason_not_listed` |
+
+Attackers also name hosts that are not theirs. These stay out of `urls.txt`, `hosts.txt` and MISP `to_ids`, and keep
+only a reason in `iocs.csv`:
+- "what is my address" services used in open-proxy tests
+- XML namespaces and vendor domains quoted inside exploits
+- research scanners' info pages
+- private or internal hosts, and bare URLs without a path
+- domains that only one attacking address mentioned
 
 The honeypots never fetch these URLs or run the files.
 

@@ -1,5 +1,5 @@
 # Threat situation report
-Period: last 7 days (2026-11-07 10:41 UTC to 2026-11-14 10:41 UTC) · 16 agents
+Period: last 7 days (2026-11-07 10:52 UTC to 2026-11-14 10:52 UTC) · 16 agents
 ## Key findings
 - **High confidence.** The fleet has less history than this period, so there is no usual level yet: nothing here is called new or rising. _(comparisons start once the fleet has run for 336 hours)_
 - **Medium confidence.** CVE-2017-9841 (PHPUnit eval-stdin remote code execution) is being attempted, a vulnerability CISA lists as exploited in the wild. _(161 attempts on 7 of 16 agents; first seen by the fleet 24 hours ago)_
@@ -11,7 +11,7 @@ Period: last 7 days (2026-11-07 10:41 UTC to 2026-11-14 10:41 UTC) · 16 agents
 ## Numbers
 | Events | Attacking addresses | High severity | Blocked now | Language-model agents | New patterns |
 |---|---|---|---|---|---|
-| 614177 | 8006 | 2874 | 698 | 0 | 10 |
+| 617297 | 8052 | 2890 | 697 | 0 | 10 |
 
 ## Known exploits
 | CVE | Name | CVSS | CISA | Events | Agents |
@@ -28,30 +28,30 @@ Period: last 7 days (2026-11-07 10:41 UTC to 2026-11-14 10:41 UTC) · 16 agents
 ## Technologies under attack
 | Technology | Events | Change | Agents |
 |---|---|---|---|
-| ssh | 26400 | no history yet | 16 |
-| credential-attack | 21635 | no history yet | 16 |
-| rdp | 14444 | no history yet | 16 |
-| ssh-shell | 13229 | no history yet | 15 |
-| telnet | 11949 | no history yet | 16 |
-| ssh-login | 6980 | no history yet | 15 |
-| shell-recon | 6557 | no history yet | 15 |
-| shell-download | 3646 | no history yet | 15 |
-| smb | 3583 | no history yet | 15 |
-| smb1 | 2138 | no history yet | 15 |
-| mysql | 2114 | no history yet | 15 |
+| ssh | 26476 | no history yet | 16 |
+| credential-attack | 21698 | no history yet | 16 |
+| rdp | 14511 | no history yet | 16 |
+| ssh-shell | 13252 | no history yet | 15 |
+| telnet | 11959 | no history yet | 16 |
+| ssh-login | 7020 | no history yet | 15 |
+| shell-recon | 6569 | no history yet | 15 |
+| shell-download | 3656 | no history yet | 15 |
+| smb | 3596 | no history yet | 15 |
+| smb1 | 2146 | no history yet | 15 |
+| mysql | 2119 | no history yet | 15 |
 | redis | 1854 | no history yet | 15 |
 
 ## New request patterns
 | Pattern | Events | Addresses | Confidence |
 |---|---|---|---|
-| `SSH-2.0-Go ` | 12385 | 397 | high |
-| ssh root | 10989 | 417 | high |
-| RDP tls,nla | 4851 | 169 | high |
-| `0a07365cc01fa9fc82608ba4019af499 SSH-2.0-Go ` | 4784 | 102 | high |
+| `SSH-2.0-Go ` | 12419 | 397 | high |
+| ssh root | 11029 | 417 | high |
+| RDP tls,nla | 4881 | 171 | high |
+| `0a07365cc01fa9fc82608ba4019af499 SSH-2.0-Go ` | 4790 | 102 | high |
 | (many distinct values from one address) | 4280 | 44 | high |
-| uname -s -v -n -r -m | 3650 | 83 | high |
-| nproc | 3500 | 44 | high |
-| `uname -m \| awk '{printf $1}' ` | 3497 | 43 | high |
+| uname -s -v -n -r -m | 3660 | 83 | high |
+| `shell-recon > shell-download > shell-recon ` | 3517 | 29 | high |
+| nproc | 3510 | 44 | high |
 
 ## Campaigns
 | Techniques | Addresses | Events | Agents |
@@ -59,7 +59,7 @@ Period: last 7 days (2026-11-07 10:41 UTC to 2026-11-14 10:41 UTC) · 16 agents
 | git-exposure | 24 | 42 | 10 |
 | php, wordpress | 15 | 18 | 1 |
 | admin-panel, iot-router | 14 | 14 | 10 |
-| env-secrets | 11 | 87 | 15 |
+| env-secrets | 11 | 88 | 15 |
 | admin-panel, php | 10 | 58 | 13 |
 
 ## Indicators (de-fanged, never fetch)
@@ -71,43 +71,43 @@ Period: last 7 days (2026-11-07 10:41 UTC to 2026-11-14 10:41 UTC) · 16 agents
 | c05b56ab6d3d07ccca6778ebd799bf98dfa2b7f10dd43601f0938f04e5070878 | 40 |
 | `hxxp://103[.]160[.]59[.]94:28816/CZRmrtxnrNONBXhwfFeqjNfBrliNaShG ` | 38 |
 | 9ba5884baa8b8a7533446fe7b6b5323d40b4ab1e335dc54a54be1a0a40459b07 | 38 |
-| a883dafc480d466ee04e0d6da986bd78eb1fdd2178d04693723da3a8f95d42f4 | 36 |
+| a883dafc480d466ee04e0d6da986bd78eb1fdd2178d04693723da3a8f95d42f4 | 37 |
 | 6d78392a5886177fe5b86e585a0b695a2bcd01a05504b3c4e38bc8eeb21e8326 | 33 |
-| 6b3a55e0261b0304143f805a24924d0c1c44524821305f31d9277843b8a10f4e | 31 |
-| cc10ba3e72e09f1e742e4155968aa081fd309c76b6acf28eea1e3046438f005e | 30 |
+| 6b3a55e0261b0304143f805a24924d0c1c44524821305f31d9277843b8a10f4e | 32 |
+| cc10ba3e72e09f1e742e4155968aa081fd309c76b6acf28eea1e3046438f005e | 31 |
 | f33ae3bc9a22cd7564990a794789954409977013966fb1a8f43c35776b833a95 | 27 |
 | `hxxps://modat[.]io/ ` | 23 |
 | 5ecf8d2cc410094e8b82dd0bc178a57f3aa1e80916689beb00fe56148b1b1256 | 23 |
-| 53175bcc0524f37b47062fafdda28e3f8eb91d519ca0a184ca71bbebe72f969a | 22 |
+| 53175bcc0524f37b47062fafdda28e3f8eb91d519ca0a184ca71bbebe72f969a | 23 |
 | 3c56dd5ed61af7e7b20f54288947a89a4891d181b10fe04560b55c5e82de1fa2 | 22 |
 
 ## ATT&CK techniques
 | Tactic | Technique | Name | Events | Agents | Confidence |
 |---|---|---|---|---|---|
-| Reconnaissance | `T1595.001 ` | Scanning IP Blocks | 49254 | 16 | high |
-| Reconnaissance | `T1595.002 ` | Vulnerability Scanning | 1256 | 15 | high |
-| Reconnaissance | `T1595.003 ` | Wordlist Scanning | 978 | 16 | high |
-| Reconnaissance | T1594 | Search Victim-Owned Websites | 362 | 15 | high |
-| Initial Access | T1133 | External Remote Services | 19806 | 16 | high |
-| Initial Access | T1078 | Valid Accounts | 6980 | 15 | high |
+| Reconnaissance | `T1595.001 ` | Scanning IP Blocks | 49399 | 16 | high |
+| Reconnaissance | `T1595.002 ` | Vulnerability Scanning | 1261 | 15 | high |
+| Reconnaissance | `T1595.003 ` | Wordlist Scanning | 1017 | 16 | high |
+| Reconnaissance | T1594 | Search Victim-Owned Websites | 364 | 15 | high |
+| Initial Access | T1133 | External Remote Services | 19866 | 16 | high |
+| Initial Access | T1078 | Valid Accounts | 7020 | 15 | high |
 | Initial Access | T1190 | Exploit Public-Facing Application | 466 | 15 | high |
-| Execution | `T1059.004 ` | Unix Shell | 13505 | 15 | high |
-| Persistence | `T1053.003 ` | Cron | 1272 | 15 | high |
+| Execution | `T1059.004 ` | Unix Shell | 13528 | 15 | high |
+| Persistence | `T1053.003 ` | Cron | 1282 | 15 | high |
 | Persistence | T1098 | Account Manipulation | 172 | 9 | high |
 | Persistence | `T1098.004 ` | SSH Authorized Keys | 125 | 9 | high |
-| Stealth | `T1070.004 ` | File Deletion | 1325 | 15 | high |
+| Stealth | `T1070.004 ` | File Deletion | 1335 | 15 | high |
 | Stealth | `T1070.003 ` | Clear Command History | 170 | 15 | high |
 | Defense Impairment | `T1222.002 ` | Linux and Mac Permissions | 362 | 15 | high |
-| Credential Access | `T1110.001 ` | Password Guessing | 21635 | 16 | high |
-| Credential Access | `T1552.001 ` | Credentials In Files | 766 | 15 | high |
-| Discovery | T1082 | System Information Discovery | 6529 | 15 | high |
-| Discovery | T1057 | Process Discovery | 1252 | 15 | high |
+| Credential Access | `T1110.001 ` | Password Guessing | 21698 | 16 | high |
+| Credential Access | `T1552.001 ` | Credentials In Files | 787 | 15 | high |
+| Discovery | T1082 | System Information Discovery | 6538 | 15 | high |
+| Discovery | T1057 | Process Discovery | 1262 | 15 | high |
 | Discovery | T1033 | `System Owner/User Discovery ` | 191 | 9 | high |
 | Discovery | T1083 | File and Directory Discovery | 99 | 9 | high |
 | Discovery | T1016 | System Network Configuration Discovery | 2 | 1 | low |
-| Command and Control | T1105 | Ingress Tool Transfer | 4184 | 15 | high |
-| Command and Control | T1090 | Proxy | 693 | 15 | high |
-| Impact | `T1496.001 ` | Compute Hijacking | 1175 | 15 | high |
+| Command and Control | T1105 | Ingress Tool Transfer | 4199 | 15 | high |
+| Command and Control | T1090 | Proxy | 699 | 15 | high |
+| Impact | `T1496.001 ` | Compute Hijacking | 1185 | 15 | high |
 
 ## Recommendations
 - Patch or take offline anything affected by CVE-2017-9841 (PHPUnit eval-stdin remote code execution). _161 attempts on 7 agents in this period, listed by CISA as exploited in the wild._
