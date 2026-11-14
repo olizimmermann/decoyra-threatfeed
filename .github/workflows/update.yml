@@ -2,7 +2,7 @@ name: Update lists
 
 on:
   schedule:
-    - cron: "17 * * * *"      # hourly; bans start at 24 h, so hourly is fresh enough and keeps history readable
+    - cron: "23 * * * *"      # hourly; bans start at 24 h, so hourly is fresh enough and keeps history readable
   workflow_dispatch:
     inputs:
       force:
