@@ -33,12 +33,12 @@
    "product": "OpenBSD OpenSSH",
    "ransomware": false
   },
-  "events": 124,
+  "events": 126,
   "baseline": null,
   "change": null,
   "agents": 8,
   "first_seen": 1794621600,
-  "last_seen": 1794704400,
+  "last_seen": 1794747600,
   "days_after_disclosure": 9,
   "custom": false,
   "source": "own"
@@ -55,12 +55,12 @@
    "product": "PHP Group PHP",
    "ransomware": true
   },
-  "events": 37,
+  "events": 44,
   "baseline": null,
   "change": null,
-  "agents": 10,
+  "agents": 11,
   "first_seen": 1794542400,
-  "last_seen": 1794736800,
+  "last_seen": 1794751200,
   "days_after_disclosure": 887,
   "custom": false,
   "source": "own"
@@ -88,28 +88,6 @@
   "source": "own"
  },
  {
-  "cve": "CVE-2021-41773",
-  "name": "Apache httpd path traversal",
-  "disclosed": "2021-10-05",
-  "cvss": 7.5,
-  "kev": {
-   "added": "2021-11-03",
-   "due": "2021-11-17",
-   "name": "Apache HTTP Server Path Traversal Vulnerability",
-   "product": "Apache HTTP Server",
-   "ransomware": true
-  },
-  "events": 20,
-  "baseline": null,
-  "change": null,
-  "agents": 10,
-  "first_seen": 1794542400,
-  "last_seen": 1794736800,
-  "days_after_disclosure": 1865,
-  "custom": false,
-  "source": "own"
- },
- {
   "cve": "CVE-2018-13379",
   "name": "FortiOS SSL VPN file read",
   "disclosed": "2019-06-04",
@@ -121,13 +99,35 @@
    "product": "Fortinet FortiOS",
    "ransomware": true
   },
-  "events": 16,
+  "events": 24,
   "baseline": null,
   "change": null,
-  "agents": 8,
+  "agents": 12,
   "first_seen": 1794636000,
-  "last_seen": 1794740400,
+  "last_seen": 1794765600,
   "days_after_disclosure": 2720,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2021-41773",
+  "name": "Apache httpd path traversal",
+  "disclosed": "2021-10-05",
+  "cvss": 7.5,
+  "kev": {
+   "added": "2021-11-03",
+   "due": "2021-11-17",
+   "name": "Apache HTTP Server Path Traversal Vulnerability",
+   "product": "Apache HTTP Server",
+   "ransomware": true
+  },
+  "events": 23,
+  "baseline": null,
+  "change": null,
+  "agents": 10,
+  "first_seen": 1794542400,
+  "last_seen": 1794762000,
+  "days_after_disclosure": 1865,
   "custom": false,
   "source": "own"
  },
@@ -165,12 +165,12 @@
    "product": "Dasan Gigabit Passive Optical Network (GPON) Routers",
    "ransomware": false
   },
-  "events": 11,
+  "events": 13,
   "baseline": null,
   "change": null,
   "agents": 8,
   "first_seen": 1794546000,
-  "last_seen": 1794729600,
+  "last_seen": 1794744000,
   "days_after_disclosure": 3115,
   "custom": false,
   "source": "own"
@@ -187,13 +187,35 @@
    "product": "TP-Link Archer AX21",
    "ransomware": false
   },
+  "events": 7,
+  "baseline": null,
+  "change": null,
+  "agents": 6,
+  "first_seen": 1794733200,
+  "last_seen": 1794765600,
+  "days_after_disclosure": 1341,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2022-22965",
+  "name": "Spring4Shell",
+  "disclosed": "2022-04-01",
+  "cvss": 9.8,
+  "kev": {
+   "added": "2022-04-04",
+   "due": "2022-04-25",
+   "name": "Spring Framework JDK 9+ Remote Code Execution Vulnerability",
+   "product": "VMware Spring Framework",
+   "ransomware": false
+  },
   "events": 4,
   "baseline": null,
   "change": null,
   "agents": 4,
-  "first_seen": 1794733200,
-  "last_seen": 1794740400,
-  "days_after_disclosure": 1341,
+  "first_seen": 1794751200,
+  "last_seen": 1794762000,
+  "days_after_disclosure": 1690,
   "custom": false,
   "source": "own"
  },
