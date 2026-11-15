@@ -33,12 +33,12 @@
    "product": "OpenBSD OpenSSH",
    "ransomware": false
   },
-  "events": 79,
+  "events": 124,
   "baseline": null,
   "change": null,
-  "agents": 7,
+  "agents": 8,
   "first_seen": 1794621600,
-  "last_seen": 1794700800,
+  "last_seen": 1794704400,
   "days_after_disclosure": 9,
   "custom": false,
   "source": "own"
@@ -55,35 +55,13 @@
    "product": "PHP Group PHP",
    "ransomware": true
   },
-  "events": 29,
+  "events": 31,
   "baseline": null,
   "change": null,
   "agents": 10,
   "first_seen": 1794542400,
-  "last_seen": 1794693600,
+  "last_seen": 1794700800,
   "days_after_disclosure": 887,
-  "custom": false,
-  "source": "own"
- },
- {
-  "cve": "CVE-2021-41773",
-  "name": "Apache httpd path traversal",
-  "disclosed": "2021-10-05",
-  "cvss": 7.5,
-  "kev": {
-   "added": "2021-11-03",
-   "due": "2021-11-17",
-   "name": "Apache HTTP Server Path Traversal Vulnerability",
-   "product": "Apache HTTP Server",
-   "ransomware": true
-  },
-  "events": 16,
-  "baseline": null,
-  "change": null,
-  "agents": 10,
-  "first_seen": 1794542400,
-  "last_seen": 1794693600,
-  "days_after_disclosure": 1865,
   "custom": false,
   "source": "own"
  },
@@ -99,13 +77,35 @@
    "product": "SAP NetWeaver",
    "ransomware": true
   },
-  "events": 14,
+  "events": 29,
   "baseline": null,
   "change": null,
-  "agents": 14,
+  "agents": 15,
   "first_seen": 1794618000,
-  "last_seen": 1794621600,
+  "last_seen": 1794700800,
   "days_after_disclosure": 569,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2021-41773",
+  "name": "Apache httpd path traversal",
+  "disclosed": "2021-10-05",
+  "cvss": 7.5,
+  "kev": {
+   "added": "2021-11-03",
+   "due": "2021-11-17",
+   "name": "Apache HTTP Server Path Traversal Vulnerability",
+   "product": "Apache HTTP Server",
+   "ransomware": true
+  },
+  "events": 17,
+  "baseline": null,
+  "change": null,
+  "agents": 10,
+  "first_seen": 1794542400,
+  "last_seen": 1794700800,
+  "days_after_disclosure": 1865,
   "custom": false,
   "source": "own"
  },
@@ -143,12 +143,12 @@
    "product": "Fortinet FortiOS",
    "ransomware": true
   },
-  "events": 8,
+  "events": 10,
   "baseline": null,
   "change": null,
-  "agents": 4,
+  "agents": 5,
   "first_seen": 1794636000,
-  "last_seen": 1794654000,
+  "last_seen": 1794708000,
   "days_after_disclosure": 2720,
   "custom": false,
   "source": "own"
@@ -165,12 +165,12 @@
    "product": "Dasan Gigabit Passive Optical Network (GPON) Routers",
    "ransomware": false
   },
-  "events": 5,
+  "events": 7,
   "baseline": null,
   "change": null,
-  "agents": 4,
+  "agents": 5,
   "first_seen": 1794546000,
-  "last_seen": 1794690000,
+  "last_seen": 1794711600,
   "days_after_disclosure": 3115,
   "custom": false,
   "source": "own"
@@ -194,6 +194,28 @@
   "first_seen": 1794654000,
   "last_seen": 1794657600,
   "days_after_disclosure": 1800,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2023-23752",
+  "name": "Joomla configuration disclosure",
+  "disclosed": "2023-02-16",
+  "cvss": 5.3,
+  "kev": {
+   "added": "2024-01-08",
+   "due": "2024-01-29",
+   "name": "Joomla! Improper Access Control Vulnerability",
+   "product": "Joomla! Joomla!",
+   "ransomware": false
+  },
+  "events": 1,
+  "baseline": null,
+  "change": null,
+  "agents": 1,
+  "first_seen": 1794700800,
+  "last_seen": 1794704400,
+  "days_after_disclosure": 1368,
   "custom": false,
   "source": "own"
  }
