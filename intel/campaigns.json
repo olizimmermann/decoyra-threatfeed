@@ -1,11 +1,11 @@
 [
  {
   "id": "a555128e77",
-  "addresses": 44,
-  "events": 102,
-  "agents": 12,
+  "addresses": 48,
+  "events": 118,
+  "agents": 14,
   "first_seen": 1794517207.98973,
-  "last_seen": 1794707986.189931,
+  "last_seen": 1794740194.0266914,
   "tags": [
    "git-exposure"
   ],
@@ -19,7 +19,7 @@
   "countries": [
    {
     "cc": "US",
-    "n": 12
+    "n": 14
    },
    {
     "cc": "DE",
@@ -27,29 +27,29 @@
    },
    {
     "cc": "NL",
-    "n": 5
+    "n": 6
    },
    {
     "cc": "SG",
     "n": 3
    },
    {
-    "cc": "GB",
+    "cc": "IN",
     "n": 3
    }
   ],
   "networks": [
    {
     "network": "AS14061 DigitalOcean, LLC",
-    "n": 17
-   },
-   {
-    "network": "AS13335 Cloudflare, Inc.",
-    "n": 5
+    "n": 18
    },
    {
     "network": "AS397731 EliteWork LLC",
-    "n": 3
+    "n": 4
+   },
+   {
+    "network": "AS13335 Cloudflare, Inc.",
+    "n": 4
    }
   ],
   "sample_addresses": [
@@ -62,11 +62,11 @@
  },
  {
   "id": "b7653d1284",
-  "addresses": 26,
-  "events": 26,
-  "agents": 12,
+  "addresses": 29,
+  "events": 29,
+  "agents": 13,
   "first_seen": 1794556532.6283548,
-  "last_seen": 1794707355.556979,
+  "last_seen": 1794733977.2380621,
   "tags": [
    "admin-panel",
    "iot-router"
@@ -81,11 +81,11 @@
   "countries": [
    {
     "cc": "PK",
-    "n": 22
+    "n": 24
    },
    {
     "cc": "CN",
-    "n": 3
+    "n": 4
    },
    {
     "cc": "RU",
@@ -99,11 +99,11 @@
    },
    {
     "network": "AS138423 CMPak Limited",
-    "n": 3
+    "n": 5
    },
    {
     "network": "AS4837 CHINA UNICOM China169 Backbone",
-    "n": 2
+    "n": 3
    }
   ],
   "sample_addresses": [
@@ -152,12 +152,69 @@
   ]
  },
  {
+  "id": "0637e74295",
+  "addresses": 22,
+  "events": 23,
+  "agents": 14,
+  "first_seen": 1794599955.1617985,
+  "last_seen": 1794740304.3655813,
+  "tags": [
+   "env-secrets"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 107,
+    "pattern": "GET /config.json"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "US",
+    "n": 6
+   },
+   {
+    "cc": "DE",
+    "n": 3
+   },
+   {
+    "cc": "VN",
+    "n": 2
+   },
+   {
+    "cc": "NG",
+    "n": 2
+   },
+   {
+    "cc": "KR",
+    "n": 2
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS135377 UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+    "n": 21
+   },
+   {
+    "network": "AS13335 Cloudflare, Inc.",
+    "n": 1
+   }
+  ],
+  "sample_addresses": [
+   "101.36.114.252",
+   "101.36.121.22",
+   "101.36.122.183",
+   "101.36.97.70",
+   "107.150.117.121"
+  ]
+ },
+ {
   "id": "f07930997a",
-  "addresses": 20,
-  "events": 26,
+  "addresses": 22,
+  "events": 31,
   "agents": 1,
   "first_seen": 1794522638.281329,
-  "last_seen": 1794709547.8998806,
+  "last_seen": 1794738676.4592166,
   "tags": [
    "php",
    "wordpress"
@@ -176,11 +233,11 @@
    },
    {
     "cc": "SE",
-    "n": 6
+    "n": 7
    },
    {
     "cc": "GB",
-    "n": 3
+    "n": 4
    },
    {
     "cc": "US",
@@ -194,7 +251,7 @@
   "networks": [
    {
     "network": "AS13335 Cloudflare, Inc.",
-    "n": 19
+    "n": 21
    }
   ],
   "sample_addresses": [
@@ -202,73 +259,118 @@
    "104.22.43.77",
    "104.23.217.121",
    "104.23.221.104",
-   "104.23.223.121"
+   "104.23.221.105"
   ]
  },
  {
-  "id": "0637e74295",
-  "addresses": 16,
-  "events": 16,
-  "agents": 13,
-  "first_seen": 1794599955.1617985,
-  "last_seen": 1794708761.8652303,
+  "id": "71e7f84ffa",
+  "addresses": 15,
+  "events": 15,
+  "agents": 10,
+  "first_seen": 1794632480.374208,
+  "last_seen": 1794740492.2656202,
   "tags": [
-   "env-secrets"
+   "command-injection"
   ],
   "cves": [],
   "patterns": [
    {
-    "id": 107,
-    "pattern": "GET /config.json"
+    "id": 16863,
+    "pattern": "GET /setup.cgi?cmd=&curpath=&currentsetting.htm=&next_file=&todo= [url: command-injection]"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "PK",
+    "n": 11
+   },
+   {
+    "cc": "CN",
+    "n": 3
+   },
+   {
+    "cc": "AR",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS9541 Cyber Internet Services (Private) Limited",
+    "n": 7
+   },
+   {
+    "network": "AS138423 CMPak Limited",
+    "n": 2
+   },
+   {
+    "network": "AS266702 MEGALINK S.R.L.",
+    "n": 1
+   }
+  ],
+  "sample_addresses": [
+   "103.244.172.183",
+   "103.244.172.36",
+   "103.82.121.175",
+   "124.29.214.60",
+   "124.29.247.44"
+  ]
+ },
+ {
+  "id": "675d4c474c",
+  "addresses": 15,
+  "events": 15,
+  "agents": 15,
+  "first_seen": 1794704717.7490282,
+  "last_seen": 1794727599.3368459,
+  "tags": [
+   "open-proxy-test"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 30605,
+    "pattern": "CONNECT /"
    }
   ],
   "countries": [
    {
     "cc": "US",
-    "n": 4
+    "n": 10
    },
    {
-    "cc": "VN",
+    "cc": "IN",
     "n": 2
    },
    {
-    "cc": "JP",
+    "cc": "CA",
     "n": 2
    },
    {
-    "cc": "HK",
-    "n": 2
-   },
-   {
-    "cc": "DE",
-    "n": 2
+    "cc": "GB",
+    "n": 1
    }
   ],
   "networks": [
    {
-    "network": "AS135377 UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+    "network": "AS14061 DigitalOcean, LLC",
     "n": 15
-   },
-   {
-    "network": "AS13335 Cloudflare, Inc.",
-    "n": 1
    }
   ],
   "sample_addresses": [
-   "101.36.121.22",
-   "101.36.122.183",
-   "101.36.97.70",
-   "107.150.117.121",
-   "118.194.228.239"
+   "134.209.153.196",
+   "138.197.147.248",
+   "138.197.161.167",
+   "138.68.249.116",
+   "142.93.220.229"
   ]
  },
  {
   "id": "2ef6aa6617",
   "addresses": 14,
-  "events": 122,
+  "events": 123,
   "agents": 15,
   "first_seen": 1794560167.2304807,
-  "last_seen": 1794701291.7650275,
+  "last_seen": 1794726788.2939677,
   "tags": [
    "env-secrets"
   ],
@@ -324,12 +426,73 @@
   ]
  },
  {
+  "id": "056f900063",
+  "addresses": 14,
+  "events": 44,
+  "agents": 15,
+  "first_seen": 1794614499.4918058,
+  "last_seen": 1794738600.0853097,
+  "tags": [
+   "llm-endpoint"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 13653,
+    "pattern": "GET /api/tags"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "US",
+    "n": 7
+   },
+   {
+    "cc": "NL",
+    "n": 2
+   },
+   {
+    "cc": "RU",
+    "n": 1
+   },
+   {
+    "cc": "DE",
+    "n": 1
+   },
+   {
+    "cc": "CZ",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS211680 NSEC - Sistemas Informaticos, S.A.",
+    "n": 3
+   },
+   {
+    "network": "AS979 NetLab Global",
+    "n": 1
+   },
+   {
+    "network": "AS57378 JSC \"ER-Telecom Holding",
+    "n": 1
+   }
+  ],
+  "sample_addresses": [
+   "107.172.5.167",
+   "130.210.17.176",
+   "201.23.85.46",
+   "202.112.47.54",
+   "207.90.244.20"
+  ]
+ },
+ {
   "id": "6fd93f706b",
   "addresses": 12,
-  "events": 86,
-  "agents": 13,
+  "events": 98,
+  "agents": 16,
   "first_seen": 1794514535.451093,
-  "last_seen": 1794709825.9933255,
+  "last_seen": 1794737790.8084972,
   "tags": [
    "admin-panel",
    "php"
@@ -378,117 +541,64 @@
   ]
  },
  {
-  "id": "71e7f84ffa",
+  "id": "5735229163",
   "addresses": 11,
-  "events": 11,
-  "agents": 9,
-  "first_seen": 1794632480.374208,
-  "last_seen": 1794703958.2072573,
+  "events": 146,
+  "agents": 3,
+  "first_seen": 1794657319.0479162,
+  "last_seen": 1794740654.9302104,
   "tags": [
-   "command-injection"
+   "open-proxy-test"
   ],
   "cves": [],
   "patterns": [
    {
-    "id": 16863,
-    "pattern": "GET /setup.cgi?cmd=&curpath=&currentsetting.htm=&next_file=&todo= [url: command-injection]"
+    "id": 22346,
+    "pattern": "CONNECT {n}.{n}.{n}.{n}:{n}"
    }
   ],
   "countries": [
-   {
-    "cc": "PK",
-    "n": 7
-   },
-   {
-    "cc": "CN",
-    "n": 3
-   },
-   {
-    "cc": "AR",
-    "n": 1
-   }
-  ],
-  "networks": [
-   {
-    "network": "AS9541 Cyber Internet Services (Private) Limited",
-    "n": 5
-   },
-   {
-    "network": "AS266702 MEGALINK S.R.L.",
-    "n": 1
-   },
-   {
-    "network": "AS17816 China Unicom IP network China169 Guangdong provi",
-    "n": 1
-   }
-  ],
-  "sample_addresses": [
-   "103.244.172.183",
-   "103.244.172.36",
-   "124.29.214.60",
-   "124.29.247.44",
-   "163.125.207.181"
-  ]
- },
- {
-  "id": "056f900063",
-  "addresses": 11,
-  "events": 24,
-  "agents": 12,
-  "first_seen": 1794614499.4918058,
-  "last_seen": 1794707043.1598854,
-  "tags": [
-   "llm-endpoint"
-  ],
-  "cves": [],
-  "patterns": [
-   {
-    "id": 13653,
-    "pattern": "GET /api/tags"
-   }
-  ],
-  "countries": [
-   {
-    "cc": "US",
-    "n": 6
-   },
    {
     "cc": "NL",
+    "n": 4
+   },
+   {
+    "cc": "SI",
     "n": 2
    },
    {
-    "cc": "CZ",
+    "cc": "US",
     "n": 1
    },
    {
-    "cc": "CN",
+    "cc": "PH",
     "n": 1
    },
    {
-    "cc": "BR",
+    "cc": "LU",
     "n": 1
    }
   ],
   "networks": [
    {
-    "network": "AS211680 NSEC - Sistemas Informaticos, S.A.",
+    "network": "AS197170 TechTies Inc.",
+    "n": 4
+   },
+   {
+    "network": "AS197769 ABINTERNET-V Ltd.",
     "n": 3
    },
    {
-    "network": "AS979 NetLab Global",
-    "n": 1
-   },
-   {
-    "network": "AS36352 HostPapa",
-    "n": 1
+    "network": "AS205759 Ghosty Networks LLC",
+    "n": 2
    }
   ],
   "sample_addresses": [
-   "107.172.5.167",
-   "130.210.17.176",
-   "201.23.85.46",
-   "202.112.47.54",
-   "207.90.244.20"
+   "102.220.160.67",
+   "102.220.161.79",
+   "130.12.181.23",
+   "36.255.97.250",
+   "45.156.87.146"
   ]
  },
  {
@@ -553,73 +663,12 @@
   ]
  },
  {
-  "id": "5735229163",
-  "addresses": 10,
-  "events": 71,
-  "agents": 2,
-  "first_seen": 1794657319.0479162,
-  "last_seen": 1794710244.6119707,
-  "tags": [
-   "open-proxy-test"
-  ],
-  "cves": [],
-  "patterns": [
-   {
-    "id": 22346,
-    "pattern": "CONNECT {n}.{n}.{n}.{n}:{n}"
-   }
-  ],
-  "countries": [
-   {
-    "cc": "NL",
-    "n": 4
-   },
-   {
-    "cc": "SI",
-    "n": 2
-   },
-   {
-    "cc": "US",
-    "n": 1
-   },
-   {
-    "cc": "PH",
-    "n": 1
-   },
-   {
-    "cc": "DE",
-    "n": 1
-   }
-  ],
-  "networks": [
-   {
-    "network": "AS197170 TechTies Inc.",
-    "n": 4
-   },
-   {
-    "network": "AS197769 ABINTERNET-V Ltd.",
-    "n": 3
-   },
-   {
-    "network": "AS401626 Netiface America, Inc.",
-    "n": 1
-   }
-  ],
-  "sample_addresses": [
-   "102.220.160.67",
-   "102.220.161.79",
-   "130.12.181.23",
-   "36.255.97.250",
-   "45.156.87.146"
-  ]
- },
- {
   "id": "7d2a00e01c",
-  "addresses": 6,
-  "events": 6,
-  "agents": 4,
+  "addresses": 9,
+  "events": 9,
+  "agents": 6,
   "first_seen": 1794546189.796038,
-  "last_seen": 1794674338.7165275,
+  "last_seen": 1794734172.6815026,
   "tags": [
    "iot-router"
   ],
@@ -633,7 +682,15 @@
   "countries": [
    {
     "cc": "PK",
-    "n": 4
+    "n": 5
+   },
+   {
+    "cc": "US",
+    "n": 1
+   },
+   {
+    "cc": "NG",
+    "n": 1
    },
    {
     "cc": "DK",
@@ -647,7 +704,7 @@
   "networks": [
    {
     "network": "AS9541 Cyber Internet Services (Private) Limited",
-    "n": 1
+    "n": 2
    },
    {
     "network": "AS9158 Telenor A/S",
@@ -659,20 +716,81 @@
    }
   ],
   "sample_addresses": [
+   "102.207.137.170",
    "103.203.88.131",
    "110.38.8.165",
-   "175.107.237.205",
-   "202.141.230.214",
-   "212.54.86.171"
+   "175.107.218.0",
+   "175.107.237.205"
+  ]
+ },
+ {
+  "id": "e9afe62248",
+  "addresses": 9,
+  "events": 9,
+  "agents": 7,
+  "first_seen": 1794665578.815714,
+  "last_seen": 1794727947.2887316,
+  "tags": [
+   "command-injection",
+   "cve-2018-10561",
+   "iot-router"
+  ],
+  "cves": [
+   "CVE-2018-10561"
+  ],
+  "patterns": [
+   {
+    "id": 23897,
+    "pattern": "POST /gponform/diag_form?images/= [body: command-injection]"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "PK",
+    "n": 5
+   },
+   {
+    "cc": "RU",
+    "n": 2
+   },
+   {
+    "cc": "PH",
+    "n": 1
+   },
+   {
+    "cc": "AR",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS9541 Cyber Internet Services (Private) Limited",
+    "n": 3
+   },
+   {
+    "network": "AS8369 Intersvyaz-2 JSC",
+    "n": 1
+   },
+   {
+    "network": "AS8359 MTS PJSC",
+    "n": 1
+   }
+  ],
+  "sample_addresses": [
+   "103.31.93.54",
+   "109.191.63.161",
+   "153.117.32.204",
+   "153.117.48.82",
+   "178.141.224.92"
   ]
  },
  {
   "id": "3db0c12268",
-  "addresses": 6,
-  "events": 6,
+  "addresses": 9,
+  "events": 9,
   "agents": 2,
   "first_seen": 1794520960.7736938,
-  "last_seen": 1794678398.088,
+  "last_seen": 1794732197.7591226,
   "tags": [
    "php",
    "wordpress"
@@ -687,7 +805,7 @@
   "countries": [
    {
     "cc": "US",
-    "n": 3
+    "n": 6
    },
    {
     "cc": "SG",
@@ -705,7 +823,7 @@
   "networks": [
    {
     "network": "AS13335 Cloudflare, Inc.",
-    "n": 4
+    "n": 6
    },
    {
     "network": "AS14789 Cloudflare, Inc.",
@@ -713,265 +831,20 @@
    }
   ],
   "sample_addresses": [
+   "104.22.191.109",
    "104.22.204.84",
    "104.22.86.207",
-   "172.69.67.178",
-   "172.69.78.172",
-   "172.71.124.66"
-  ]
- },
- {
-  "id": "f2720dd295",
-  "addresses": 6,
-  "events": 66,
-  "agents": 6,
-  "first_seen": 1794529504.9150047,
-  "last_seen": 1794682979.856227,
-  "tags": [
-   "env-secrets"
-  ],
-  "cves": [],
-  "patterns": [
-   {
-    "id": 85,
-    "pattern": "GET /.env"
-   },
-   {
-    "id": 370,
-    "pattern": "GET /.env.backup"
-   },
-   {
-    "id": 375,
-    "pattern": "GET /.env.production"
-   }
-  ],
-  "countries": [
-   {
-    "cc": "FR",
-    "n": 2
-   },
-   {
-    "cc": "NL",
-    "n": 1
-   },
-   {
-    "cc": "KH",
-    "n": 1
-   },
-   {
-    "cc": "IN",
-    "n": 1
-   },
-   {
-    "cc": "FI",
-    "n": 1
-   }
-  ],
-  "networks": [
-   {
-    "network": "AS14061 DigitalOcean, LLC",
-    "n": 2
-   },
-   {
-    "network": "AS9009 M247 Europe SRL",
-    "n": 1
-   },
-   {
-    "network": "AS51167 Contabo GmbH",
-    "n": 1
-   }
-  ],
-  "sample_addresses": [
-   "134.209.85.233",
-   "139.59.27.160",
-   "141.98.103.251",
-   "172.69.222.158",
-   "207.180.202.214"
-  ]
- },
- {
-  "id": "0be9c0702e",
-  "addresses": 6,
-  "events": 30,
-  "agents": 6,
-  "first_seen": 1794637929.0050516,
-  "last_seen": 1794664287.9409115,
-  "tags": [
-   "admin-panel",
-   "vpn-gateway"
-  ],
-  "cves": [],
-  "patterns": [
-   {
-    "id": 3035,
-    "pattern": "GET /admin/index.html"
-   },
-   {
-    "id": 17614,
-    "pattern": "GET /+cscoe+/logon.html"
-   },
-   {
-    "id": 17943,
-    "pattern": "GET /remote/login"
-   }
-  ],
-  "countries": [
-   {
-    "cc": "FR",
-    "n": 6
-   }
-  ],
-  "networks": [
-   {
-    "network": "AS12876 Scaleway SAS",
-    "n": 6
-   }
-  ],
-  "sample_addresses": [
-   "62.210.142.148",
-   "62.210.142.159",
-   "62.210.142.160",
-   "62.210.142.171",
-   "62.210.142.174"
-  ]
- },
- {
-  "id": "e9afe62248",
-  "addresses": 5,
-  "events": 5,
-  "agents": 4,
-  "first_seen": 1794665578.815714,
-  "last_seen": 1794708266.485606,
-  "tags": [
-   "command-injection",
-   "cve-2018-10561",
-   "iot-router"
-  ],
-  "cves": [
-   "CVE-2018-10561"
-  ],
-  "patterns": [
-   {
-    "id": 23897,
-    "pattern": "POST /gponform/diag_form?images/= [body: command-injection]"
-   }
-  ],
-  "countries": [
-   {
-    "cc": "RU",
-    "n": 2
-   },
-   {
-    "cc": "PK",
-    "n": 2
-   },
-   {
-    "cc": "PH",
-    "n": 1
-   }
-  ],
-  "networks": [
-   {
-    "network": "AS9541 Cyber Internet Services (Private) Limited",
-    "n": 1
-   },
-   {
-    "network": "AS8369 Intersvyaz-2 JSC",
-    "n": 1
-   },
-   {
-    "network": "AS8359 MTS PJSC",
-    "n": 1
-   }
-  ],
-  "sample_addresses": [
-   "103.31.93.54",
-   "109.191.63.161",
-   "178.141.224.92",
-   "180.190.238.10",
-   "43.230.94.181"
-  ]
- },
- {
-  "id": "4892f6e2fc",
-  "addresses": 5,
-  "events": 223,
-  "agents": 4,
-  "first_seen": 1794595372.1047583,
-  "last_seen": 1794684395.8501647,
-  "tags": [
-   "cve-2017-9841",
-   "php",
-   "phpunit"
-  ],
-  "cves": [
-   "CVE-2017-9841"
-  ],
-  "patterns": [
-   {
-    "id": 5485,
-    "pattern": "GET /vendor/phpunit/src/util/php/eval-stdin.php"
-   },
-   {
-    "id": 5486,
-    "pattern": "GET /vendor/phpunit/phpunit/license/eval-stdin.php"
-   },
-   {
-    "id": 5487,
-    "pattern": "GET /phpunit/phpunit/src/util/php/eval-stdin.php"
-   }
-  ],
-  "countries": [
-   {
-    "cc": "VN",
-    "n": 1
-   },
-   {
-    "cc": "SG",
-    "n": 1
-   },
-   {
-    "cc": "MY",
-    "n": 1
-   },
-   {
-    "cc": "KR",
-    "n": 1
-   },
-   {
-    "cc": "BE",
-    "n": 1
-   }
-  ],
-  "networks": [
-   {
-    "network": "AS132203 Shenzhen Tencent Computer Systems Company Limite",
-    "n": 2
-   },
-   {
-    "network": "AS7552 Viettel Group",
-    "n": 1
-   },
-   {
-    "network": "AS4766 Korea Telecom",
-    "n": 1
-   }
-  ],
-  "sample_addresses": [
-   "125.141.72.225",
-   "161.120.177.21",
-   "171.237.170.148",
-   "31.57.34.150",
-   "43.167.198.92"
+   "104.23.190.192",
+   "172.69.67.178"
   ]
  },
  {
   "id": "b65a19c989",
-  "addresses": 5,
-  "events": 5,
-  "agents": 5,
+  "addresses": 9,
+  "events": 9,
+  "agents": 9,
   "first_seen": 1794633495.3046975,
-  "last_seen": 1794703203.692442,
+  "last_seen": 1794740520.7643287,
   "tags": [
    "containers"
   ],
@@ -985,7 +858,7 @@
   "countries": [
    {
     "cc": "US",
-    "n": 4
+    "n": 8
    },
    {
     "cc": "DE",
@@ -995,7 +868,11 @@
   "networks": [
    {
     "network": "AS14061 DigitalOcean, LLC",
-    "n": 5
+    "n": 8
+   },
+   {
+    "network": "AS63949 Akamai Technologies, Inc.",
+    "n": 1
    }
   ],
   "sample_addresses": [
@@ -1008,11 +885,11 @@
  },
  {
   "id": "5dde94108c",
-  "addresses": 5,
-  "events": 10,
-  "agents": 5,
+  "addresses": 9,
+  "events": 18,
+  "agents": 9,
   "first_seen": 1794633559.3083336,
-  "last_seen": 1794703243.447604,
+  "last_seen": 1794740584.7987363,
   "tags": [
    "vpn-gateway"
   ],
@@ -1030,34 +907,34 @@
   "countries": [
    {
     "cc": "US",
-    "n": 5
+    "n": 9
    }
   ],
   "networks": [
    {
     "network": "AS14061 DigitalOcean, LLC",
-    "n": 3
+    "n": 6
    },
    {
     "network": "AS63949 Akamai Technologies, Inc.",
-    "n": 2
+    "n": 3
    }
   ],
   "sample_addresses": [
    "138.68.227.191",
+   "142.93.126.132",
+   "159.65.217.49",
    "159.89.151.0",
-   "24.144.113.17",
-   "45.79.192.205",
-   "97.107.130.115"
+   "165.227.203.83"
   ]
  },
  {
   "id": "4f124b6b83",
-  "addresses": 5,
-  "events": 5,
-  "agents": 5,
+  "addresses": 9,
+  "events": 9,
+  "agents": 9,
   "first_seen": 1794633445.5883734,
-  "last_seen": 1794703170.5267313,
+  "last_seen": 1794740480.8802469,
   "tags": [
    "exchange"
   ],
@@ -1071,7 +948,11 @@
   "countries": [
    {
     "cc": "US",
-    "n": 4
+    "n": 7
+   },
+   {
+    "cc": "GB",
+    "n": 1
    },
    {
     "cc": "DE",
@@ -1081,7 +962,7 @@
   "networks": [
    {
     "network": "AS14061 DigitalOcean, LLC",
-    "n": 3
+    "n": 7
    },
    {
     "network": "AS63949 Akamai Technologies, Inc.",
@@ -1091,9 +972,113 @@
   "sample_addresses": [
    "142.93.19.138",
    "142.93.206.147",
-   "164.92.200.234",
-   "173.255.192.244",
-   "96.126.101.34"
+   "157.230.156.202",
+   "157.245.233.112",
+   "164.92.200.234"
+  ]
+ },
+ {
+  "id": "11fa152f86",
+  "addresses": 9,
+  "events": 18,
+  "agents": 9,
+  "first_seen": 1794633650.9651906,
+  "last_seen": 1794740666.7441914,
+  "tags": [
+   "vpn-gateway"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 17209,
+    "pattern": "GET /sslvpnlogin.html"
+   },
+   {
+    "id": 17212,
+    "pattern": "GET /sonicui/7/sslvpn-portal/"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "US",
+    "n": 8
+   },
+   {
+    "cc": "DE",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS14061 DigitalOcean, LLC",
+    "n": 6
+   },
+   {
+    "network": "AS63949 Akamai Technologies, Inc.",
+    "n": 3
+   }
+  ],
+  "sample_addresses": [
+   "147.182.141.21",
+   "159.65.107.4",
+   "167.172.183.76",
+   "206.189.76.242",
+   "45.33.60.111"
+  ]
+ },
+ {
+  "id": "8c7789b664",
+  "addresses": 8,
+  "events": 200,
+  "agents": 8,
+  "first_seen": 1794635316.8998048,
+  "last_seen": 1794738865.3172941,
+  "tags": [
+   "env-secrets",
+   "git-exposure",
+   "java-spring"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 79,
+    "pattern": "GET /login.action"
+   },
+   {
+    "id": 85,
+    "pattern": "GET /.env"
+   },
+   {
+    "id": 87,
+    "pattern": "GET /.git/config"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "US",
+    "n": 7
+   },
+   {
+    "cc": "CA",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS14061 DigitalOcean, LLC",
+    "n": 6
+   },
+   {
+    "network": "AS63949 Akamai Technologies, Inc.",
+    "n": 2
+   }
+  ],
+  "sample_addresses": [
+   "142.93.86.197",
+   "159.65.237.24",
+   "165.227.27.119",
+   "165.232.58.129",
+   "167.172.139.78"
   ]
  }
 ]
