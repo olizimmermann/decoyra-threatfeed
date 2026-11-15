@@ -4,21 +4,10 @@
   "name": "Scanning IP Blocks",
   "tactic": "Reconnaissance",
   "observed_as": "connected to a decoy port",
-  "events": 100384,
+  "events": 108658,
   "baseline": null,
   "change": null,
-  "agents": 16,
-  "confidence": "high"
- },
- {
-  "id": "T1595.002",
-  "name": "Vulnerability Scanning",
-  "tactic": "Reconnaissance",
-  "observed_as": "sent a request that tests for a specific weakness",
-  "events": 4157,
-  "baseline": null,
-  "change": null,
-  "agents": 15,
+  "agents": 17,
   "confidence": "high"
  },
  {
@@ -26,7 +15,18 @@
   "name": "Wordlist Scanning",
   "tactic": "Reconnaissance",
   "observed_as": "asked for well-known sensitive paths",
-  "events": 3794,
+  "events": 4798,
+  "baseline": null,
+  "change": null,
+  "agents": 17,
+  "confidence": "high"
+ },
+ {
+  "id": "T1595.002",
+  "name": "Vulnerability Scanning",
+  "tactic": "Reconnaissance",
+  "observed_as": "sent a request that tests for a specific weakness",
+  "events": 4638,
   "baseline": null,
   "change": null,
   "agents": 16,
@@ -37,10 +37,10 @@
   "name": "Search Victim-Owned Websites",
   "tactic": "Reconnaissance",
   "observed_as": "crawled the decoy website",
-  "events": 1036,
+  "events": 1225,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -48,10 +48,10 @@
   "name": "External Remote Services",
   "tactic": "Initial Access",
   "observed_as": "tried to sign in to a remote access service",
-  "events": 38834,
+  "events": 41933,
   "baseline": null,
   "change": null,
-  "agents": 16,
+  "agents": 17,
   "confidence": "high"
  },
  {
@@ -59,10 +59,10 @@
   "name": "Valid Accounts",
   "tactic": "Initial Access",
   "observed_as": "used a credential planted in a decoy file, or logged in to the SSH decoy",
-  "events": 13667,
+  "events": 14911,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -70,10 +70,10 @@
   "name": "Exploit Public-Facing Application",
   "tactic": "Initial Access",
   "observed_as": "sent an exploit for a known vulnerability or injection",
-  "events": 888,
+  "events": 1005,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -81,10 +81,10 @@
   "name": "Unix Shell",
   "tactic": "Execution",
   "observed_as": "request tries to run shell commands on the target",
-  "events": 24518,
+  "events": 26532,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -92,10 +92,10 @@
   "name": "Cron",
   "tactic": "Persistence",
   "observed_as": "payload tries to write a scheduled job",
-  "events": 2582,
+  "events": 2903,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -103,10 +103,10 @@
   "name": "Account Manipulation",
   "tactic": "Persistence",
   "observed_as": "changed a password or an account",
-  "events": 370,
+  "events": 421,
   "baseline": null,
   "change": null,
-  "agents": 9,
+  "agents": 10,
   "confidence": "high"
  },
  {
@@ -114,7 +114,7 @@
   "name": "SSH Authorized Keys",
   "tactic": "Persistence",
   "observed_as": "added a key to authorized_keys",
-  "events": 261,
+  "events": 287,
   "baseline": null,
   "change": null,
   "agents": 10,
@@ -125,10 +125,10 @@
   "name": "File Deletion",
   "tactic": "Stealth",
   "observed_as": "deleted files or logs",
-  "events": 2690,
+  "events": 3022,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -136,10 +136,10 @@
   "name": "Clear Command History",
   "tactic": "Stealth",
   "observed_as": "tried to erase the shell history",
-  "events": 294,
+  "events": 296,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -147,10 +147,10 @@
   "name": "Linux and Mac Permissions",
   "tactic": "Defense Impairment",
   "observed_as": "made a file executable or immutable",
-  "events": 714,
+  "events": 768,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -158,10 +158,10 @@
   "name": "Password Guessing",
   "tactic": "Credential Access",
   "observed_as": "tried user name and password pairs",
-  "events": 48857,
+  "events": 53409,
   "baseline": null,
   "change": null,
-  "agents": 16,
+  "agents": 17,
   "confidence": "high"
  },
  {
@@ -169,10 +169,10 @@
   "name": "Credentials In Files",
   "tactic": "Credential Access",
   "observed_as": "asked for files that usually hold secrets",
-  "events": 1673,
+  "events": 2359,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -180,10 +180,10 @@
   "name": "System Information Discovery",
   "tactic": "Discovery",
   "observed_as": "asked for the system, CPU, memory or GPU",
-  "events": 12145,
+  "events": 13274,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -191,10 +191,10 @@
   "name": "Process Discovery",
   "tactic": "Discovery",
   "observed_as": "listed running processes",
-  "events": 2552,
+  "events": 2875,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -202,10 +202,10 @@
   "name": "System Owner/User Discovery",
   "tactic": "Discovery",
   "observed_as": "asked which user it is",
-  "events": 428,
+  "events": 479,
   "baseline": null,
   "change": null,
-  "agents": 12,
+  "agents": 13,
   "confidence": "high"
  },
  {
@@ -213,10 +213,10 @@
   "name": "File and Directory Discovery",
   "tactic": "Discovery",
   "observed_as": "listed or searched files",
-  "events": 218,
+  "events": 246,
   "baseline": null,
   "change": null,
-  "agents": 10,
+  "agents": 11,
   "confidence": "high"
  },
  {
@@ -224,10 +224,10 @@
   "name": "System Network Configuration Discovery",
   "tactic": "Discovery",
   "observed_as": "asked for network interfaces or routes",
-  "events": 6,
+  "events": 7,
   "baseline": null,
   "change": null,
-  "agents": 2,
+  "agents": 3,
   "confidence": "medium"
  },
  {
@@ -235,10 +235,10 @@
   "name": "Ingress Tool Transfer",
   "tactic": "Command and Control",
   "observed_as": "request tells the target to download a tool, or a file was uploaded to the decoy",
-  "events": 7917,
+  "events": 8709,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -246,10 +246,10 @@
   "name": "Proxy",
   "tactic": "Command and Control",
   "observed_as": "tried to use the decoy as a proxy",
-  "events": 2251,
+  "events": 2478,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  },
  {
@@ -257,10 +257,10 @@
   "name": "Compute Hijacking",
   "tactic": "Impact",
   "observed_as": "tried to start a cryptocurrency miner",
-  "events": 2374,
+  "events": 2670,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "confidence": "high"
  }
 ]
