@@ -7,11 +7,11 @@
    "shell-recon"
   ],
   "pattern": "shell-recon > shell-download > shell-recon",
-  "sessions": 10182,
+  "sessions": 11127,
   "agents": 16,
-  "sources": 68,
+  "sources": 72,
   "first_seen": 1794587120.3943331,
-  "last_seen": 1794782442.3472588,
+  "last_seen": 1794796236.7942376,
   "tags": []
  },
  {
@@ -26,11 +26,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > shell-recon > miner > cron-persistence > cleanup > upload",
-  "sessions": 2176,
+  "sessions": 2369,
   "agents": 16,
-  "sources": 68,
+  "sources": 72,
   "first_seen": 1794587120.9928033,
-  "last_seen": 1794782425.0531163,
+  "last_seen": 1794796204.6872272,
   "tags": []
  },
  {
@@ -42,11 +42,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > cleanup > upload",
-  "sessions": 165,
+  "sessions": 167,
   "agents": 16,
   "sources": 38,
   "first_seen": 1794590431.9763744,
-  "last_seen": 1794778089.8874555,
+  "last_seen": 1794795131.824929,
   "tags": []
  },
  {
@@ -61,11 +61,11 @@
    "upload"
   ],
   "pattern": "ssh-key-persistence > shell-recon > account-change > shell-recon > cron-persistence > shell-recon > upload",
-  "sessions": 161,
+  "sessions": 166,
   "agents": 8,
-  "sources": 112,
+  "sources": 117,
   "first_seen": 1794588916.0919945,
-  "last_seen": 1794781834.2253203,
+  "last_seen": 1794790668.090065,
   "tags": []
  },
  {
@@ -81,11 +81,11 @@
    "upload"
   ],
   "pattern": "ssh-key-persistence > shell-recon > account-change > cleanup > shell-recon > cron-persistence > shell-recon > upload",
-  "sessions": 44,
+  "sessions": 45,
   "agents": 8,
-  "sources": 39,
+  "sources": 40,
   "first_seen": 1794589903.5221505,
-  "last_seen": 1794776942.9077992,
+  "last_seen": 1794785899.001902,
   "tags": []
  },
  {
@@ -154,11 +154,11 @@
    "cleanup"
   ],
   "pattern": "shell-recon > cleanup",
-  "sessions": 5,
-  "agents": 3,
-  "sources": 3,
+  "sessions": 7,
+  "agents": 5,
+  "sources": 4,
   "first_seen": 1794749835.0565763,
-  "last_seen": 1794765643.1882343,
+  "last_seen": 1794792905.0544405,
   "tags": []
  },
  {
@@ -168,11 +168,11 @@
    "account-change"
   ],
   "pattern": "shell-recon > account-change",
-  "sessions": 5,
+  "sessions": 6,
   "agents": 2,
-  "sources": 2,
+  "sources": 3,
   "first_seen": 1794740676.111122,
-  "last_seen": 1794778860.9882214,
+  "last_seen": 1794784286.5900793,
   "tags": []
  },
  {
