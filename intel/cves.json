@@ -11,21 +11,43 @@
    "product": "PHPUnit PHPUnit",
    "ransomware": false
   },
-  "events": 295,
+  "events": 299,
   "baseline": null,
   "change": null,
   "agents": 11,
   "first_seen": 1794567600,
-  "last_seen": 1794798000,
+  "last_seen": 1794826800,
   "days_after_disclosure": 3426,
   "custom": false,
   "source": "own"
  },
  {
+  "cve": "CVE-2026-104935",
+  "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+  "disclosed": "",
+  "cvss": null,
+  "kev": {
+   "added": "2026-10-13",
+   "due": "2026-10-16",
+   "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+   "product": "Ivanti Connect Secure",
+   "ransomware": false
+  },
+  "events": 147,
+  "baseline": null,
+  "change": null,
+  "agents": 16,
+  "first_seen": 1794632400,
+  "last_seen": 1794826800,
+  "days_after_disclosure": null,
+  "custom": true,
+  "source": "custom"
+ },
+ {
   "cve": "CVE-2026-123158",
   "name": "OpenSSH password authentication bypass (musl libc without PAM)",
   "disclosed": "2026-11-05",
-  "cvss": null,
+  "cvss": 8.1,
   "kev": {
    "added": "2026-11-09",
    "due": "2026-11-12",
@@ -55,15 +77,59 @@
    "product": "PHP Group PHP",
    "ransomware": true
   },
-  "events": 50,
+  "events": 52,
   "baseline": null,
   "change": null,
   "agents": 11,
   "first_seen": 1794542400,
-  "last_seen": 1794798000,
+  "last_seen": 1794801600,
   "days_after_disclosure": 887,
   "custom": false,
   "source": "own"
+ },
+ {
+  "cve": "CVE-2018-13379",
+  "name": "FortiOS SSL VPN file read",
+  "disclosed": "2019-06-04",
+  "cvss": 9.1,
+  "kev": {
+   "added": "2021-11-03",
+   "due": "2022-05-03",
+   "name": "Fortinet FortiOS SSL VPN Path Traversal Vulnerability",
+   "product": "Fortinet FortiOS",
+   "ransomware": true
+  },
+  "events": 46,
+  "baseline": null,
+  "change": null,
+  "agents": 16,
+  "first_seen": 1794636000,
+  "last_seen": 1794830400,
+  "days_after_disclosure": 2720,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2026-96652",
+  "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+  "disclosed": "",
+  "cvss": null,
+  "kev": {
+   "added": "2026-10-20",
+   "due": "2026-11-03",
+   "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+   "product": "Plex Media Server",
+   "ransomware": false
+  },
+  "events": 45,
+  "baseline": null,
+  "change": null,
+  "agents": 15,
+  "first_seen": 1794697200,
+  "last_seen": 1794722400,
+  "days_after_disclosure": null,
+  "custom": true,
+  "source": "custom"
  },
  {
   "cve": "CVE-2025-31324",
@@ -88,28 +154,6 @@
   "source": "own"
  },
  {
-  "cve": "CVE-2018-13379",
-  "name": "FortiOS SSL VPN file read",
-  "disclosed": "2019-06-04",
-  "cvss": 9.1,
-  "kev": {
-   "added": "2021-11-03",
-   "due": "2022-05-03",
-   "name": "Fortinet FortiOS SSL VPN Path Traversal Vulnerability",
-   "product": "Fortinet FortiOS",
-   "ransomware": true
-  },
-  "events": 36,
-  "baseline": null,
-  "change": null,
-  "agents": 15,
-  "first_seen": 1794636000,
-  "last_seen": 1794798000,
-  "days_after_disclosure": 2720,
-  "custom": false,
-  "source": "own"
- },
- {
   "cve": "CVE-2021-41773",
   "name": "Apache httpd path traversal",
   "disclosed": "2021-10-05",
@@ -121,12 +165,12 @@
    "product": "Apache HTTP Server",
    "ransomware": true
   },
-  "events": 27,
+  "events": 30,
   "baseline": null,
   "change": null,
-  "agents": 11,
+  "agents": 13,
   "first_seen": 1794542400,
-  "last_seen": 1794794400,
+  "last_seen": 1794819600,
   "days_after_disclosure": 1865,
   "custom": false,
   "source": "own"
@@ -143,12 +187,12 @@
    "product": "Dasan Gigabit Passive Optical Network (GPON) Routers",
    "ransomware": false
   },
-  "events": 15,
+  "events": 16,
   "baseline": null,
   "change": null,
-  "agents": 9,
+  "agents": 10,
   "first_seen": 1794546000,
-  "last_seen": 1794783600,
+  "last_seen": 1794805200,
   "days_after_disclosure": 3115,
   "custom": false,
   "source": "own"
@@ -187,12 +231,12 @@
    "product": "TP-Link Archer AX21",
    "ransomware": false
   },
-  "events": 7,
+  "events": 11,
   "baseline": null,
   "change": null,
-  "agents": 6,
+  "agents": 7,
   "first_seen": 1794733200,
-  "last_seen": 1794765600,
+  "last_seen": 1794826800,
   "days_after_disclosure": 1341,
   "custom": false,
   "source": "own"
@@ -238,6 +282,28 @@
   "first_seen": 1794769200,
   "last_seen": 1794772800,
   "days_after_disclosure": 4436,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2015-3306",
+  "name": "ProFTPD mod_copy file copy without login",
+  "disclosed": "2015-05-18",
+  "cvss": 10.0,
+  "kev": {
+   "added": "2026-10-08",
+   "due": "2026-10-11",
+   "name": "ProFTPD Improper Access Control Vulnerability",
+   "product": "ProFTPD ProFTPD",
+   "ransomware": false
+  },
+  "events": 1,
+  "baseline": null,
+  "change": null,
+  "agents": 1,
+  "first_seen": 1794816000,
+  "last_seen": 1794819600,
+  "days_after_disclosure": 4200,
   "custom": false,
   "source": "own"
  },
@@ -306,5 +372,27 @@
   "days_after_disclosure": 1368,
   "custom": false,
   "source": "own"
+ },
+ {
+  "cve": "CVE-2024-7399",
+  "name": "Samsung MagicINFO 9 Server file upload",
+  "disclosed": "2024-08-09",
+  "cvss": 8.8,
+  "kev": {
+   "added": "2026-04-24",
+   "due": "2026-05-08",
+   "name": "Samsung MagicINFO 9 Server Path Traversal Vulnerability",
+   "product": "Samsung MagicINFO 9 Server",
+   "ransomware": false
+  },
+  "events": 1,
+  "baseline": null,
+  "change": null,
+  "agents": 1,
+  "first_seen": 1794794400,
+  "last_seen": 1794798000,
+  "days_after_disclosure": 829,
+  "custom": false,
+  "source": "template"
  }
 ]
