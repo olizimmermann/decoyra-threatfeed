@@ -7,11 +7,11 @@
    "shell-recon"
   ],
   "pattern": "shell-recon > shell-download > shell-recon",
-  "sessions": 17474,
+  "sessions": 17901,
   "agents": 16,
   "sources": 96,
   "first_seen": 1794587120.3943331,
-  "last_seen": 1794925107.5036108,
+  "last_seen": 1794955068.6453283,
   "tags": []
  },
  {
@@ -26,11 +26,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > shell-recon > miner > cron-persistence > cleanup > upload",
-  "sessions": 3848,
+  "sessions": 3929,
   "agents": 16,
   "sources": 97,
   "first_seen": 1794587120.9928033,
-  "last_seen": 1794925007.651383,
+  "last_seen": 1794953351.835704,
   "tags": []
  },
  {
@@ -45,11 +45,11 @@
    "upload"
   ],
   "pattern": "ssh-key-persistence > shell-recon > account-change > shell-recon > cron-persistence > shell-recon > upload",
-  "sessions": 216,
+  "sessions": 230,
   "agents": 9,
-  "sources": 156,
+  "sources": 160,
   "first_seen": 1794588916.0919945,
-  "last_seen": 1794920947.8933315,
+  "last_seen": 1794954479.5666678,
   "tags": []
  },
  {
@@ -61,11 +61,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > cleanup > upload",
-  "sessions": 176,
+  "sessions": 179,
   "agents": 16,
   "sources": 38,
   "first_seen": 1794590431.9763744,
-  "last_seen": 1794914620.4495428,
+  "last_seen": 1794947329.270478,
   "tags": []
  },
  {
@@ -98,11 +98,11 @@
    "upload"
   ],
   "pattern": "ssh-key-persistence > shell-recon > account-change > cleanup > shell-recon > cron-persistence > shell-recon > upload",
-  "sessions": 81,
+  "sessions": 92,
   "agents": 9,
-  "sources": 69,
+  "sources": 78,
   "first_seen": 1794589903.5221505,
-  "last_seen": 1794919426.3202143,
+  "last_seen": 1794947856.2969477,
   "tags": []
  },
  {
@@ -112,11 +112,11 @@
    "cleanup"
   ],
   "pattern": "shell-recon > cleanup",
-  "sessions": 25,
-  "agents": 13,
-  "sources": 11,
+  "sessions": 28,
+  "agents": 14,
+  "sources": 13,
   "first_seen": 1794749835.0565763,
-  "last_seen": 1794921177.5174413,
+  "last_seen": 1794950241.3289468,
   "tags": []
  },
  {
@@ -142,11 +142,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > upload",
-  "sessions": 17,
-  "agents": 12,
+  "sessions": 22,
+  "agents": 14,
   "sources": 2,
   "first_seen": 1794668563.625231,
-  "last_seen": 1794913955.8717911,
+  "last_seen": 1794949037.2854426,
   "tags": []
  },
  {
@@ -156,11 +156,11 @@
    "account-change"
   ],
   "pattern": "shell-recon > account-change",
-  "sessions": 16,
+  "sessions": 17,
   "agents": 2,
   "sources": 8,
   "first_seen": 1794740676.111122,
-  "last_seen": 1794919077.977664,
+  "last_seen": 1794929168.9823842,
   "tags": []
  },
  {
@@ -188,6 +188,21 @@
   "sources": 5,
   "first_seen": 1794654306.8881562,
   "last_seen": 1794911340.1586869,
+  "tags": []
+ },
+ {
+  "id": 43796,
+  "stages": [
+   "botnet-check",
+   "shell-recon",
+   "upload"
+  ],
+  "pattern": "botnet-check > shell-recon > upload",
+  "sessions": 4,
+  "agents": 4,
+  "sources": 4,
+  "first_seen": 1794770834.012411,
+  "last_seen": 1794944537.8629951,
   "tags": []
  },
  {
@@ -238,18 +253,19 @@
   "tags": []
  },
  {
-  "id": 43796,
+  "id": 42887,
   "stages": [
-   "botnet-check",
+   "ssh-key-persistence",
    "shell-recon",
+   "account-change",
    "upload"
   ],
-  "pattern": "botnet-check > shell-recon > upload",
+  "pattern": "ssh-key-persistence > shell-recon > account-change > upload",
   "sessions": 2,
   "agents": 2,
-  "sources": 2,
-  "first_seen": 1794770834.012411,
-  "last_seen": 1794846966.1991072,
+  "sources": 1,
+  "first_seen": 1794766730.0095246,
+  "last_seen": 1794940741.1331456,
   "tags": []
  },
  {
@@ -294,22 +310,6 @@
   "sources": 1,
   "first_seen": 1794770726.7743783,
   "last_seen": 1794770744.500724,
-  "tags": []
- },
- {
-  "id": 42887,
-  "stages": [
-   "ssh-key-persistence",
-   "shell-recon",
-   "account-change",
-   "upload"
-  ],
-  "pattern": "ssh-key-persistence > shell-recon > account-change > upload",
-  "sessions": 1,
-  "agents": 1,
-  "sources": 1,
-  "first_seen": 1794766730.0095246,
-  "last_seen": 1794766824.2735553,
   "tags": []
  },
  {
