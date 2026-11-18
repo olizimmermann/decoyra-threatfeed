@@ -1,6 +1,7 @@
 # LIVE MALWARE INFRASTRUCTURE: not de-fanged. Never fetch these.
 # Payload and callback URLs attackers told the honeypots to fetch, last 7 days. Shell glue cut off;
 # proxy-check, benign, internal and single-address domains left out (see iocs.csv).
+http://1.1.1.1/cdn-cgi/trace
 http://101.53.235.26:40551/Mozi.a
 http://102.33.44.40:34998/Mozi.a
 http://103.125.128.0:37982/Mozi.m
@@ -33,6 +34,7 @@ http://153.117.15.92:36601/Mozi.a
 http://153.117.29.177:32980/Mozi.a
 http://153.117.32.204:39222/Mozi.m
 http://153.117.33.152:33620/Mozi.a
+http://153.117.34.135:52911/Mozi.m
 http://153.117.40.230:44157/Mozi.m
 http://153.117.48.82:59739/Mozi.m
 http://153.117.67.240:47091/Mozi.m
@@ -45,6 +47,7 @@ http://190.196.253.115:10399/Mozi.m
 http://190.196.253.121:10015/Mozi.m
 http://190.196.253.14:10531/Mozi.m
 http://190.196.253.66:10289/Mozi.m
+http://196.189.104.106:37618/Mozi.m
 http://196.190.11.194:45426/Mozi.m
 http://198.144.179.82:80/1.sh
 http://202.47.50.8:33483/Mozi.a
@@ -58,6 +61,8 @@ http://223.123.34.1:33660/Mozi.a
 http://223.123.34.218:53887/Mozi.m
 http://223.123.34.237:36267/Mozi.a
 http://223.123.34.33:34425/Mozi.m
+http://223.123.34.53:37186/Mozi.m
+http://223.123.34.82:34298/Mozi.m
 http://223.123.35.168:33999/Mozi.m
 http://223.123.47.66:33126/Mozi.m
 http://223.123.73.216:41181/Mozi.m
@@ -95,6 +100,7 @@ http://91.92.128.226/files/hidemyass.tgz
 http://93.127.133.123/XKcNhY4G8rcYpb.sh
 http://94.26.106.220/bullshi
 http://95.26.106.220/bullshi
+http://a7x.overflow.biz/hachk.php
 https://217.60.102.5/sh
 https://217.60.103.56/sh
 https://artd-app.lat/wp-admin/
