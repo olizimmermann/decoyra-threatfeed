@@ -7,11 +7,11 @@
    "shell-recon"
   ],
   "pattern": "shell-recon > shell-download > shell-recon",
-  "sessions": 18208,
+  "sessions": 19519,
   "agents": 16,
-  "sources": 98,
+  "sources": 103,
   "first_seen": 1794587120.3943331,
-  "last_seen": 1794975234.8177102,
+  "last_seen": 1795010138.112093,
   "tags": []
  },
  {
@@ -26,11 +26,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > shell-recon > miner > cron-persistence > cleanup > upload",
-  "sessions": 4071,
+  "sessions": 4428,
   "agents": 16,
-  "sources": 99,
+  "sources": 103,
   "first_seen": 1794587120.9928033,
-  "last_seen": 1794975244.748724,
+  "last_seen": 1795010143.74046,
   "tags": []
  },
  {
@@ -45,11 +45,11 @@
    "upload"
   ],
   "pattern": "ssh-key-persistence > shell-recon > account-change > shell-recon > cron-persistence > shell-recon > upload",
-  "sessions": 232,
+  "sessions": 240,
   "agents": 9,
-  "sources": 162,
+  "sources": 168,
   "first_seen": 1794588916.0919945,
-  "last_seen": 1794966065.7880611,
+  "last_seen": 1795006726.131,
   "tags": []
  },
  {
@@ -61,11 +61,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > cleanup > upload",
-  "sessions": 182,
+  "sessions": 189,
   "agents": 16,
   "sources": 38,
   "first_seen": 1794590431.9763744,
-  "last_seen": 1794962675.3025453,
+  "last_seen": 1794999539.6249845,
   "tags": []
  },
  {
@@ -78,11 +78,11 @@
    "cleanup"
   ],
   "pattern": "shell-recon > miner > ssh-key-persistence > cron-persistence > cleanup",
-  "sessions": 120,
-  "agents": 5,
-  "sources": 4,
+  "sessions": 133,
+  "agents": 6,
+  "sources": 5,
   "first_seen": 1794597010.407541,
-  "last_seen": 1794916379.0712936,
+  "last_seen": 1794992138.0104537,
   "tags": []
  },
  {
@@ -98,11 +98,25 @@
    "upload"
   ],
   "pattern": "ssh-key-persistence > shell-recon > account-change > cleanup > shell-recon > cron-persistence > shell-recon > upload",
-  "sessions": 97,
+  "sessions": 106,
   "agents": 9,
-  "sources": 82,
+  "sources": 87,
   "first_seen": 1794589903.5221505,
-  "last_seen": 1794973857.2732742,
+  "last_seen": 1795006399.638679,
+  "tags": []
+ },
+ {
+  "id": 38193,
+  "stages": [
+   "shell-recon",
+   "account-change"
+  ],
+  "pattern": "shell-recon > account-change",
+  "sessions": 42,
+  "agents": 2,
+  "sources": 12,
+  "first_seen": 1794740676.111122,
+  "last_seen": 1795009524.4349253,
   "tags": []
  },
  {
@@ -112,11 +126,26 @@
    "cleanup"
   ],
   "pattern": "shell-recon > cleanup",
-  "sessions": 32,
-  "agents": 14,
-  "sources": 14,
+  "sessions": 37,
+  "agents": 16,
+  "sources": 17,
   "first_seen": 1794749835.0565763,
-  "last_seen": 1794973866.5004008,
+  "last_seen": 1795009405.1210568,
+  "tags": []
+ },
+ {
+  "id": 24743,
+  "stages": [
+   "shell-recon",
+   "shell-download",
+   "upload"
+  ],
+  "pattern": "shell-recon > shell-download > upload",
+  "sessions": 30,
+  "agents": 15,
+  "sources": 2,
+  "first_seen": 1794668563.625231,
+  "last_seen": 1795008077.7752962,
   "tags": []
  },
  {
@@ -135,46 +164,17 @@
   "tags": []
  },
  {
-  "id": 24743,
-  "stages": [
-   "shell-recon",
-   "shell-download",
-   "upload"
-  ],
-  "pattern": "shell-recon > shell-download > upload",
-  "sessions": 23,
-  "agents": 14,
-  "sources": 2,
-  "first_seen": 1794668563.625231,
-  "last_seen": 1794961619.4341214,
-  "tags": []
- },
- {
-  "id": 38193,
-  "stages": [
-   "shell-recon",
-   "account-change"
-  ],
-  "pattern": "shell-recon > account-change",
-  "sessions": 22,
-  "agents": 2,
-  "sources": 9,
-  "first_seen": 1794740676.111122,
-  "last_seen": 1794974630.3386576,
-  "tags": []
- },
- {
   "id": 21733,
   "stages": [
    "shell-recon",
    "shell-download"
   ],
   "pattern": "shell-recon > shell-download",
-  "sessions": 20,
-  "agents": 13,
-  "sources": 6,
+  "sessions": 23,
+  "agents": 15,
+  "sources": 7,
   "first_seen": 1794654306.8881562,
-  "last_seen": 1794973812.2664561,
+  "last_seen": 1795007239.5307221,
   "tags": []
  },
  {
@@ -266,6 +266,21 @@
   "sources": 1,
   "first_seen": 1794766730.0095246,
   "last_seen": 1794940741.1331456,
+  "tags": []
+ },
+ {
+  "id": 82950,
+  "stages": [
+   "shell-recon",
+   "account-change",
+   "upload"
+  ],
+  "pattern": "shell-recon > account-change > upload",
+  "sessions": 1,
+  "agents": 1,
+  "sources": 1,
+  "first_seen": 1794984371.3202574,
+  "last_seen": 1794984371.6192915,
   "tags": []
  },
  {

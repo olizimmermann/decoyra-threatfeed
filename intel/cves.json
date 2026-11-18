@@ -11,12 +11,12 @@
    "product": "PHPUnit PHPUnit",
    "ransomware": false
   },
-  "events": 564,
+  "events": 603,
   "baseline": null,
   "change": null,
   "agents": 15,
   "first_seen": 1794567600,
-  "last_seen": 1794967200,
+  "last_seen": 1795006800,
   "days_after_disclosure": 3426,
   "custom": false,
   "source": "own"
@@ -55,12 +55,12 @@
    "product": "OpenBSD OpenSSH",
    "ransomware": false
   },
-  "events": 140,
+  "events": 142,
   "baseline": null,
   "change": null,
   "agents": 13,
   "first_seen": 1794621600,
-  "last_seen": 1794963600,
+  "last_seen": 1794985200,
   "days_after_disclosure": 9,
   "custom": false,
   "source": "own"
@@ -77,12 +77,12 @@
    "product": "Apache HTTP Server",
    "ransomware": true
   },
-  "events": 110,
+  "events": 113,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "first_seen": 1794542400,
-  "last_seen": 1794952800,
+  "last_seen": 1795003200,
   "days_after_disclosure": 1865,
   "custom": false,
   "source": "own"
@@ -132,6 +132,28 @@
   "source": "own"
  },
  {
+  "cve": "CVE-2025-31324",
+  "name": "SAP NetWeaver Visual Composer file upload",
+  "disclosed": "2025-04-24",
+  "cvss": 10.0,
+  "kev": {
+   "added": "2025-04-29",
+   "due": "2025-05-20",
+   "name": "SAP NetWeaver Unrestricted File Upload Vulnerability",
+   "product": "SAP NetWeaver",
+   "ransomware": true
+  },
+  "events": 92,
+  "baseline": null,
+  "change": null,
+  "agents": 17,
+  "first_seen": 1794618000,
+  "last_seen": 1795006800,
+  "days_after_disclosure": 569,
+  "custom": false,
+  "source": "own"
+ },
+ {
   "cve": "CVE-2020-3452",
   "name": "Cisco ASA and FTD Read-Only Path Traversal Vulnerability",
   "disclosed": "",
@@ -176,28 +198,6 @@
   "source": "custom"
  },
  {
-  "cve": "CVE-2025-31324",
-  "name": "SAP NetWeaver Visual Composer file upload",
-  "disclosed": "2025-04-24",
-  "cvss": 10.0,
-  "kev": {
-   "added": "2025-04-29",
-   "due": "2025-05-20",
-   "name": "SAP NetWeaver Unrestricted File Upload Vulnerability",
-   "product": "SAP NetWeaver",
-   "ransomware": true
-  },
-  "events": 76,
-  "baseline": null,
-  "change": null,
-  "agents": 16,
-  "first_seen": 1794618000,
-  "last_seen": 1794924000,
-  "days_after_disclosure": 569,
-  "custom": false,
-  "source": "own"
- },
- {
   "cve": "CVE-2024-4577",
   "name": "PHP-CGI argument injection",
   "disclosed": "2024-06-09",
@@ -209,12 +209,12 @@
    "product": "PHP Group PHP",
    "ransomware": true
   },
-  "events": 74,
+  "events": 80,
   "baseline": null,
   "change": null,
-  "agents": 13,
+  "agents": 14,
   "first_seen": 1794542400,
-  "last_seen": 1794945600,
+  "last_seen": 1795003200,
   "days_after_disclosure": 887,
   "custom": false,
   "source": "own"
@@ -253,12 +253,12 @@
    "product": "Dasan Gigabit Passive Optical Network (GPON) Routers",
    "ransomware": false
   },
-  "events": 36,
+  "events": 38,
   "baseline": null,
   "change": null,
   "agents": 15,
   "first_seen": 1794546000,
-  "last_seen": 1794970800,
+  "last_seen": 1795003200,
   "days_after_disclosure": 3115,
   "custom": false,
   "source": "own"
@@ -297,12 +297,12 @@
    "product": "TP-Link Archer AX21",
    "ransomware": false
   },
-  "events": 17,
+  "events": 19,
   "baseline": null,
   "change": null,
   "agents": 10,
   "first_seen": 1794733200,
-  "last_seen": 1794963600,
+  "last_seen": 1794996000,
   "days_after_disclosure": 1341,
   "custom": false,
   "source": "own"
@@ -330,6 +330,28 @@
   "source": "own"
  },
  {
+  "cve": "CVE-2021-3129",
+  "name": "Laravel Ignition remote code execution",
+  "disclosed": "2021-01-12",
+  "cvss": 9.8,
+  "kev": {
+   "added": "2023-09-18",
+   "due": "2023-10-09",
+   "name": "Laravel Ignition File Upload Vulnerability",
+   "product": "Laravel Ignition",
+   "ransomware": true
+  },
+  "events": 7,
+  "baseline": null,
+  "change": null,
+  "agents": 2,
+  "first_seen": 1794726000,
+  "last_seen": 1794999600,
+  "days_after_disclosure": 2133,
+  "custom": false,
+  "source": "own"
+ },
+ {
   "cve": "CVE-2015-3306",
   "name": "ProFTPD mod_copy file copy without login",
   "disclosed": "2015-05-18",
@@ -348,28 +370,6 @@
   "first_seen": 1794816000,
   "last_seen": 1794938400,
   "days_after_disclosure": 4200,
-  "custom": false,
-  "source": "own"
- },
- {
-  "cve": "CVE-2021-3129",
-  "name": "Laravel Ignition remote code execution",
-  "disclosed": "2021-01-12",
-  "cvss": 9.8,
-  "kev": {
-   "added": "2023-09-18",
-   "due": "2023-10-09",
-   "name": "Laravel Ignition File Upload Vulnerability",
-   "product": "Laravel Ignition",
-   "ransomware": true
-  },
-  "events": 3,
-  "baseline": null,
-  "change": null,
-  "agents": 2,
-  "first_seen": 1794726000,
-  "last_seen": 1794956400,
-  "days_after_disclosure": 2133,
   "custom": false,
   "source": "own"
  },
@@ -394,6 +394,28 @@
   "days_after_disclosure": 1628,
   "custom": false,
   "source": "own"
+ },
+ {
+  "cve": "CVE-2024-7399",
+  "name": "Samsung MagicINFO 9 Server file upload",
+  "disclosed": "2024-08-09",
+  "cvss": 8.8,
+  "kev": {
+   "added": "2026-04-24",
+   "due": "2026-05-08",
+   "name": "Samsung MagicINFO 9 Server Path Traversal Vulnerability",
+   "product": "Samsung MagicINFO 9 Server",
+   "ransomware": false
+  },
+  "events": 2,
+  "baseline": null,
+  "change": null,
+  "agents": 1,
+  "first_seen": 1794794400,
+  "last_seen": 1794988800,
+  "days_after_disclosure": 829,
+  "custom": false,
+  "source": "template"
  },
  {
   "cve": "CVE-2014-6271",
@@ -440,24 +462,24 @@
   "source": "own"
  },
  {
-  "cve": "CVE-2024-7399",
-  "name": "Samsung MagicINFO 9 Server file upload",
-  "disclosed": "2024-08-09",
-  "cvss": 8.8,
+  "cve": "CVE-2025-2746",
+  "name": "Kentico Xperience staging service authentication bypass",
+  "disclosed": "2025-03-24",
+  "cvss": 9.8,
   "kev": {
-   "added": "2026-04-24",
-   "due": "2026-05-08",
-   "name": "Samsung MagicINFO 9 Server Path Traversal Vulnerability",
-   "product": "Samsung MagicINFO 9 Server",
+   "added": "2025-10-20",
+   "due": "2025-11-10",
+   "name": "Kentico Xperience CMS Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+   "product": "Kentico Xperience CMS",
    "ransomware": false
   },
   "events": 1,
   "baseline": null,
   "change": null,
   "agents": 1,
-  "first_seen": 1794794400,
-  "last_seen": 1794798000,
-  "days_after_disclosure": 829,
+  "first_seen": 1794985200,
+  "last_seen": 1794988800,
+  "days_after_disclosure": 604,
   "custom": false,
   "source": "template"
  }
