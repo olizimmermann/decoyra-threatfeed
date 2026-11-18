@@ -9,19 +9,19 @@ Project homepage: **https://decoyra.net**
 <!-- stats:start -->
 | | |
 |---|---|
-| updated utc | 2026-11-18T14:12:57Z |
-| blocked now | 840 |
+| updated utc | 2026-11-18T22:04:43Z |
+| blocked now | 880 |
 | blocked ipv6 | 0 |
-| collapsed entries | 730 |
-| blocked 7d | 2989 |
-| blocked 30d | 2989 |
-| urls | 119 |
-| hosts | 109 |
+| collapsed entries | 752 |
+| blocked 7d | 3198 |
+| blocked 30d | 3198 |
+| urls | 130 |
+| hosts | 114 |
 | sha256 | 54 |
-| cves 7d | 22 |
+| cves 7d | 23 |
 | cves kev | 22 |
 | campaigns 7d | 20 |
-| suricata rules | 493 |
+| suricata rules | 491 |
 <!-- stats:end -->
 
 ## Lists

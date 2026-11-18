@@ -11,12 +11,12 @@
    "product": "PHPUnit PHPUnit",
    "ransomware": false
   },
-  "events": 603,
+  "events": 972,
   "baseline": null,
   "change": null,
-  "agents": 15,
+  "agents": 16,
   "first_seen": 1794567600,
-  "last_seen": 1795006800,
+  "last_seen": 1795042800,
   "days_after_disclosure": 3426,
   "custom": false,
   "source": "own"
@@ -77,12 +77,12 @@
    "product": "Apache HTTP Server",
    "ransomware": true
   },
-  "events": 113,
+  "events": 114,
   "baseline": null,
   "change": null,
   "agents": 16,
   "first_seen": 1794542400,
-  "last_seen": 1795003200,
+  "last_seen": 1795039200,
   "days_after_disclosure": 1865,
   "custom": false,
   "source": "own"
@@ -209,12 +209,12 @@
    "product": "PHP Group PHP",
    "ransomware": true
   },
-  "events": 80,
+  "events": 82,
   "baseline": null,
   "change": null,
-  "agents": 14,
+  "agents": 15,
   "first_seen": 1794542400,
-  "last_seen": 1795003200,
+  "last_seen": 1795039200,
   "days_after_disclosure": 887,
   "custom": false,
   "source": "own"
@@ -242,6 +242,28 @@
   "source": "custom"
  },
  {
+  "cve": "CVE-2021-3129",
+  "name": "Laravel Ignition remote code execution",
+  "disclosed": "2021-01-12",
+  "cvss": 9.8,
+  "kev": {
+   "added": "2023-09-18",
+   "due": "2023-10-09",
+   "name": "Laravel Ignition File Upload Vulnerability",
+   "product": "Laravel Ignition",
+   "ransomware": true
+  },
+  "events": 44,
+  "baseline": null,
+  "change": null,
+  "agents": 2,
+  "first_seen": 1794726000,
+  "last_seen": 1795042800,
+  "days_after_disclosure": 2133,
+  "custom": false,
+  "source": "own"
+ },
+ {
   "cve": "CVE-2018-10561",
   "name": "GPON router authentication bypass",
   "disclosed": "2018-05-04",
@@ -253,12 +275,12 @@
    "product": "Dasan Gigabit Passive Optical Network (GPON) Routers",
    "ransomware": false
   },
-  "events": 38,
+  "events": 41,
   "baseline": null,
   "change": null,
   "agents": 15,
   "first_seen": 1794546000,
-  "last_seen": 1795003200,
+  "last_seen": 1795035600,
   "days_after_disclosure": 3115,
   "custom": false,
   "source": "own"
@@ -275,12 +297,12 @@
    "product": "ThinkPHP noneCms",
    "ransomware": false
   },
-  "events": 22,
+  "events": 24,
   "baseline": null,
   "change": null,
-  "agents": 12,
+  "agents": 13,
   "first_seen": 1794567600,
-  "last_seen": 1794877200,
+  "last_seen": 1795039200,
   "days_after_disclosure": 2894,
   "custom": false,
   "source": "own"
@@ -326,28 +348,6 @@
   "first_seen": 1794751200,
   "last_seen": 1794970800,
   "days_after_disclosure": 1690,
-  "custom": false,
-  "source": "own"
- },
- {
-  "cve": "CVE-2021-3129",
-  "name": "Laravel Ignition remote code execution",
-  "disclosed": "2021-01-12",
-  "cvss": 9.8,
-  "kev": {
-   "added": "2023-09-18",
-   "due": "2023-10-09",
-   "name": "Laravel Ignition File Upload Vulnerability",
-   "product": "Laravel Ignition",
-   "ransomware": true
-  },
-  "events": 7,
-  "baseline": null,
-  "change": null,
-  "agents": 2,
-  "first_seen": 1794726000,
-  "last_seen": 1794999600,
-  "days_after_disclosure": 2133,
   "custom": false,
   "source": "own"
  },
@@ -436,6 +436,22 @@
   "first_seen": 1794769200,
   "last_seen": 1794772800,
   "days_after_disclosure": 4436,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2017-17215",
+  "name": "Huawei HG532 command injection",
+  "disclosed": "2018-03-20",
+  "cvss": null,
+  "kev": null,
+  "events": 1,
+  "baseline": null,
+  "change": null,
+  "agents": 1,
+  "first_seen": 1795010400,
+  "last_seen": 1795014000,
+  "days_after_disclosure": 3166,
   "custom": false,
   "source": "own"
  },
