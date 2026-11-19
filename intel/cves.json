@@ -11,12 +11,12 @@
    "product": "PHPUnit PHPUnit",
    "ransomware": false
   },
-  "events": 1590,
+  "events": 1743,
   "baseline": null,
   "change": null,
   "agents": 16,
   "first_seen": 1794567600,
-  "last_seen": 1795060800,
+  "last_seen": 1795093200,
   "days_after_disclosure": 3426,
   "custom": false,
   "source": "own"
@@ -33,12 +33,12 @@
    "product": "Ivanti Connect Secure",
    "ransomware": false
   },
-  "events": 201,
+  "events": 202,
   "baseline": null,
   "change": null,
   "agents": 16,
   "first_seen": 1794632400,
-  "last_seen": 1794934800,
+  "last_seen": 1795078800,
   "days_after_disclosure": null,
   "custom": true,
   "source": "custom"
@@ -66,28 +66,6 @@
   "source": "own"
  },
  {
-  "cve": "CVE-2021-41773",
-  "name": "Apache httpd path traversal",
-  "disclosed": "2021-10-05",
-  "cvss": 7.5,
-  "kev": {
-   "added": "2021-11-03",
-   "due": "2021-11-17",
-   "name": "Apache HTTP Server Path Traversal Vulnerability",
-   "product": "Apache HTTP Server",
-   "ransomware": true
-  },
-  "events": 115,
-  "baseline": null,
-  "change": null,
-  "agents": 16,
-  "first_seen": 1794542400,
-  "last_seen": 1795050000,
-  "days_after_disclosure": 1865,
-  "custom": false,
-  "source": "own"
- },
- {
   "cve": "CVE-2021-3129",
   "name": "Laravel Ignition remote code execution",
   "disclosed": "2021-01-12",
@@ -99,13 +77,57 @@
    "product": "Laravel Ignition",
    "ransomware": true
   },
-  "events": 112,
+  "events": 129,
   "baseline": null,
   "change": null,
   "agents": 2,
   "first_seen": 1794726000,
-  "last_seen": 1795060800,
+  "last_seen": 1795093200,
   "days_after_disclosure": 2133,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2021-41773",
+  "name": "Apache httpd path traversal",
+  "disclosed": "2021-10-05",
+  "cvss": 7.5,
+  "kev": {
+   "added": "2021-11-03",
+   "due": "2021-11-17",
+   "name": "Apache HTTP Server Path Traversal Vulnerability",
+   "product": "Apache HTTP Server",
+   "ransomware": true
+  },
+  "events": 116,
+  "baseline": null,
+  "change": null,
+  "agents": 16,
+  "first_seen": 1794542400,
+  "last_seen": 1795068000,
+  "days_after_disclosure": 1865,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2025-31324",
+  "name": "SAP NetWeaver Visual Composer file upload",
+  "disclosed": "2025-04-24",
+  "cvss": 10.0,
+  "kev": {
+   "added": "2025-04-29",
+   "due": "2025-05-20",
+   "name": "SAP NetWeaver Unrestricted File Upload Vulnerability",
+   "product": "SAP NetWeaver",
+   "ransomware": true
+  },
+  "events": 109,
+  "baseline": null,
+  "change": null,
+  "agents": 17,
+  "first_seen": 1794618000,
+  "last_seen": 1795078800,
+  "days_after_disclosure": 569,
   "custom": false,
   "source": "own"
  },
@@ -154,28 +176,6 @@
   "source": "own"
  },
  {
-  "cve": "CVE-2025-31324",
-  "name": "SAP NetWeaver Visual Composer file upload",
-  "disclosed": "2025-04-24",
-  "cvss": 10.0,
-  "kev": {
-   "added": "2025-04-29",
-   "due": "2025-05-20",
-   "name": "SAP NetWeaver Unrestricted File Upload Vulnerability",
-   "product": "SAP NetWeaver",
-   "ransomware": true
-  },
-  "events": 92,
-  "baseline": null,
-  "change": null,
-  "agents": 17,
-  "first_seen": 1794618000,
-  "last_seen": 1795006800,
-  "days_after_disclosure": 569,
-  "custom": false,
-  "source": "own"
- },
- {
   "cve": "CVE-2024-4577",
   "name": "PHP-CGI argument injection",
   "disclosed": "2024-06-09",
@@ -187,12 +187,12 @@
    "product": "PHP Group PHP",
    "ransomware": true
   },
-  "events": 84,
+  "events": 85,
   "baseline": null,
   "change": null,
   "agents": 15,
   "first_seen": 1794542400,
-  "last_seen": 1795050000,
+  "last_seen": 1795068000,
   "days_after_disclosure": 887,
   "custom": false,
   "source": "own"
@@ -242,6 +242,28 @@
   "source": "custom"
  },
  {
+  "cve": "CVE-2018-10561",
+  "name": "GPON router authentication bypass",
+  "disclosed": "2018-05-04",
+  "cvss": 9.8,
+  "kev": {
+   "added": "2022-03-31",
+   "due": "2022-04-21",
+   "name": "Dasan GPON Routers Authentication Bypass Vulnerability",
+   "product": "Dasan Gigabit Passive Optical Network (GPON) Routers",
+   "ransomware": false
+  },
+  "events": 45,
+  "baseline": null,
+  "change": null,
+  "agents": 15,
+  "first_seen": 1794546000,
+  "last_seen": 1795078800,
+  "days_after_disclosure": 3115,
+  "custom": false,
+  "source": "own"
+ },
+ {
   "cve": "CVE-2026-96652",
   "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
   "disclosed": "",
@@ -262,28 +284,6 @@
   "days_after_disclosure": null,
   "custom": true,
   "source": "custom"
- },
- {
-  "cve": "CVE-2018-10561",
-  "name": "GPON router authentication bypass",
-  "disclosed": "2018-05-04",
-  "cvss": 9.8,
-  "kev": {
-   "added": "2022-03-31",
-   "due": "2022-04-21",
-   "name": "Dasan GPON Routers Authentication Bypass Vulnerability",
-   "product": "Dasan Gigabit Passive Optical Network (GPON) Routers",
-   "ransomware": false
-  },
-  "events": 43,
-  "baseline": null,
-  "change": null,
-  "agents": 15,
-  "first_seen": 1794546000,
-  "last_seen": 1795053600,
-  "days_after_disclosure": 3115,
-  "custom": false,
-  "source": "own"
  },
  {
   "cve": "CVE-2018-20062",
@@ -319,12 +319,12 @@
    "product": "TP-Link Archer AX21",
    "ransomware": false
   },
-  "events": 21,
+  "events": 23,
   "baseline": null,
   "change": null,
-  "agents": 10,
+  "agents": 11,
   "first_seen": 1794733200,
-  "last_seen": 1795046400,
+  "last_seen": 1795075200,
   "days_after_disclosure": 1341,
   "custom": false,
   "source": "own"
