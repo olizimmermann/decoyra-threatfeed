@@ -1,19 +1,19 @@
 cve,name,cvss,cisa_kev,ransomware,events_7d,agents,first_seen_utc,last_seen_utc,days_after_disclosure
-CVE-2017-9841,PHPUnit eval-stdin remote code execution,9.8,yes,no,972,16,2026-11-13T11:00:00Z,2026-11-18T23:00:00Z,3426
+CVE-2017-9841,PHPUnit eval-stdin remote code execution,9.8,yes,no,1590,16,2026-11-13T11:00:00Z,2026-11-19T04:00:00Z,3426
 CVE-2026-104935,Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability,,yes,no,201,16,2026-11-14T05:00:00Z,2026-11-17T17:00:00Z,
-CVE-2026-123158,OpenSSH password authentication bypass (musl libc without PAM),8.1,yes,no,142,13,2026-11-14T02:00:00Z,2026-11-18T07:00:00Z,9
-CVE-2021-41773,Apache httpd path traversal,7.5,yes,yes,114,16,2026-11-13T04:00:00Z,2026-11-18T22:00:00Z,1865
+CVE-2026-123158,OpenSSH password authentication bypass (musl libc without PAM),8.1,yes,no,144,13,2026-11-14T02:00:00Z,2026-11-19T03:00:00Z,9
+CVE-2021-41773,Apache httpd path traversal,7.5,yes,yes,115,16,2026-11-13T04:00:00Z,2026-11-19T01:00:00Z,1865
+CVE-2021-3129,Laravel Ignition remote code execution,9.8,yes,yes,112,2,2026-11-15T07:00:00Z,2026-11-19T04:00:00Z,2133
 CVE-2018-13379,FortiOS SSL VPN file read,9.1,yes,yes,102,16,2026-11-14T06:00:00Z,2026-11-17T17:00:00Z,2720
 CVE-2021-44228,Log4Shell,10.0,yes,yes,101,8,2026-11-14T11:00:00Z,2026-11-16T16:00:00Z,1800
 CVE-2025-31324,SAP NetWeaver Visual Composer file upload,10.0,yes,yes,92,17,2026-11-14T01:00:00Z,2026-11-18T13:00:00Z,569
+CVE-2024-4577,PHP-CGI argument injection,9.8,yes,yes,84,15,2026-11-13T04:00:00Z,2026-11-19T01:00:00Z,887
 CVE-2020-3452,Cisco ASA and FTD Read-Only Path Traversal Vulnerability,,yes,no,82,16,2026-11-14T05:00:00Z,2026-11-17T17:00:00Z,
 CVE-2022-40684,Fortinet Multiple Products Authentication Bypass Vulnerability,,yes,yes,82,16,2026-11-14T05:00:00Z,2026-11-17T17:00:00Z,
-CVE-2024-4577,PHP-CGI argument injection,9.8,yes,yes,82,15,2026-11-13T04:00:00Z,2026-11-18T22:00:00Z,887
 CVE-2026-96652,Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability,,yes,no,45,15,2026-11-14T23:00:00Z,2026-11-15T06:00:00Z,
-CVE-2021-3129,Laravel Ignition remote code execution,9.8,yes,yes,44,2,2026-11-15T07:00:00Z,2026-11-18T23:00:00Z,2133
-CVE-2018-10561,GPON router authentication bypass,9.8,yes,no,41,15,2026-11-13T05:00:00Z,2026-11-18T21:00:00Z,3115
+CVE-2018-10561,GPON router authentication bypass,9.8,yes,no,43,15,2026-11-13T05:00:00Z,2026-11-19T02:00:00Z,3115
 CVE-2018-20062,ThinkPHP remote code execution,9.8,yes,no,24,13,2026-11-13T11:00:00Z,2026-11-18T22:00:00Z,2894
-CVE-2023-1389,TP-Link Archer command injection,8.8,yes,no,19,10,2026-11-15T09:00:00Z,2026-11-18T10:00:00Z,1341
+CVE-2023-1389,TP-Link Archer command injection,8.8,yes,no,21,10,2026-11-15T09:00:00Z,2026-11-19T00:00:00Z,1341
 CVE-2022-22965,Spring4Shell,9.8,yes,no,15,14,2026-11-15T14:00:00Z,2026-11-18T03:00:00Z,1690
 CVE-2015-3306,ProFTPD mod_copy file copy without login,10.0,yes,no,3,3,2026-11-16T08:00:00Z,2026-11-17T18:00:00Z,4200
 CVE-2022-26134,Confluence OGNL injection,9.8,yes,yes,2,1,2026-11-16T12:00:00Z,2026-11-16T13:00:00Z,1628
@@ -22,3 +22,4 @@ CVE-2014-6271,Shellshock,9.8,yes,no,1,1,2026-11-15T19:00:00Z,2026-11-15T20:00:00
 CVE-2017-17215,Huawei HG532 command injection,,no,no,1,1,2026-11-18T14:00:00Z,2026-11-18T15:00:00Z,3166
 CVE-2023-23752,Joomla configuration disclosure,5.3,yes,no,1,1,2026-11-15T00:00:00Z,2026-11-15T01:00:00Z,1368
 CVE-2025-2746,Kentico Xperience staging service authentication bypass,9.8,yes,no,1,1,2026-11-18T07:00:00Z,2026-11-18T08:00:00Z,604
+CVE-2025-6205,DELMIA Apriso broken access control,9.1,yes,no,1,1,2026-11-19T03:00:00Z,2026-11-19T04:00:00Z,472
