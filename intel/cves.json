@@ -11,12 +11,12 @@
    "product": "PHPUnit PHPUnit",
    "ransomware": false
   },
-  "events": 1869,
+  "events": 1851,
   "baseline": null,
   "change": null,
   "agents": 16,
   "first_seen": 1794567600,
-  "last_seen": 1795125600,
+  "last_seen": 1795168800,
   "days_after_disclosure": 3426,
   "custom": false,
   "source": "own"
@@ -55,12 +55,12 @@
    "product": "OpenBSD OpenSSH",
    "ransomware": false
   },
-  "events": 144,
+  "events": 146,
   "baseline": null,
   "change": null,
   "agents": 13,
   "first_seen": 1794621600,
-  "last_seen": 1795057200,
+  "last_seen": 1795154400,
   "days_after_disclosure": 9,
   "custom": false,
   "source": "own"
@@ -88,28 +88,6 @@
   "source": "own"
  },
  {
-  "cve": "CVE-2021-41773",
-  "name": "Apache httpd path traversal",
-  "disclosed": "2021-10-05",
-  "cvss": 7.5,
-  "kev": {
-   "added": "2021-11-03",
-   "due": "2021-11-17",
-   "name": "Apache HTTP Server Path Traversal Vulnerability",
-   "product": "Apache HTTP Server",
-   "ransomware": true
-  },
-  "events": 119,
-  "baseline": null,
-  "change": null,
-  "agents": 16,
-  "first_seen": 1794542400,
-  "last_seen": 1795125600,
-  "days_after_disclosure": 1865,
-  "custom": false,
-  "source": "own"
- },
- {
   "cve": "CVE-2025-31324",
   "name": "SAP NetWeaver Visual Composer file upload",
   "disclosed": "2025-04-24",
@@ -121,13 +99,35 @@
    "product": "SAP NetWeaver",
    "ransomware": true
   },
-  "events": 109,
+  "events": 127,
   "baseline": null,
   "change": null,
-  "agents": 17,
+  "agents": 18,
   "first_seen": 1794618000,
-  "last_seen": 1795078800,
+  "last_seen": 1795176000,
   "days_after_disclosure": 569,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2021-41773",
+  "name": "Apache httpd path traversal",
+  "disclosed": "2021-10-05",
+  "cvss": 7.5,
+  "kev": {
+   "added": "2021-11-03",
+   "due": "2021-11-17",
+   "name": "Apache HTTP Server Path Traversal Vulnerability",
+   "product": "Apache HTTP Server",
+   "ransomware": true
+  },
+  "events": 118,
+  "baseline": null,
+  "change": null,
+  "agents": 16,
+  "first_seen": 1794542400,
+  "last_seen": 1795176000,
+  "days_after_disclosure": 1865,
   "custom": false,
   "source": "own"
  },
@@ -187,12 +187,12 @@
    "product": "PHP Group PHP",
    "ransomware": true
   },
-  "events": 91,
+  "events": 86,
   "baseline": null,
   "change": null,
   "agents": 15,
   "first_seen": 1794542400,
-  "last_seen": 1795125600,
+  "last_seen": 1795176000,
   "days_after_disclosure": 887,
   "custom": false,
   "source": "own"
@@ -253,12 +253,12 @@
    "product": "Dasan Gigabit Passive Optical Network (GPON) Routers",
    "ransomware": false
   },
-  "events": 48,
+  "events": 47,
   "baseline": null,
   "change": null,
-  "agents": 16,
+  "agents": 17,
   "first_seen": 1794546000,
-  "last_seen": 1795140000,
+  "last_seen": 1795150800,
   "days_after_disclosure": 3115,
   "custom": false,
   "source": "own"
@@ -297,7 +297,7 @@
    "product": "ThinkPHP noneCms",
    "ransomware": false
   },
-  "events": 27,
+  "events": 26,
   "baseline": null,
   "change": null,
   "agents": 13,
@@ -452,6 +452,28 @@
   "first_seen": 1795010400,
   "last_seen": 1795014000,
   "days_after_disclosure": 3166,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2021-34473",
+  "name": "Exchange ProxyShell",
+  "disclosed": "2021-07-14",
+  "cvss": 9.1,
+  "kev": {
+   "added": "2021-11-03",
+   "due": "2021-11-17",
+   "name": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+   "product": "Microsoft Exchange Server",
+   "ransomware": true
+  },
+  "events": 1,
+  "baseline": null,
+  "change": null,
+  "agents": 1,
+  "first_seen": 1795161600,
+  "last_seen": 1795165200,
+  "days_after_disclosure": 1955,
   "custom": false,
   "source": "own"
  },
