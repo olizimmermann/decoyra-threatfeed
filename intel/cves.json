@@ -11,12 +11,12 @@
    "product": "PHPUnit PHPUnit",
    "ransomware": false
   },
-  "events": 1851,
+  "events": 1819,
   "baseline": null,
   "change": null,
   "agents": 16,
   "first_seen": 1794567600,
-  "last_seen": 1795168800,
+  "last_seen": 1795204800,
   "days_after_disclosure": 3426,
   "custom": false,
   "source": "own"
@@ -121,15 +121,37 @@
    "product": "Apache HTTP Server",
    "ransomware": true
   },
-  "events": 118,
+  "events": 115,
   "baseline": null,
   "change": null,
   "agents": 16,
   "first_seen": 1794542400,
-  "last_seen": 1795176000,
+  "last_seen": 1795204800,
   "days_after_disclosure": 1865,
   "custom": false,
   "source": "own"
+ },
+ {
+  "cve": "CVE-2024-0012",
+  "name": "PAN-OS management web interface authentication bypass",
+  "disclosed": "",
+  "cvss": null,
+  "kev": {
+   "added": "2024-11-18",
+   "due": "2024-12-09",
+   "name": "Palo Alto Networks PAN-OS Management Interface Authentication Bypass Vulnerability",
+   "product": "Palo Alto Networks PAN-OS",
+   "ransomware": true
+  },
+  "events": 103,
+  "baseline": null,
+  "change": null,
+  "agents": 18,
+  "first_seen": 1794636000,
+  "last_seen": 1795150800,
+  "days_after_disclosure": null,
+  "custom": true,
+  "source": "custom"
  },
  {
   "cve": "CVE-2018-13379",
@@ -172,28 +194,6 @@
   "first_seen": 1794654000,
   "last_seen": 1794844800,
   "days_after_disclosure": 1800,
-  "custom": false,
-  "source": "own"
- },
- {
-  "cve": "CVE-2024-4577",
-  "name": "PHP-CGI argument injection",
-  "disclosed": "2024-06-09",
-  "cvss": 9.8,
-  "kev": {
-   "added": "2024-06-12",
-   "due": "2024-07-03",
-   "name": "PHP-CGI OS Command Injection Vulnerability",
-   "product": "PHP Group PHP",
-   "ransomware": true
-  },
-  "events": 86,
-  "baseline": null,
-  "change": null,
-  "agents": 15,
-  "first_seen": 1794542400,
-  "last_seen": 1795176000,
-  "days_after_disclosure": 887,
   "custom": false,
   "source": "own"
  },
@@ -242,6 +242,28 @@
   "source": "custom"
  },
  {
+  "cve": "CVE-2024-4577",
+  "name": "PHP-CGI argument injection",
+  "disclosed": "2024-06-09",
+  "cvss": 9.8,
+  "kev": {
+   "added": "2024-06-12",
+   "due": "2024-07-03",
+   "name": "PHP-CGI OS Command Injection Vulnerability",
+   "product": "PHP Group PHP",
+   "ransomware": true
+  },
+  "events": 81,
+  "baseline": null,
+  "change": null,
+  "agents": 15,
+  "first_seen": 1794542400,
+  "last_seen": 1795204800,
+  "days_after_disclosure": 887,
+  "custom": false,
+  "source": "own"
+ },
+ {
   "cve": "CVE-2018-10561",
   "name": "GPON router authentication bypass",
   "disclosed": "2018-05-04",
@@ -253,12 +275,12 @@
    "product": "Dasan Gigabit Passive Optical Network (GPON) Routers",
    "ransomware": false
   },
-  "events": 47,
+  "events": 50,
   "baseline": null,
   "change": null,
   "agents": 17,
   "first_seen": 1794546000,
-  "last_seen": 1795150800,
+  "last_seen": 1795208400,
   "days_after_disclosure": 3115,
   "custom": false,
   "source": "own"
@@ -286,28 +308,6 @@
   "source": "custom"
  },
  {
-  "cve": "CVE-2018-20062",
-  "name": "ThinkPHP remote code execution",
-  "disclosed": "2018-12-11",
-  "cvss": 9.8,
-  "kev": {
-   "added": "2021-11-03",
-   "due": "2022-05-03",
-   "name": "ThinkPHP \"noneCms\" Remote Code Execution Vulnerability",
-   "product": "ThinkPHP noneCms",
-   "ransomware": false
-  },
-  "events": 26,
-  "baseline": null,
-  "change": null,
-  "agents": 13,
-  "first_seen": 1794567600,
-  "last_seen": 1795122000,
-  "days_after_disclosure": 2894,
-  "custom": false,
-  "source": "own"
- },
- {
   "cve": "CVE-2023-1389",
   "name": "TP-Link Archer command injection",
   "disclosed": "2023-03-15",
@@ -326,6 +326,28 @@
   "first_seen": 1794733200,
   "last_seen": 1795114800,
   "days_after_disclosure": 1341,
+  "custom": false,
+  "source": "own"
+ },
+ {
+  "cve": "CVE-2018-20062",
+  "name": "ThinkPHP remote code execution",
+  "disclosed": "2018-12-11",
+  "cvss": 9.8,
+  "kev": {
+   "added": "2021-11-03",
+   "due": "2022-05-03",
+   "name": "ThinkPHP \"noneCms\" Remote Code Execution Vulnerability",
+   "product": "ThinkPHP noneCms",
+   "ransomware": false
+  },
+  "events": 24,
+  "baseline": null,
+  "change": null,
+  "agents": 12,
+  "first_seen": 1794567600,
+  "last_seen": 1795204800,
+  "days_after_disclosure": 2894,
   "custom": false,
   "source": "own"
  },
