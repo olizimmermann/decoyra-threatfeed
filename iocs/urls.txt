@@ -2,6 +2,7 @@
 # Payload and callback URLs attackers told the honeypots to fetch, last 7 days. Shell glue cut off;
 # proxy-check, benign, internal and single-address domains left out (see iocs.csv).
 http://1.1.1.1/cdn-cgi/trace
+http://100.10.5.152:57982/Mozi.m
 http://100.10.5.5:54396/Mozi.m
 http://101.29.21.174:43554/Mozi.a
 http://101.53.224.56:43766/Mozi.m
@@ -13,13 +14,11 @@ http://103.18.14.11:51694/Mozi.m
 http://103.18.14.38:59514/Mozi.m
 http://103.198.154.141:54989/Mozi.m
 http://103.244.172.139:48622/Mozi.a
-http://103.244.172.183:35380/Mozi.m
+http://103.26.82.13:51809/Mozi.m
 http://103.26.86.240:47116/Mozi.m
-http://103.31.93.54:59625/Mozi.m
 http://103.82.120.220:57359/Mozi.m
 http://103.82.121.175:35118/Mozi.m
 http://103.98.37.57:47585/Mozi.m
-http://105.184.107.208:51067/Mozi.a
 http://105.224.253.3:54463/Mozi.a
 http://108.165.95.10/l.sh
 http://110.38.12.240:47672/Mozi.m
@@ -43,12 +42,12 @@ http://139.135.41.138:42503/Mozi.m
 http://139.135.43.180:53548/Mozi.m
 http://139.135.44.215:37348/Mozi.m
 http://139.135.44.236:40557/Mozi.m
-http://139.135.59.132:59614/Mozi.m
 http://144.48.130.121:55993/Mozi.m
 http://144.48.130.194:54379/Mozi.m
 http://151.244.234.162:35146/b/amd64
 http://151.244.234.162:35146/s/amd64
 http://151.244.234.24:65133/b/amd64
+http://151.244.234.24:65133/s/amd64
 http://153.117.1.35:49870/Mozi.m
 http://153.117.13.156:39007/Mozi.m
 http://153.117.15.148:51324/Mozi.m
@@ -56,14 +55,11 @@ http://153.117.15.225:54882/Mozi.a
 http://153.117.15.23:47662/Mozi.m
 http://153.117.15.92:36601/Mozi.a
 http://153.117.29.177:32980/Mozi.a
-http://153.117.32.204:39222/Mozi.m
-http://153.117.33.152:33620/Mozi.a
 http://153.117.33.174:54186/Mozi.m
 http://153.117.34.135:52911/Mozi.m
 http://153.117.34.1:39263/Mozi.m
 http://153.117.38.184:42748/Mozi.a
 http://153.117.40.230:44157/Mozi.m
-http://153.117.48.82:59739/Mozi.m
 http://153.117.67.240:47091/Mozi.m
 http://153.117.70.125:38633/Mozi.m
 http://153.117.70.7:52679/Mozi.m
@@ -99,6 +95,7 @@ http://202.47.53.100:38973/Mozi.m
 http://202.47.53.47:55245/Mozi.a
 http://202.70.139.121:47278/Mozi.a
 http://207.148.74.112/wp-admin/&testcookie=1&wp-submit=Log
+http://212.54.86.171:42531/Mozi.a
 http://221.229.81.133:35148/Mozi.m
 http://223.123.126.195:39016/Mozi.a
 http://223.123.34.153:46383/Mozi.m
@@ -113,6 +110,7 @@ http://223.123.35.168:33999/Mozi.m
 http://223.123.47.66:33126/Mozi.m
 http://223.123.73.216:41181/Mozi.m
 http://27.153.233.240:44911/Mozi.m
+http://27.31.132.66:42011/Mozi.m
 http://31.56.209.73:32461/b/amd64
 http://31.56.209.73:32461/s/amd64
 http://36.251.0.194:33623/Mozi.m
@@ -120,8 +118,6 @@ http://39.34.166.220:60442/Mozi.m
 http://39.34.186.51:55205/Mozi.m
 http://42.177.123.85:53169/Mozi.m
 http://42.52.12.208:44444/Mozi.a
-http://43.132.110.152/sh/iitm
-http://43.132.110.152/sh/iitms.sh
 http://43.228.157.59:39929/CB_18f8aea94de8537a
 http://43.228.157.59:39929/CB_18f8aea94f0e165f
 http://43.228.157.59:39929/CB_18f8aea9518b2219
@@ -145,7 +141,6 @@ http://46.227.184.199:32927/Mozi.m
 http://5.83.134.37:5001/amd64
 http://59.103.100.19:41603/Mozi.m
 http://59.103.104.205:57564/Mozi.m
-http://59.103.106.8:52140/Mozi.a
 http://59.103.106.9:33305/Mozi.a
 http://59.103.110.120:34019/Mozi.a
 http://60.19.217.108:52996/Mozi.m
@@ -156,12 +151,12 @@ http://72.255.19.34:52374/Mozi.a
 http://72.255.3.166:54908/Mozi.m
 http://72.255.32.204:41278/Mozi.m
 http://72.255.32.86:45430/Mozi.m
-http://72.255.33.140:60466/Mozi.m
 http://72.255.33.192:55908/Mozi.m
 http://72.50.119.217:54625/Mozi.m
 http://74.113.234.62:5521/akzmahazcA/kaz.sh
 http://74.113.234.62:5521/akzmahazcA/kz.sh
 http://78.154.103.13:14505/load.sh
+http://79.132.141.139:9052/swag.mips
 http://91.92.128.226/files/hidemyass.tgz
 http://93.127.133.123/XKcNhY4G8rcYpb.sh
 http://94.229.17.82:60823/Mozi.a
