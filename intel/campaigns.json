@@ -1,11 +1,11 @@
 [
  {
   "id": "b8b7f32135",
-  "addresses": 272,
-  "events": 576,
+  "addresses": 315,
+  "events": 662,
   "agents": 18,
   "first_seen": 1795125071.1723323,
-  "last_seen": 1795358645.3559368,
+  "last_seen": 1795383906.8097093,
   "tags": [
    "admin-panel",
    "iot-router"
@@ -20,45 +20,45 @@
   "countries": [
    {
     "cc": "IN",
-    "n": 107
+    "n": 124
    },
    {
     "cc": "MZ",
-    "n": 36
+    "n": 43
    },
    {
     "cc": "BR",
-    "n": 27
-   },
-   {
-    "cc": "RO",
-    "n": 16
+    "n": 32
    },
    {
     "cc": "CN",
-    "n": 16
+    "n": 18
+   },
+   {
+    "cc": "RO",
+    "n": 17
    }
   ],
   "networks": [
    {
     "network": "AS9829 Bharat Sanchar Nigam Ltd",
-    "n": 90
+    "n": 106
    },
    {
     "network": "AS30619 TMCEL - Mocambique Telecom, SA",
-    "n": 36
+    "n": 43
    },
    {
-    "network": "AS49909 Direct One SA",
-    "n": 16
+    "network": "AS4134 Chinanet",
+    "n": 18
    }
   ],
   "sample_addresses": [
+   "102.23.145.165",
    "102.23.146.43",
+   "103.120.252.198",
    "103.146.241.204",
-   "103.172.56.202",
-   "103.19.120.69",
-   "103.76.102.113"
+   "103.172.56.202"
   ]
  },
  {
@@ -102,11 +102,11 @@
  },
  {
   "id": "b7653d1284",
-  "addresses": 92,
-  "events": 94,
+  "addresses": 97,
+  "events": 99,
   "agents": 18,
   "first_seen": 1794811845.9200816,
-  "last_seen": 1795360131.6812315,
+  "last_seen": 1795382865.4838438,
   "tags": [
    "admin-panel",
    "iot-router"
@@ -121,7 +121,7 @@
   "countries": [
    {
     "cc": "PK",
-    "n": 67
+    "n": 72
    },
    {
     "cc": "CN",
@@ -143,7 +143,7 @@
   "networks": [
    {
     "network": "AS9541 Cyber Internet Services (Private) Limited",
-    "n": 36
+    "n": 38
    },
    {
     "network": "AS4837 CHINA UNICOM China169 Backbone",
@@ -164,11 +164,11 @@
  },
  {
   "id": "0637e74295",
-  "addresses": 77,
-  "events": 114,
+  "addresses": 81,
+  "events": 122,
   "agents": 18,
   "first_seen": 1794820026.5368488,
-  "last_seen": 1795357255.307752,
+  "last_seen": 1795383363.1239705,
   "tags": [
    "env-secrets"
   ],
@@ -186,6 +186,10 @@
    },
    {
     "cc": "NG",
+    "n": 7
+   },
+   {
+    "cc": "HK",
     "n": 6
    },
    {
@@ -195,16 +199,12 @@
    {
     "cc": "DE",
     "n": 6
-   },
-   {
-    "cc": "TH",
-    "n": 5
    }
   ],
   "networks": [
    {
     "network": "AS135377 UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
-    "n": 75
+    "n": 79
    },
    {
     "network": "AS141679 China Telecom",
@@ -258,11 +258,11 @@
  },
  {
   "id": "056f900063",
-  "addresses": 63,
-  "events": 3006,
+  "addresses": 69,
+  "events": 3029,
   "agents": 18,
   "first_seen": 1794810628.4527547,
-  "last_seen": 1795354313.348629,
+  "last_seen": 1795382618.3429644,
   "tags": [
    "llm-endpoint"
   ],
@@ -276,7 +276,7 @@
   "countries": [
    {
     "cc": "US",
-    "n": 22
+    "n": 25
    },
    {
     "cc": "NL",
@@ -284,7 +284,7 @@
    },
    {
     "cc": "DE",
-    "n": 5
+    "n": 6
    },
    {
     "cc": "CN",
@@ -314,7 +314,7 @@
    "102.210.149.166",
    "103.106.229.11",
    "103.218.237.88",
-   "106.75.24.225"
+   "104.243.210.88"
   ]
  },
  {
@@ -446,8 +446,8 @@
   "addresses": 45,
   "events": 45,
   "agents": 16,
-  "first_seen": 1794776645.642848,
-  "last_seen": 1795331280.744573,
+  "first_seen": 1794780883.2365024,
+  "last_seen": 1795365793.5309246,
   "tags": [
    "command-injection",
    "cve-2018-10561",
@@ -508,10 +508,10 @@
  },
  {
   "id": "71e7f84ffa",
-  "addresses": 45,
-  "events": 45,
+  "addresses": 43,
+  "events": 43,
   "agents": 17,
-  "first_seen": 1794770779.8417757,
+  "first_seen": 1794806679.0980828,
   "last_seen": 1795255506.4697545,
   "tags": [
    "command-injection",
@@ -529,7 +529,7 @@
   "countries": [
    {
     "cc": "PK",
-    "n": 26
+    "n": 25
    },
    {
     "cc": "CN",
@@ -544,14 +544,14 @@
     "n": 1
    },
    {
-    "cc": "IN",
+    "cc": "HK",
     "n": 1
    }
   ],
   "networks": [
    {
     "network": "AS9541 Cyber Internet Services (Private) Limited",
-    "n": 18
+    "n": 17
    },
    {
     "network": "AS4837 CHINA UNICOM China169 Backbone",
@@ -564,19 +564,19 @@
   ],
   "sample_addresses": [
    "101.53.225.12",
-   "103.125.128.0",
-   "103.18.14.11",
    "103.18.14.38",
-   "103.26.86.240"
+   "103.26.86.240",
+   "103.82.120.220",
+   "110.38.12.240"
   ]
  },
  {
   "id": "a555128e77",
-  "addresses": 38,
-  "events": 150,
+  "addresses": 40,
+  "events": 155,
   "agents": 17,
   "first_seen": 1794818058.7210104,
-  "last_seen": 1795353734.5646849,
+  "last_seen": 1795383939.5556712,
   "tags": [
    "git-exposure"
   ],
@@ -594,7 +594,7 @@
    },
    {
     "cc": "DE",
-    "n": 5
+    "n": 6
    },
    {
     "cc": "SG",
@@ -634,10 +634,10 @@
  {
   "id": "2b6c8e8583",
   "addresses": 34,
-  "events": 283,
+  "events": 310,
   "agents": 16,
-  "first_seen": 1794767584.542939,
-  "last_seen": 1795361096.2457204,
+  "first_seen": 1794782610.79471,
+  "last_seen": 1795384283.100797,
   "tags": [
    "cve-2025-30208"
   ],
@@ -799,10 +799,10 @@
  {
   "id": "5735229163",
   "addresses": 31,
-  "events": 1010,
+  "events": 1011,
   "agents": 13,
   "first_seen": 1794810867.1982934,
-  "last_seen": 1795360548.501964,
+  "last_seen": 1795363900.6086762,
   "tags": [
    "open-proxy-test"
   ],
@@ -915,6 +915,69 @@
   ]
  },
  {
+  "id": "509f68251a",
+  "addresses": 28,
+  "events": 43,
+  "agents": 11,
+  "first_seen": 1795313336.7760842,
+  "last_seen": 1795383106.4751606,
+  "tags": [
+   "cve-2025-3248"
+  ],
+  "cves": [
+   "CVE-2025-3248"
+  ],
+  "patterns": [
+   {
+    "id": 136130,
+    "pattern": "POST /api/v1/validate/code [body: cve-2025-3248]"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "US",
+    "n": 7
+   },
+   {
+    "cc": "IN",
+    "n": 6
+   },
+   {
+    "cc": "FR",
+    "n": 2
+   },
+   {
+    "cc": "DE",
+    "n": 2
+   },
+   {
+    "cc": "VN",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS16509 Amazon.com, Inc.",
+    "n": 5
+   },
+   {
+    "network": "AS14061 DigitalOcean, LLC",
+    "n": 4
+   },
+   {
+    "network": "AS9123 JSC \"TIMEWEB",
+    "n": 1
+   }
+  ],
+  "sample_addresses": [
+   "103.31.41.78",
+   "109.172.55.113",
+   "126.143.218.66",
+   "13.203.215.40",
+   "143.198.123.174"
+  ]
+ },
+ {
   "id": "ca5f34488b",
   "addresses": 27,
   "events": 75,
@@ -978,10 +1041,10 @@
  {
   "id": "cfa2c3f653",
   "addresses": 24,
-  "events": 82,
+  "events": 85,
   "agents": 18,
   "first_seen": 1794813741.3956869,
-  "last_seen": 1795357189.7525012,
+  "last_seen": 1795377615.823418,
   "tags": [
    "env-secrets",
    "llm-endpoint"
@@ -1085,63 +1148,6 @@
    "104.22.219.118",
    "104.22.43.62",
    "104.23.217.121"
-  ]
- },
- {
-  "id": "8814102408",
-  "addresses": 20,
-  "events": 33,
-  "agents": 16,
-  "first_seen": 1794810609.5831556,
-  "last_seen": 1795352624.6123283,
-  "tags": [
-   "iot-router"
-  ],
-  "cves": [],
-  "patterns": [
-   {
-    "id": 21342,
-    "pattern": "GET /hnap1"
-   }
-  ],
-  "countries": [
-   {
-    "cc": "DE",
-    "n": 12
-   },
-   {
-    "cc": "US",
-    "n": 5
-   },
-   {
-    "cc": "FR",
-    "n": 2
-   },
-   {
-    "cc": "CA",
-    "n": 1
-   }
-  ],
-  "networks": [
-   {
-    "network": "AS14061 DigitalOcean, LLC",
-    "n": 13
-   },
-   {
-    "network": "AS63949 Akamai Technologies, Inc.",
-    "n": 5
-   },
-   {
-    "network": "AS12876 Scaleway SAS",
-    "n": 2
-   }
-  ],
-  "sample_addresses": [
-   "104.248.35.147",
-   "134.209.236.116",
-   "138.68.75.43",
-   "146.190.145.217",
-   "165.22.29.38"
   ]
  }
 ]
