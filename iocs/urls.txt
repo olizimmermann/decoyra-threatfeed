@@ -2,11 +2,13 @@
 # Payload and callback URLs attackers told the honeypots to fetch, last 7 days. Shell glue cut off;
 # proxy-check, benign, internal and single-address domains left out (see iocs.csv).
 http://1.1.1.1/cdn-cgi/trace
+http://100.10.4.86:49858/Mozi.m
 http://100.10.5.152:57982/Mozi.m
 http://100.10.5.5:54396/Mozi.m
 http://101.29.21.174:43554/Mozi.a
 http://101.53.224.56:43766/Mozi.m
 http://101.53.225.12:35163/Mozi.m
+http://103.11.62.23:59384/Mozi.a
 http://103.160.59.94:28816/CZRmrtxnrNONBXhwfFeqjNfBrliNaShG
 http://103.176.16.114:37355/Mozi.m
 http://103.18.14.38:59514/Mozi.m
@@ -48,6 +50,7 @@ http://151.244.234.162:35146/b/amd64
 http://151.244.234.162:35146/s/amd64
 http://151.244.234.24:65133/b/amd64
 http://151.244.234.24:65133/s/amd64
+http://153.117.1.218:58328/Mozi.m
 http://153.117.1.35:49870/Mozi.m
 http://153.117.13.156:39007/Mozi.m
 http://153.117.15.148:51324/Mozi.m
@@ -59,10 +62,12 @@ http://153.117.33.174:54186/Mozi.m
 http://153.117.34.135:52911/Mozi.m
 http://153.117.34.1:39263/Mozi.m
 http://153.117.38.184:42748/Mozi.a
+http://153.117.50.48:55808/Mozi.a
 http://153.117.67.240:47091/Mozi.m
 http://153.117.70.125:38633/Mozi.m
 http://153.117.70.7:52679/Mozi.m
 http://153.117.79.15:43577/Mozi.m
+http://153.117.79.60:37868/Mozi.m
 http://153.117.8.118:51742/Mozi.m
 http://153.117.8.72:43203/Mozi.m
 http://153.36.169.98:53757/Mozi.m
@@ -75,7 +80,6 @@ http://175.107.218.240:55662/Mozi.m
 http://175.151.216.207:45140/Mozi.m
 http://182.190.223.130:40622/Mozi.m
 http://185.39.181.103:55962/Mozi.m
-http://190.196.253.121:10015/Mozi.m
 http://190.196.253.14:10531/Mozi.m
 http://190.196.253.66:10289/Mozi.m
 http://196.189.104.106:37618/Mozi.m
@@ -89,8 +93,8 @@ http://196.251.121.142/a3f8d2/kaizen.mpsl
 http://196.251.121.142/a3f8d2/kaizen.x86
 http://196.251.121.142/a3f8d2/kaizen.x86_64
 http://198.144.179.82:80/1.sh
+http://2.57.122.103:28080/rsc?id=04a9b2a723a03399&h=3d73353d
 http://202.141.230.214:50432/Mozi.m
-http://202.47.50.8:33483/Mozi.a
 http://202.47.53.100:38973/Mozi.m
 http://202.47.53.47:55245/Mozi.a
 http://202.70.139.121:47278/Mozi.a
@@ -106,6 +110,7 @@ http://223.123.34.53:37186/Mozi.m
 http://223.123.34.82:34298/Mozi.m
 http://223.123.35.120:58387/Mozi.m
 http://223.123.35.168:33999/Mozi.m
+http://223.123.47.146:41764/Mozi.a
 http://27.153.233.240:44911/Mozi.m
 http://27.31.132.66:42011/Mozi.m
 http://31.56.209.34/SpaceDown/bin.x86
@@ -128,12 +133,12 @@ http://43.228.157.59:39929/CB_18f8bcee2a2c5172
 http://43.228.157.59:39929/CB_18f8bcee2a2c5172&ipv=0
 http://43.228.157.59:39929/CB_18f8bcee2efe66f0
 http://43.230.94.184:42467/Mozi.a
+http://43.230.94.185:44836/Mozi.m
 http://43.250.106.149:32933/Mozi.m
 http://45.198.224.89/arm7
 http://45.77.235.182:8000/admin/master/console/&state=1&response_mode=query&response_type=code&scope=openid&nonce=1&code_challenge_method=S256&code_challenge=wMYxCiAZ5DmiZvqD0h5G_9QwE7IDDFRojvORiaqiTt
 http://45.88.91.135:35146/b/amd64
 http://45.88.91.135:35146/s/amd64
-http://45.90.163.37/tot
 http://46.227.184.199:32927/Mozi.m
 http://5.83.134.37:5001/amd64
 http://59.103.100.19:41603/Mozi.m
@@ -156,9 +161,7 @@ http://78.154.103.13:14505/load.sh
 http://79.132.141.139:9052/swag.mips
 http://91.92.128.226/files/hidemyass.tgz
 http://91.92.40.4:80/kla.sh
-http://93.127.133.123/XKcNhY4G8rcYpb.sh
 http://94.229.17.82:60823/Mozi.a
-http://94.26.106.220/bullshi
 http://a7x.overflow.biz/hachk.php
 http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest
 http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd

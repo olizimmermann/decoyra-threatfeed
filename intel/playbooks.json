@@ -7,11 +7,11 @@
    "shell-recon"
   ],
   "pattern": "shell-recon > shell-download > shell-recon",
-  "sessions": 31390,
+  "sessions": 31539,
   "agents": 18,
   "sources": 111,
   "first_seen": 1794587120.3943331,
-  "last_seen": 1795383481.147889,
+  "last_seen": 1795401637.1834342,
   "tags": []
  },
  {
@@ -26,11 +26,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > shell-recon > miner > cron-persistence > cleanup > upload",
-  "sessions": 7664,
+  "sessions": 7714,
   "agents": 18,
   "sources": 111,
   "first_seen": 1794587120.9928033,
-  "last_seen": 1795383457.2370696,
+  "last_seen": 1795401570.7924373,
   "tags": []
  },
  {
@@ -43,11 +43,11 @@
    "cleanup"
   ],
   "pattern": "shell-recon > miner > ssh-key-persistence > cron-persistence > cleanup",
-  "sessions": 139,
+  "sessions": 141,
   "agents": 9,
-  "sources": 7,
+  "sources": 9,
   "first_seen": 1794597010.407541,
-  "last_seen": 1795327730.7657847,
+  "last_seen": 1795389912.3935132,
   "tags": []
  },
  {
@@ -62,7 +62,7 @@
    "upload"
   ],
   "pattern": "ssh-key-persistence > shell-recon > account-change > shell-recon > cron-persistence > shell-recon > upload",
-  "sessions": 131,
+  "sessions": 122,
   "agents": 9,
   "sources": 207,
   "first_seen": 1794588916.0919945,
@@ -82,8 +82,8 @@
    "upload"
   ],
   "pattern": "ssh-key-persistence > shell-recon > account-change > cleanup > shell-recon > cron-persistence > shell-recon > upload",
-  "sessions": 118,
-  "agents": 8,
+  "sessions": 117,
+  "agents": 7,
   "sources": 134,
   "first_seen": 1794589903.5221505,
   "last_seen": 1795281870.691991,
@@ -98,11 +98,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > cleanup > upload",
-  "sessions": 79,
+  "sessions": 76,
   "agents": 18,
   "sources": 40,
   "first_seen": 1794590431.9763744,
-  "last_seen": 1795382858.963603,
+  "last_seen": 1795398481.1210375,
   "tags": []
  },
  {
@@ -112,7 +112,7 @@
    "account-change"
   ],
   "pattern": "shell-recon > account-change",
-  "sessions": 65,
+  "sessions": 64,
   "agents": 5,
   "sources": 16,
   "first_seen": 1794740676.111122,
@@ -126,7 +126,7 @@
    "shell-download"
   ],
   "pattern": "shell-recon > shell-download",
-  "sessions": 65,
+  "sessions": 64,
   "agents": 18,
   "sources": 12,
   "first_seen": 1794654306.8881562,
@@ -141,11 +141,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > upload",
-  "sessions": 58,
+  "sessions": 59,
   "agents": 17,
   "sources": 2,
   "first_seen": 1794668563.625231,
-  "last_seen": 1795371521.900258,
+  "last_seen": 1795397195.5015755,
   "tags": []
  },
  {
@@ -155,11 +155,11 @@
    "cleanup"
   ],
   "pattern": "shell-recon > cleanup",
-  "sessions": 56,
+  "sessions": 55,
   "agents": 17,
-  "sources": 25,
+  "sources": 26,
   "first_seen": 1794749835.0565763,
-  "last_seen": 1795383081.590621,
+  "last_seen": 1795399095.1608956,
   "tags": []
  },
  {
