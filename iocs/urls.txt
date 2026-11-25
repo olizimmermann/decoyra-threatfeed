@@ -1,10 +1,10 @@
 # LIVE MALWARE INFRASTRUCTURE: not de-fanged. Never fetch these.
 # Payload and callback URLs attackers told the honeypots to fetch, last 7 days. Shell glue cut off;
 # proxy-check, benign, internal and single-address domains left out (see iocs.csv).
-http://1.1.1.1/cdn-cgi/trace
 http://100.10.4.86:49858/Mozi.m
 http://100.10.5.152:57982/Mozi.m
 http://100.10.5.5:54396/Mozi.m
+http://100.20.2.180:52242/Mozi.a
 http://101.29.21.174:43554/Mozi.a
 http://101.53.224.56:43766/Mozi.m
 http://101.53.225.12:35163/Mozi.m
@@ -41,13 +41,15 @@ http://119.30.116.228:56736/Mozi.m
 http://122.10.18.57:8888/wl139probe
 http://122.99.54.19:35870/Mozi.m
 http://124.29.221.118:43029/Mozi.m
-http://124.29.226.188:46346/Mozi.m
 http://137.59.230.113:41813/Mozi.m
 http://139.135.41.138:42503/Mozi.m
 http://139.135.43.180:53548/Mozi.m
+http://139.135.43.246:34131/Mozi.a
 http://139.135.44.236:40557/Mozi.m
 http://139.135.44.97:35965/Mozi.m
 http://144.48.130.121:55993/Mozi.m
+http://147.45.125.129/judge/65bb860140e0234a
+http://147.45.125.129/judge/bbf15d88d09b9c12
 http://151.234.36.252:51636/Mozi.m
 http://151.244.234.162:35146/b/amd64
 http://151.244.234.162:35146/s/amd64
@@ -58,11 +60,11 @@ http://153.117.15.148:51324/Mozi.m
 http://153.117.15.218:34728/Mozi.a
 http://153.117.15.225:54882/Mozi.a
 http://153.117.33.174:54186/Mozi.m
-http://153.117.34.135:52911/Mozi.m
 http://153.117.34.1:39263/Mozi.m
 http://153.117.34.220:57763/Mozi.a
 http://153.117.38.184:42748/Mozi.a
 http://153.117.40.103:48991/Mozi.m
+http://153.117.50.210:58205/Mozi.m
 http://153.117.50.48:55808/Mozi.a
 http://153.117.68.174:57849/Mozi.m
 http://153.117.70.125:38633/Mozi.m
@@ -83,7 +85,6 @@ http://175.107.3.32:57548/Mozi.m
 http://175.151.216.207:45140/Mozi.m
 http://182.190.223.130:40622/Mozi.m
 http://185.39.181.103:55962/Mozi.m
-http://196.189.104.106:37618/Mozi.m
 http://196.189.46.69:44663/Mozi.a
 http://196.190.182.12:55059/Mozi.a
 http://196.251.121.142/a3f8d2/kaizen.arm
@@ -107,8 +108,6 @@ http://219.156.101.89:36042/Mozi.m
 http://221.229.81.133:35148/Mozi.m
 http://223.123.34.17:40156/Mozi.m
 http://223.123.34.203:56914/Mozi.m
-http://223.123.34.53:37186/Mozi.m
-http://223.123.34.82:34298/Mozi.m
 http://223.123.35.120:58387/Mozi.m
 http://223.123.47.146:41764/Mozi.a
 http://223.123.71.125:43158/Mozi.a
