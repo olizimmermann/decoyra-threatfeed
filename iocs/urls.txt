@@ -1,6 +1,7 @@
 # LIVE MALWARE INFRASTRUCTURE: not de-fanged. Never fetch these.
 # Payload and callback URLs attackers told the honeypots to fetch, last 7 days. Shell glue cut off;
 # proxy-check, benign, internal and single-address domains left out (see iocs.csv).
+http://100.10.4.112:53390/Mozi.m
 http://100.10.4.86:49858/Mozi.m
 http://100.10.5.152:57982/Mozi.m
 http://100.10.5.5:54396/Mozi.m
@@ -11,8 +12,10 @@ http://101.53.225.12:35163/Mozi.m
 http://101.53.225.13:53352/Mozi.m
 http://102.53.60.220:53674/Mozi.m
 http://103.11.62.23:59384/Mozi.a
+http://103.151.47.90:45414/Mozi.a
 http://103.160.59.94:28816/CZRmrtxnrNONBXhwfFeqjNfBrliNaShG
 http://103.176.16.114:37355/Mozi.m
+http://103.18.14.245:54056/Mozi.m
 http://103.191.118.187:54515/Mozi.a
 http://103.198.154.141:54989/Mozi.m
 http://103.244.172.255:33806/Mozi.m
@@ -31,7 +34,6 @@ http://110.38.240.119:54394/Mozi.m
 http://110.38.247.220:50663/Mozi.m
 http://110.38.250.131:46908/Mozi.m
 http://112.225.196.156:52203/Mozi.m
-http://112.254.21.177:59260/Mozi.m
 http://115.48.163.236:58792/Mozi.m
 http://115.57.75.93:39375/Mozi.m
 http://118.107.130.26:43036/Mozi.m
@@ -49,12 +51,15 @@ http://139.135.41.56:60041/Mozi.m
 http://139.135.43.180:53548/Mozi.m
 http://139.135.43.246:34131/Mozi.a
 http://139.135.44.236:40557/Mozi.m
+http://139.135.44.79:59143/Mozi.m
 http://139.135.44.97:35965/Mozi.m
 http://139.135.45.238:41388/Mozi.m
 http://144.48.130.108:41647/Mozi.m
+http://147.45.125.129/judge/5d2e64ada84d1526
 http://147.45.125.129/judge/65bb860140e0234a
 http://147.45.125.129/judge/7a8ce3dc035b77fe
 http://147.45.125.129/judge/875d069eee4ff07c
+http://147.45.125.129/judge/9afebd9144e97a15
 http://147.45.125.129/judge/acb8e6a6f7f841e4
 http://147.45.125.129/judge/b68e3a6ef1ecaf6a
 http://147.45.125.129/judge/bbf15d88d09b9c12
@@ -66,17 +71,19 @@ http://151.244.234.162:35146/s/amd64
 http://151.244.234.24:65133/b/amd64
 http://151.244.234.24:65133/s/amd64
 http://153.117.1.218:58328/Mozi.m
+http://153.117.15.141:52610/Mozi.m
 http://153.117.15.148:51324/Mozi.m
 http://153.117.15.218:34728/Mozi.a
-http://153.117.15.225:54882/Mozi.a
 http://153.117.33.174:54186/Mozi.m
-http://153.117.34.1:39263/Mozi.m
 http://153.117.34.220:57763/Mozi.a
 http://153.117.38.184:42748/Mozi.a
 http://153.117.40.103:48991/Mozi.m
 http://153.117.50.210:58205/Mozi.m
 http://153.117.50.48:55808/Mozi.a
+http://153.117.53.195:48428/Mozi.m
+http://153.117.67.35:36107/Mozi.m
 http://153.117.68.174:57849/Mozi.m
+http://153.117.69.210:48533/Mozi.m
 http://153.117.70.7:52679/Mozi.m
 http://153.117.79.15:43577/Mozi.m
 http://153.117.79.60:37868/Mozi.m
@@ -86,14 +93,12 @@ http://160.119.66.206/bins/net.
 http://165.101.118.96:42984/Mozi.m
 http://172.168.171.117:39758/Mozi.m
 http://175.107.1.181:50186/Mozi.m
+http://175.107.205.37:45788/Mozi.m
 http://175.107.208.117:50051/Mozi.m
-http://175.107.217.161:41836/Mozi.m
-http://175.107.218.240:55662/Mozi.m
 http://175.107.228.65:47936/Mozi.m
 http://175.107.3.32:57548/Mozi.m
 http://175.151.216.207:45140/Mozi.m
 http://182.190.223.130:40622/Mozi.m
-http://185.39.181.103:55962/Mozi.m
 http://196.188.141.17:48704/Mozi.m
 http://196.189.46.69:44663/Mozi.a
 http://196.251.121.142/a3f8d2/kaizen.arm
@@ -101,6 +106,7 @@ http://196.251.121.142/a3f8d2/kaizen.arm64
 http://196.251.121.142/a3f8d2/kaizen.arm7
 http://196.251.121.142/a3f8d2/kaizen.mips
 http://196.251.121.142/a3f8d2/kaizen.mpsl
+http://196.251.121.142/a3f8d2/kaizen.mpsl_r1_srv
 http://196.251.121.142/a3f8d2/kaizen.x86
 http://196.251.121.142/a3f8d2/kaizen.x86_64
 http://198.144.179.82:80/1.sh
@@ -116,6 +122,7 @@ http://210.212.30.166:57124/Mozi.m
 http://212.54.86.171:42531/Mozi.a
 http://219.156.101.89:36042/Mozi.m
 http://221.229.81.133:35148/Mozi.m
+http://223.123.34.148:38197/Mozi.m
 http://223.123.34.17:40156/Mozi.m
 http://223.123.34.203:56914/Mozi.m
 http://223.123.47.146:41764/Mozi.a
@@ -123,9 +130,8 @@ http://223.123.71.125:43158/Mozi.a
 http://27.31.132.66:42011/Mozi.m
 http://27.44.145.79:38197/Mozi.a
 http://31.56.209.34/SpaceDown/bin.x86
-http://31.56.209.73:32461/b/amd64
-http://31.56.209.73:32461/s/amd64
 http://36.251.0.194:33623/Mozi.m
+http://36.255.33.28:40012/Mozi.m
 http://36.74.146.222:37869/Mozi.m
 http://39.34.187.196:35306/Mozi.m
 http://42.228.41.77:41889/Mozi.a
@@ -137,12 +143,6 @@ http://43.228.157.59:38243/CB_18fbd5424f8808bc
 http://43.228.157.59:38243/CB_18fbd5424fecb94a
 http://43.228.157.59:38243/CB_18fbd5424ff1f561
 http://43.228.157.59:38243/CB_18fbd5424ff1f561&ipv=0
-http://43.228.157.59:39929/CB_18f8aea94de8537a
-http://43.228.157.59:39929/CB_18f8aea94f0e165f
-http://43.228.157.59:39929/CB_18f8aea9518b2219
-http://43.228.157.59:39929/CB_18f8aea95223e513
-http://43.228.157.59:39929/CB_18f8aea95223e513&ipv=0
-http://43.228.157.59:39929/CB_18f8aea955fdca10
 http://43.230.94.184:42467/Mozi.a
 http://43.230.94.185:44836/Mozi.m
 http://43.250.106.149:32933/Mozi.m
@@ -159,16 +159,12 @@ http://45.156.87.102:8099/b/vacronf4c9f1a77e41
 http://45.156.87.102:8888/s
 http://45.156.87.102:9443/s
 http://45.198.224.89/arm7
-http://45.88.91.135:35146/b/amd64
-http://45.88.91.135:35146/s/amd64
 http://59.103.104.205:57564/Mozi.m
 http://61.71.161.166:43495/Mozi.m
 http://72.255.19.34:52374/Mozi.a
 http://72.255.32.90:59798/Mozi.a
 http://72.255.33.192:55908/Mozi.m
 http://72.255.33.40:54082/Mozi.a
-http://74.113.234.62:5521/akzmahazcA/kaz.sh
-http://74.113.234.62:5521/akzmahazcA/kz.sh
 http://77.239.124.181/b
 http://77.239.124.181:8080/b
 http://77.239.124.181:9052/b
