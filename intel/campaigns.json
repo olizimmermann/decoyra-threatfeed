@@ -1,11 +1,11 @@
 [
  {
   "id": "b8b7f32135",
-  "addresses": 481,
-  "events": 1025,
+  "addresses": 487,
+  "events": 1037,
   "agents": 18,
   "first_seen": 1795125071.1723323,
-  "last_seen": 1795646971.6857784,
+  "last_seen": 1795681930.2438433,
   "tags": [
    "admin-panel",
    "iot-router"
@@ -20,29 +20,29 @@
   "countries": [
    {
     "cc": "IN",
-    "n": 126
+    "n": 127
    },
    {
     "cc": "MZ",
     "n": 53
    },
    {
-    "cc": "BR",
-    "n": 51
+    "cc": "AR",
+    "n": 50
    },
    {
-    "cc": "AR",
-    "n": 48
+    "cc": "BR",
+    "n": 47
    },
    {
     "cc": "VE",
-    "n": 25
+    "n": 26
    }
   ],
   "networks": [
    {
     "network": "AS9829 Bharat Sanchar Nigam Ltd",
-    "n": 102
+    "n": 103
    },
    {
     "network": "AS30619 TMCEL - Mocambique Telecom, SA",
@@ -50,7 +50,7 @@
    },
    {
     "network": "AS10617 SION S.A",
-    "n": 35
+    "n": 36
    }
   ],
   "sample_addresses": [
@@ -63,11 +63,11 @@
  },
  {
   "id": "b7653d1284",
-  "addresses": 122,
-  "events": 126,
+  "addresses": 127,
+  "events": 130,
   "agents": 18,
-  "first_seen": 1795046647.1322522,
-  "last_seen": 1795649568.7438312,
+  "first_seen": 1795082464.5092924,
+  "last_seen": 1795681564.0396142,
   "tags": [
    "admin-panel",
    "iot-router"
@@ -82,33 +82,33 @@
   "countries": [
    {
     "cc": "PK",
-    "n": 88
+    "n": 91
    },
    {
     "cc": "CN",
-    "n": 14
+    "n": 16
    },
    {
     "cc": "IN",
     "n": 6
    },
    {
-    "cc": "AR",
+    "cc": "RU",
     "n": 5
    },
    {
-    "cc": "RU",
+    "cc": "AR",
     "n": 4
    }
   ],
   "networks": [
    {
     "network": "AS9541 Cyber Internet Services (Private) Limited",
-    "n": 48
+    "n": 51
    },
    {
     "network": "AS4837 CHINA UNICOM China169 Backbone",
-    "n": 12
+    "n": 14
    },
    {
     "network": "AS138423 CMPak Limited",
@@ -117,19 +117,19 @@
   ],
   "sample_addresses": [
    "101.53.225.36",
+   "103.104.215.4",
    "103.152.100.72",
    "103.162.158.195",
-   "103.162.40.221",
-   "103.176.16.88"
+   "103.162.40.221"
   ]
  },
  {
   "id": "18ce39d260",
-  "addresses": 109,
-  "events": 114,
+  "addresses": 119,
+  "events": 126,
   "agents": 18,
   "first_seen": 1795077393.2920904,
-  "last_seen": 1795588146.9826481,
+  "last_seen": 1795681621.4187758,
   "tags": [
    "cve-2025-31324"
   ],
@@ -145,13 +145,13 @@
   "countries": [
    {
     "cc": "US",
-    "n": 109
+    "n": 119
    }
   ],
   "networks": [
    {
     "network": "AS8075 Microsoft Corporation",
-    "n": 109
+    "n": 119
    }
   ],
   "sample_addresses": [
@@ -163,49 +163,73 @@
   ]
  },
  {
-  "id": "2e89352f2b",
-  "addresses": 79,
-  "events": 80,
+  "id": "0637e74295",
+  "addresses": 92,
+  "events": 134,
   "agents": 18,
-  "first_seen": 1795079463.5266883,
-  "last_seen": 1795579032.8360994,
+  "first_seen": 1795098086.4157634,
+  "last_seen": 1795675801.7937386,
   "tags": [
-   "java-spring"
+   "env-secrets"
   ],
   "cves": [],
   "patterns": [
    {
-    "id": 5821,
-    "pattern": "GET /actuator/health"
+    "id": 107,
+    "pattern": "GET /config.json"
    }
   ],
   "countries": [
    {
     "cc": "US",
-    "n": 79
+    "n": 16
+   },
+   {
+    "cc": "HK",
+    "n": 10
+   },
+   {
+    "cc": "GB",
+    "n": 9
+   },
+   {
+    "cc": "IN",
+    "n": 6
+   },
+   {
+    "cc": "DE",
+    "n": 6
    }
   ],
   "networks": [
    {
-    "network": "AS8075 Microsoft Corporation",
-    "n": 79
+    "network": "AS135377 UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+    "n": 89
+   },
+   {
+    "network": "AS141679 China Telecom",
+    "n": 2
+   },
+   {
+    "network": "AS134972 IKUUU NETWORK LTD",
+    "n": 1
    }
   ],
   "sample_addresses": [
-   "13.86.107.138",
-   "135.233.98.30",
-   "172.172.164.67",
-   "172.174.112.250",
-   "172.212.203.49"
+   "101.36.105.50",
+   "101.36.107.65",
+   "101.36.114.209",
+   "101.36.114.252",
+   "101.36.122.183"
   ]
  },
  {
   "id": "056f900063",
-  "addresses": 78,
-  "events": 411,
+  "addresses": 80,
+  "events": 440,
   "agents": 18,
-  "first_seen": 1795051119.6979048,
-  "last_seen": 1795648348.2230291,
+  "first_seen": 1795080358.5476227,
+  "last_seen": 1795681776.7905405,
   "tags": [
    "llm-endpoint"
   ],
@@ -223,7 +247,7 @@
    },
    {
     "cc": "NL",
-    "n": 12
+    "n": 14
    },
    {
     "cc": "DE",
@@ -241,11 +265,11 @@
   "networks": [
    {
     "network": "AS63949 Akamai Technologies, Inc.",
-    "n": 5
+    "n": 6
    },
    {
     "network": "AS215125 Church of Cyberology",
-    "n": 5
+    "n": 6
    },
    {
     "network": "AS12586 GHOSTnet GmbH",
@@ -261,64 +285,40 @@
   ]
  },
  {
-  "id": "0637e74295",
-  "addresses": 77,
-  "events": 116,
+  "id": "2e89352f2b",
+  "addresses": 80,
+  "events": 81,
   "agents": 18,
-  "first_seen": 1795098086.4157634,
-  "last_seen": 1795619779.1938617,
+  "first_seen": 1795079463.5266883,
+  "last_seen": 1795579032.8360994,
   "tags": [
-   "env-secrets"
+   "java-spring"
   ],
   "cves": [],
   "patterns": [
    {
-    "id": 107,
-    "pattern": "GET /config.json"
+    "id": 5821,
+    "pattern": "GET /actuator/health"
    }
   ],
   "countries": [
    {
     "cc": "US",
-    "n": 13
-   },
-   {
-    "cc": "HK",
-    "n": 9
-   },
-   {
-    "cc": "GB",
-    "n": 9
-   },
-   {
-    "cc": "NG",
-    "n": 5
-   },
-   {
-    "cc": "KR",
-    "n": 5
+    "n": 80
    }
   ],
   "networks": [
    {
-    "network": "AS135377 UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
-    "n": 74
-   },
-   {
-    "network": "AS141679 China Telecom",
-    "n": 2
-   },
-   {
-    "network": "AS134972 IKUUU NETWORK LTD",
-    "n": 1
+    "network": "AS8075 Microsoft Corporation",
+    "n": 80
    }
   ],
   "sample_addresses": [
-   "101.36.105.50",
-   "101.36.107.65",
-   "101.36.114.209",
-   "101.36.114.252",
-   "101.36.122.183"
+   "13.86.107.138",
+   "135.233.98.30",
+   "172.172.164.67",
+   "172.174.112.250",
+   "172.212.203.49"
   ]
  },
  {
@@ -389,8 +389,8 @@
   "addresses": 45,
   "events": 46,
   "agents": 16,
-  "first_seen": 1795050579.1250713,
-  "last_seen": 1795641835.8774517,
+  "first_seen": 1795077881.6086102,
+  "last_seen": 1795676872.5519686,
   "tags": [
    "command-injection",
    "cve-2018-10561",
@@ -412,14 +412,14 @@
    },
    {
     "cc": "CN",
-    "n": 5
-   },
-   {
-    "cc": "TW",
-    "n": 2
+    "n": 4
    },
    {
     "cc": "IN",
+    "n": 3
+   },
+   {
+    "cc": "TW",
     "n": 2
    },
    {
@@ -430,14 +430,14 @@
   "networks": [
    {
     "network": "AS9541 Cyber Internet Services (Private) Limited",
-    "n": 21
+    "n": 20
    },
    {
     "network": "AS139879 Galaxy Broadband (pvt.) Ltd.",
     "n": 4
    },
    {
-    "network": "AS4837 CHINA UNICOM China169 Backbone",
+    "network": "AS138423 CMPak Limited",
     "n": 3
    }
   ],
@@ -451,11 +451,11 @@
  },
  {
   "id": "8d12579c3c",
-  "addresses": 35,
-  "events": 35,
+  "addresses": 37,
+  "events": 37,
   "agents": 15,
   "first_seen": 1795287755.3096395,
-  "last_seen": 1795642936.9664302,
+  "last_seen": 1795666542.0758991,
   "tags": [
    "command-injection",
    "cve-2024-12847"
@@ -472,7 +472,7 @@
   "countries": [
    {
     "cc": "PK",
-    "n": 24
+    "n": 26
    },
    {
     "cc": "CN",
@@ -490,7 +490,7 @@
   "networks": [
    {
     "network": "AS9541 Cyber Internet Services (Private) Limited",
-    "n": 13
+    "n": 14
    },
    {
     "network": "AS4837 CHINA UNICOM China169 Backbone",
@@ -563,12 +563,73 @@
   ]
  },
  {
+  "id": "a555128e77",
+  "addresses": 31,
+  "events": 193,
+  "agents": 18,
+  "first_seen": 1795090747.9838958,
+  "last_seen": 1795678650.6536324,
+  "tags": [
+   "git-exposure"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 87,
+    "pattern": "GET /.git/config"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "US",
+    "n": 9
+   },
+   {
+    "cc": "DE",
+    "n": 5
+   },
+   {
+    "cc": "SG",
+    "n": 3
+   },
+   {
+    "cc": "JP",
+    "n": 2
+   },
+   {
+    "cc": "UZ",
+    "n": 1
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS14061 DigitalOcean, LLC",
+    "n": 6
+   },
+   {
+    "network": "AS396982 Google LLC",
+    "n": 5
+   },
+   {
+    "network": "AS8075 Microsoft Corporation",
+    "n": 2
+   }
+  ],
+  "sample_addresses": [
+   "103.41.19.124",
+   "104.225.132.170",
+   "130.49.171.102",
+   "136.108.98.131",
+   "143.198.89.226"
+  ]
+ },
+ {
   "id": "8814102408",
   "addresses": 31,
-  "events": 48,
+  "events": 49,
   "agents": 18,
-  "first_seen": 1795055981.2761667,
-  "last_seen": 1795644334.3431704,
+  "first_seen": 1795084411.6109738,
+  "last_seen": 1795664005.9450045,
   "tags": [
    "iot-router"
   ],
@@ -614,116 +675,63 @@
   "sample_addresses": [
    "104.248.43.74",
    "134.209.236.116",
+   "138.197.182.192",
    "138.68.75.43",
-   "139.59.214.243",
-   "143.198.73.73"
+   "139.59.214.243"
   ]
  },
  {
-  "id": "a555128e77",
+  "id": "631518dec8",
   "addresses": 30,
-  "events": 180,
+  "events": 39,
   "agents": 18,
-  "first_seen": 1795065578.0682871,
-  "last_seen": 1795649171.7820146,
+  "first_seen": 1795192683.8174174,
+  "last_seen": 1795680463.8279586,
   "tags": [
-   "git-exposure"
+   "java-spring"
   ],
   "cves": [],
   "patterns": [
    {
-    "id": 87,
-    "pattern": "GET /.git/config"
+    "id": 19350,
+    "pattern": "GET /solr/"
    }
   ],
   "countries": [
    {
     "cc": "US",
+    "n": 21
+   },
+   {
+    "cc": "NL",
     "n": 9
-   },
-   {
-    "cc": "DE",
-    "n": 5
-   },
-   {
-    "cc": "SG",
-    "n": 2
-   },
-   {
-    "cc": "JP",
-    "n": 2
-   },
-   {
-    "cc": "UZ",
-    "n": 1
    }
   ],
   "networks": [
    {
-    "network": "AS14061 DigitalOcean, LLC",
-    "n": 5
+    "network": "AS211680 NSEC - Sistemas Informaticos, S.A.",
+    "n": 20
    },
    {
-    "network": "AS396982 Google LLC",
-    "n": 4
-   },
-   {
-    "network": "AS8075 Microsoft Corporation",
-    "n": 2
+    "network": "AS21859 Zenlayer Inc",
+    "n": 10
    }
   ],
   "sample_addresses": [
-   "103.41.19.124",
-   "104.225.132.170",
-   "130.49.171.102",
-   "136.108.98.131",
-   "144.172.79.19"
-  ]
- },
- {
-  "id": "1e26edd3fc",
-  "addresses": 30,
-  "events": 30,
-  "agents": 17,
-  "first_seen": 1795049824.3933067,
-  "last_seen": 1795092750.7572815,
-  "tags": [
-   "admin-panel"
-  ],
-  "cves": [],
-  "patterns": [
-   {
-    "id": 5669,
-    "pattern": "GET /manager/html"
-   }
-  ],
-  "countries": [
-   {
-    "cc": "US",
-    "n": 30
-   }
-  ],
-  "networks": [
-   {
-    "network": "AS8075 Microsoft Corporation",
-    "n": 30
-   }
-  ],
-  "sample_addresses": [
-   "13.89.123.168",
-   "172.212.227.97",
-   "20.106.180.165",
-   "20.118.211.122",
-   "20.118.235.7"
+   "109.105.210.100",
+   "109.105.210.92",
+   "109.105.210.93",
+   "109.105.210.97",
+   "109.105.210.98"
   ]
  },
  {
   "id": "2b6c8e8583",
   "addresses": 29,
-  "events": 467,
-  "agents": 13,
-  "first_seen": 1795071396.100776,
-  "last_seen": 1795644085.5350845,
+  "events": 485,
+  "agents": 14,
+  "first_seen": 1795089906.3467271,
+  "last_seen": 1795676242.953695,
   "tags": [
    "cve-2025-30208"
   ],
@@ -778,6 +786,71 @@
    "106.55.39.200",
    "111.228.53.202",
    "111.229.252.90"
+  ]
+ },
+ {
+  "id": "0d13708bf2",
+  "addresses": 29,
+  "events": 168,
+  "agents": 14,
+  "first_seen": 1795086777.2679367,
+  "last_seen": 1795680896.3017273,
+  "tags": [
+   "llm-endpoint"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 13653,
+    "pattern": "GET /api/tags"
+   },
+   {
+    "id": 16015,
+    "pattern": "POST /api/generate"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "NL",
+    "n": 6
+   },
+   {
+    "cc": "US",
+    "n": 4
+   },
+   {
+    "cc": "NZ",
+    "n": 3
+   },
+   {
+    "cc": "DE",
+    "n": 3
+   },
+   {
+    "cc": "HK",
+    "n": 2
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS215125 Church of Cyberology",
+    "n": 5
+   },
+   {
+    "network": "AS137409 GSL Networks Pty LTD",
+    "n": 3
+   },
+   {
+    "network": "AS31898 Oracle Corporation",
+    "n": 2
+   }
+  ],
+  "sample_addresses": [
+   "13.184.235.217",
+   "154.88.64.62",
+   "158.173.167.33",
+   "158.173.167.36",
+   "158.173.167.75"
   ]
  },
  {
@@ -843,12 +916,49 @@
   ]
  },
  {
+  "id": "1e26edd3fc",
+  "addresses": 28,
+  "events": 28,
+  "agents": 18,
+  "first_seen": 1795092554.8713458,
+  "last_seen": 1795666000.2211118,
+  "tags": [
+   "admin-panel"
+  ],
+  "cves": [],
+  "patterns": [
+   {
+    "id": 5669,
+    "pattern": "GET /manager/html"
+   }
+  ],
+  "countries": [
+   {
+    "cc": "US",
+    "n": 28
+   }
+  ],
+  "networks": [
+   {
+    "network": "AS8075 Microsoft Corporation",
+    "n": 28
+   }
+  ],
+  "sample_addresses": [
+   "138.91.106.67",
+   "20.106.196.4",
+   "20.118.235.7",
+   "20.121.124.72",
+   "20.14.76.20"
+  ]
+ },
+ {
   "id": "850baeb19e",
-  "addresses": 26,
-  "events": 31,
+  "addresses": 25,
+  "events": 30,
   "agents": 16,
   "first_seen": 1795103444.046288,
-  "last_seen": 1795644441.3969157,
+  "last_seen": 1795680982.1317391,
   "tags": [
    "llm-endpoint"
   ],
@@ -865,11 +975,11 @@
     "n": 4
    },
    {
-    "cc": "FR",
-    "n": 4
+    "cc": "NL",
+    "n": 3
    },
    {
-    "cc": "NL",
+    "cc": "FR",
     "n": 3
    },
    {
@@ -887,93 +997,28 @@
     "n": 4
    },
    {
-    "network": "AS51167 Contabo GmbH",
+    "network": "AS215125 Church of Cyberology",
     "n": 3
    },
    {
-    "network": "AS215125 Church of Cyberology",
-    "n": 3
+    "network": "AS51167 Contabo GmbH",
+    "n": 2
    }
   ],
   "sample_addresses": [
    "129.211.9.250",
+   "147.90.234.115",
    "152.228.143.186",
    "161.33.15.151",
-   "161.33.40.214",
-   "185.220.101.173"
-  ]
- },
- {
-  "id": "0d13708bf2",
-  "addresses": 24,
-  "events": 150,
-  "agents": 14,
-  "first_seen": 1795062891.0132692,
-  "last_seen": 1795631792.0572588,
-  "tags": [
-   "llm-endpoint"
-  ],
-  "cves": [],
-  "patterns": [
-   {
-    "id": 13653,
-    "pattern": "GET /api/tags"
-   },
-   {
-    "id": 16015,
-    "pattern": "POST /api/generate"
-   }
-  ],
-  "countries": [
-   {
-    "cc": "NL",
-    "n": 5
-   },
-   {
-    "cc": "US",
-    "n": 3
-   },
-   {
-    "cc": "NZ",
-    "n": 3
-   },
-   {
-    "cc": "DE",
-    "n": 3
-   },
-   {
-    "cc": "HK",
-    "n": 2
-   }
-  ],
-  "networks": [
-   {
-    "network": "AS215125 Church of Cyberology",
-    "n": 4
-   },
-   {
-    "network": "AS137409 GSL Networks Pty LTD",
-    "n": 3
-   },
-   {
-    "network": "AS31898 Oracle Corporation",
-    "n": 2
-   }
-  ],
-  "sample_addresses": [
-   "13.184.235.217",
-   "154.88.64.62",
-   "158.173.167.33",
-   "158.173.167.36",
-   "158.173.167.75"
+   "161.33.40.214"
   ]
  },
  {
   "id": "ca5f34488b",
-  "addresses": 23,
-  "events": 100,
-  "agents": 18,
-  "first_seen": 1795052612.777811,
+  "addresses": 19,
+  "events": 91,
+  "agents": 17,
+  "first_seen": 1795078179.6176357,
   "last_seen": 1795622721.2012334,
   "tags": [
    "llm-endpoint"
@@ -988,11 +1033,7 @@
   "countries": [
    {
     "cc": "US",
-    "n": 10
-   },
-   {
-    "cc": "CN",
-    "n": 3
+    "n": 7
    },
    {
     "cc": "TR",
@@ -1003,21 +1044,25 @@
     "n": 2
    },
    {
+    "cc": "CN",
+    "n": 2
+   },
+   {
     "cc": "TW",
     "n": 1
    }
   ],
   "networks": [
    {
-    "network": "AS396982 Google LLC",
-    "n": 4
-   },
-   {
     "network": "AS16509 Amazon.com, Inc.",
     "n": 3
    },
    {
     "network": "AS8075 Microsoft Corporation",
+    "n": 2
+   },
+   {
+    "network": "AS44620 Netlen Internet Hizmetleri Ltd. Sti.",
     "n": 2
    }
   ],
@@ -1030,108 +1075,66 @@
   ]
  },
  {
-  "id": "631518dec8",
-  "addresses": 23,
-  "events": 30,
-  "agents": 18,
-  "first_seen": 1795057339.2746854,
-  "last_seen": 1795647980.2869442,
+  "id": "7d8e266a42",
+  "addresses": 19,
+  "events": 256,
+  "agents": 16,
+  "first_seen": 1795281958.1468296,
+  "last_seen": 1795675104.1991327,
   "tags": [
-   "java-spring"
+   "cve-2025-55182"
   ],
-  "cves": [],
+  "cves": [
+   "CVE-2025-55182"
+  ],
   "patterns": [
    {
-    "id": 19350,
-    "pattern": "GET /solr/"
+    "id": 131888,
+    "pattern": "POST / [body: cve-2025-55182]"
    }
   ],
   "countries": [
    {
     "cc": "US",
-    "n": 15
+    "n": 6
    },
    {
-    "cc": "NL",
-    "n": 8
-   }
-  ],
-  "networks": [
-   {
-    "network": "AS211680 NSEC - Sistemas Informaticos, S.A.",
-    "n": 15
-   },
-   {
-    "network": "AS21859 Zenlayer Inc",
-    "n": 8
-   }
-  ],
-  "sample_addresses": [
-   "109.105.210.100",
-   "109.105.210.93",
-   "109.105.210.97",
-   "109.105.210.98",
-   "109.105.210.99"
-  ]
- },
- {
-  "id": "71e7f84ffa",
-  "addresses": 21,
-  "events": 21,
-  "agents": 13,
-  "first_seen": 1795058111.505041,
-  "last_seen": 1795255506.4697545,
-  "tags": [
-   "command-injection",
-   "cve-2024-12847"
-  ],
-  "cves": [
-   "CVE-2024-12847"
-  ],
-  "patterns": [
-   {
-    "id": 16863,
-    "pattern": "GET /setup.cgi?cmd=&curpath=&currentsetting.htm=&next_file=&todo= [url: command-injection]"
-   }
-  ],
-  "countries": [
-   {
-    "cc": "PK",
-    "n": 10
+    "cc": "FR",
+    "n": 3
    },
    {
     "cc": "CN",
-    "n": 8
+    "n": 3
    },
    {
-    "cc": "RU",
+    "cc": "IN",
     "n": 2
    },
    {
-    "cc": "HK",
+    "cc": "RU",
     "n": 1
    }
   ],
   "networks": [
    {
-    "network": "AS9541 Cyber Internet Services (Private) Limited",
-    "n": 6
+    "network": "AS45090 Shenzhen Tencent Computer Systems Company Limite",
+    "n": 3
    },
    {
-    "network": "AS4837 CHINA UNICOM China169 Backbone",
-    "n": 4
+    "network": "AS16276 OVH SAS",
+    "n": 3
    },
    {
-    "network": "AS8359 MTS PJSC",
+    "network": "AS51167 Contabo GmbH",
     "n": 2
    }
   ],
   "sample_addresses": [
-   "101.53.225.12",
-   "103.26.86.240",
-   "103.82.120.220",
-   "110.38.12.240",
-   "110.38.250.131"
+   "107.23.146.208",
+   "118.89.68.18",
+   "119.91.222.231",
+   "120.53.107.122",
+   "144.91.106.106"
   ]
  }
 ]
