@@ -7,11 +7,11 @@
    "shell-recon"
   ],
   "pattern": "shell-recon > shell-download > shell-recon",
-  "sessions": 35297,
+  "sessions": 34713,
   "agents": 18,
   "sources": 114,
   "first_seen": 1794587120.3943331,
-  "last_seen": 1795744826.0515819,
+  "last_seen": 1795776416.2985077,
   "tags": []
  },
  {
@@ -26,11 +26,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > shell-recon > miner > cron-persistence > cleanup > upload",
-  "sessions": 8224,
+  "sessions": 8077,
   "agents": 18,
   "sources": 114,
   "first_seen": 1794587120.9928033,
-  "last_seen": 1795744788.1047897,
+  "last_seen": 1795776264.3369813,
   "tags": []
  },
  {
@@ -40,7 +40,7 @@
    "account-change"
   ],
   "pattern": "shell-recon > account-change",
-  "sessions": 181,
+  "sessions": 180,
   "agents": 12,
   "sources": 25,
   "first_seen": 1794740676.111122,
@@ -59,11 +59,11 @@
    "upload"
   ],
   "pattern": "ssh-key-persistence > shell-recon > account-change > shell-recon > cron-persistence > shell-recon > upload",
-  "sessions": 163,
+  "sessions": 164,
   "agents": 17,
-  "sources": 307,
+  "sources": 312,
   "first_seen": 1794588916.0919945,
-  "last_seen": 1795741992.64336,
+  "last_seen": 1795776297.478674,
   "tags": []
  },
  {
@@ -75,11 +75,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > cleanup > upload",
-  "sessions": 80,
+  "sessions": 79,
   "agents": 18,
   "sources": 40,
   "first_seen": 1794590431.9763744,
-  "last_seen": 1795741483.606202,
+  "last_seen": 1795775717.4914355,
   "tags": []
  },
  {
@@ -95,11 +95,11 @@
    "upload"
   ],
   "pattern": "ssh-key-persistence > shell-recon > account-change > cleanup > shell-recon > cron-persistence > shell-recon > upload",
-  "sessions": 76,
-  "agents": 14,
-  "sources": 181,
+  "sessions": 78,
+  "agents": 15,
+  "sources": 187,
   "first_seen": 1794589903.5221505,
-  "last_seen": 1795742361.4975626,
+  "last_seen": 1795773868.7216895,
   "tags": []
  },
  {
@@ -112,11 +112,11 @@
    "cleanup"
   ],
   "pattern": "shell-recon > miner > ssh-key-persistence > cron-persistence > cleanup",
-  "sessions": 71,
+  "sessions": 74,
   "agents": 3,
   "sources": 13,
   "first_seen": 1794597010.407541,
-  "last_seen": 1795717696.854564,
+  "last_seen": 1795748228.6465206,
   "tags": []
  },
  {
@@ -131,7 +131,7 @@
   "agents": 17,
   "sources": 2,
   "first_seen": 1794668563.625231,
-  "last_seen": 1795742402.7856574,
+  "last_seen": 1795768577.32797,
   "tags": []
  },
  {
@@ -155,11 +155,11 @@
    "cleanup"
   ],
   "pattern": "shell-recon > cleanup",
-  "sessions": 57,
-  "agents": 18,
-  "sources": 41,
+  "sessions": 54,
+  "agents": 17,
+  "sources": 42,
   "first_seen": 1794749835.0565763,
-  "last_seen": 1795727629.6837533,
+  "last_seen": 1795766547.6929011,
   "tags": []
  },
  {
@@ -184,7 +184,7 @@
    "shell-recon"
   ],
   "pattern": "shell-recon > account-change > shell-recon",
-  "sessions": 24,
+  "sessions": 23,
   "agents": 17,
   "sources": 14,
   "first_seen": 1794806225.91008,
