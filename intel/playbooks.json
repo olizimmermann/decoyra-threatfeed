@@ -7,11 +7,11 @@
    "shell-recon"
   ],
   "pattern": "shell-recon > shell-download > shell-recon",
-  "sessions": 33779,
+  "sessions": 33627,
   "agents": 18,
   "sources": 114,
   "first_seen": 1794587120.3943331,
-  "last_seen": 1795808815.3400626,
+  "last_seen": 1795833120.6329303,
   "tags": []
  },
  {
@@ -26,11 +26,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > shell-recon > miner > cron-persistence > cleanup > upload",
-  "sessions": 7911,
+  "sessions": 7860,
   "agents": 18,
   "sources": 114,
   "first_seen": 1794587120.9928033,
-  "last_seen": 1795808769.1406097,
+  "last_seen": 1795833122.0803301,
   "tags": []
  },
  {
@@ -40,11 +40,11 @@
    "account-change"
   ],
   "pattern": "shell-recon > account-change",
-  "sessions": 181,
+  "sessions": 182,
   "agents": 11,
   "sources": 26,
   "first_seen": 1794740676.111122,
-  "last_seen": 1795800177.5216796,
+  "last_seen": 1795813049.0989566,
   "tags": []
  },
  {
@@ -59,7 +59,7 @@
    "upload"
   ],
   "pattern": "ssh-key-persistence > shell-recon > account-change > shell-recon > cron-persistence > shell-recon > upload",
-  "sessions": 168,
+  "sessions": 167,
   "agents": 17,
   "sources": 319,
   "first_seen": 1794588916.0919945,
@@ -79,7 +79,7 @@
   "agents": 18,
   "sources": 40,
   "first_seen": 1794590431.9763744,
-  "last_seen": 1795801687.993036,
+  "last_seen": 1795830735.250946,
   "tags": []
  },
  {
@@ -114,9 +114,9 @@
   "pattern": "ssh-key-persistence > shell-recon > account-change > cleanup > shell-recon > cron-persistence > shell-recon > upload",
   "sessions": 72,
   "agents": 15,
-  "sources": 191,
+  "sources": 192,
   "first_seen": 1794589903.5221505,
-  "last_seen": 1795796369.8288338,
+  "last_seen": 1795810554.3933928,
   "tags": []
  },
  {
@@ -127,11 +127,11 @@
    "upload"
   ],
   "pattern": "shell-recon > shell-download > upload",
-  "sessions": 65,
+  "sessions": 64,
   "agents": 17,
   "sources": 2,
   "first_seen": 1794668563.625231,
-  "last_seen": 1795807878.9895833,
+  "last_seen": 1795819834.2208884,
   "tags": []
  },
  {
@@ -141,7 +141,7 @@
    "shell-download"
   ],
   "pattern": "shell-recon > shell-download",
-  "sessions": 62,
+  "sessions": 61,
   "agents": 18,
   "sources": 16,
   "first_seen": 1794654306.8881562,
@@ -155,7 +155,7 @@
    "cleanup"
   ],
   "pattern": "shell-recon > cleanup",
-  "sessions": 55,
+  "sessions": 52,
   "agents": 17,
   "sources": 42,
   "first_seen": 1794749835.0565763,
@@ -220,6 +220,21 @@
   "tags": []
  },
  {
+  "id": 43796,
+  "stages": [
+   "botnet-check",
+   "shell-recon",
+   "upload"
+  ],
+  "pattern": "botnet-check > shell-recon > upload",
+  "sessions": 4,
+  "agents": 4,
+  "sources": 9,
+  "first_seen": 1794770834.012411,
+  "last_seen": 1795828915.0418813,
+  "tags": []
+ },
+ {
   "id": 12323,
   "stages": [
    "shell-recon",
@@ -234,21 +249,6 @@
   "sources": 4,
   "first_seen": 1794607220.8561993,
   "last_seen": 1795462877.8362455,
-  "tags": []
- },
- {
-  "id": 43796,
-  "stages": [
-   "botnet-check",
-   "shell-recon",
-   "upload"
-  ],
-  "pattern": "botnet-check > shell-recon > upload",
-  "sessions": 3,
-  "agents": 3,
-  "sources": 8,
-  "first_seen": 1794770834.012411,
-  "last_seen": 1795609586.0075953,
   "tags": []
  },
  {
